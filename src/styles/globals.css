@@ -8,6 +8,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-family: 'Work Sans', sans-serif;
 }
 
 a {
@@ -44,14 +45,22 @@ a {
 .inputAdulto{
   background-image: url('/icons/person.svg');
   background-repeat: no-repeat;
-  background-position: 10px;
+  background-position: 12px;
 }
 .inputCrianca{
   background-image: url('/icons/baby.svg');
   background-repeat: no-repeat;
-  background-position: 10px;
+  background-position: 12px;
 }
 
 .gradient{
   background: linear-gradient(0deg, rgba(2, 0, 36, 0.874) 23%, rgba(9, 9, 121, 0.825) 81%, rgba(9, 15, 125, 0.766) 86%, rgba(27, 60, 193, 0.756) 100%)
+}
+
+.max-w-700{
+  max-width: 700px;
+}
+.max-h-300{
+  max-height: 300px;
+  background-color: #004740d2;
 }

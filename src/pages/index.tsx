@@ -175,7 +175,7 @@ const Home: NextPage = () => {
               <p className='text-title'>O acesso a flutuação da Nascente Azul é feito através de uma trilha contemplativa de aproximadamente 300 m até chegar à sala de equipamentos para a flutuação</p>
             </div>
             <div className='w-[80%] pt-10'>
-              <img className='w-full' src="/logs/logs.png" alt="" />
+              <img className='w-full' src="/logs/Logs.png" alt="" />
             </div>
           </div>
         </div>
@@ -187,16 +187,16 @@ const Home: NextPage = () => {
           <img className='w-full h-[130vh]' src="/background/reserveSeusPacote.png" alt="" />
         </div>
         <h5 className=' text-white absolute mt-[20vh] text-4xl font-pacifico'>Recarregue as suas energias</h5>
-        <section className='min-w-[700px] absolute bg-green mt-[50vh] p-10 text-center text-white rounded-lg'>
+        <section className='min-w-[700px] absolute bg-green mt-[45vh] p-10 pb-12 px-14 text-center text-white rounded-lg'>
           <h3 className='text-2xl font-light mb-[10vh]'>Reserve seu pacote</h3>
+          <div className='grid grid-cols-2 gap-8 w-[50vw] min-w-[600px] max-w-700 max-h-400'>
           {/* inputs */}
-          <div className='grid grid-cols-2 w-[50vw] min-w-[620px]'>
-            <section className='w-[80%] flex flex-wrap'>
-              <input className='inputName w-[400%] rounded-md p-1 mb-2' type="text" />
-              <input className='inpurEmail w-[200%] rounded-md p-1 my-2 pl-10' type="email" placeholder='email' />
-              <div className='flex w-[100%]'>
-                <div className='p-2 w-[40%] rounded-md my-2 bg-white'>
-                  <div className='text-title flex w-[30%] min-w-[70px]'>
+            <section className='w-[80%] min-w-[400px] flex flex-wrap '>
+              <input className='inputName w-[100%] max-w-[300px] rounded-md p-2 mb-2' type="text" />
+              <input className='inpurEmail w-[100%] max-w-[300px] rounded-md p-2 my-2 pl-10' type="email" placeholder='email' />
+              <div className='flex w-[100%] max-w-[300px]'>
+                <div className='p-2 w-[35%] min-w-[70px] rounded-md my-2 bg-white'>
+                  <div className='text-title flex px-1'>
                     <img className='mr-2' src="/icons/flagBrazil.svg" alt="DDD-Brasil" />
                     - 55
                   </div>
@@ -204,7 +204,8 @@ const Home: NextPage = () => {
                 <input className='w-[70%] my-2 ml-1 rounded-md pl-2' type="text" placeholder='telefone' />
               </div>
             </section>
-            <section className='text-text grid grid-cols-2 gap-2 w-[90%] '>
+          {/* inputs */}
+            <section className='text-text grid grid-cols-2 gap-2 w-[90%] min-w-[300px]'>
               <input className='inputCheckIn pl-10 w-[100%] h-10 rounded-md' type="text" />
               <input className='inputCheckOut pl-10 w-100%] h-10 rounded-md' type="text" />
               <input className='inputAdulto pl-10 w-[100%] h-10 rounded-md' type="text" />
@@ -264,7 +265,7 @@ const Home: NextPage = () => {
 
           <div className='text-white mt-[34vh] w-[85%] flex justify-between relative'>
             <div className='text-sm leading-7'>
-              <p className='text-text'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
+              <p className='text-[#707070]'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
               <p>CNPJ 86.744.935/0001-06</p>
             </div>
             <div className=''>

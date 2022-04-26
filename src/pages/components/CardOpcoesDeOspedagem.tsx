@@ -9,12 +9,12 @@ export default function CardOpcoesDeOspedagem({ title, subTitle,price, image }: 
     return (
         <section className="shadow-3xl flex items-center bg-white rounded-2xl mb-16">
             <div className="">
-                <img className="h-[320px]" src={image} alt="imagem Do local" />
+                <img className="hover:cursor-pointer h-[320px]" src={image} alt="imagem Do local" />
             </div>
             <div className="w-[62%]  px-14 py-10 text-text ">
                 <div className="leading-[8px]">
-                    <h2 className="text-2xl leading-6 font-normal">{title}</h2>
-                    <h3 className="text-sm ">{subTitle}</h3>
+                    <h2 className="hover:cursor-pointer text-2xl leading-6 font-normal">{title}</h2>
+                    <h3 className="hover:cursor-pointer text-sm ">{subTitle}</h3>
                 </div>
                 {/* ============ specifications ============ */}
                 <div className="grid grid-cols-2">

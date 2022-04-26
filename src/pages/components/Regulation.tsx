@@ -24,7 +24,7 @@ export default function RegulationComponent() {
                     </ul>
                 </nav>
                 <div className="px-10 text-text">
-                    <h3 className="">Conheça o pacote</h3>
+                    <h3 className="text-2xl">Conheça o pacote</h3>
                     <br />
                     <h4>o pacote inclui:</h4><br />
                     <p>Aéreo: Passagem aérea de ida e volta entre a cidade de origem Campo Grande - Aeroporto Internacional de Campo Grande (CGR), em classe econômica, podendo haver conexão e/ou escala.</p>

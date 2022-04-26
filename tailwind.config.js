@@ -4,11 +4,14 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    maxWidth: {
+      '1/2': '700px%',
+    },
     colors: {
       'lightBlue': '#ECF2FE',
       'blue': '#9BBAF9',
       'DarkBlue': '#6394F6',
-      'green': '#00453ef7',
+      'green': '#004740d2',
       'orange': '#F1B22B',
       'title': '#343A40',
       'text': '#747575',
