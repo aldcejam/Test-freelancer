@@ -114,13 +114,13 @@ const Home: NextPage = () => {
         <CardOpcoesDeOspedagem
           title='Flat Ype Hotel'
           subTitle='Flat com cozinha equipada e apartamento mobiliado.'
-          image='/illustration/imgFlat.png'
+          image='/imgFlat.png'
           price={930}
         />
         <CardOpcoesDeOspedagem
           title='Hotel Lucca'
           subTitle='Conforto e aconchego para você curtir o seu final de dia.'
-          image='/illustration/imgHotelLucca.png'
+          image='/imgHotelLucca.png'
           price={1280}
         />
       </section>
@@ -187,25 +187,28 @@ const Home: NextPage = () => {
           <img className='w-full h-[130vh]' src="/background/reserveSeusPacote.png" alt="" />
         </div>
         <h5 className=' text-white absolute mt-[20vh] text-4xl font-pacifico'>Recarregue as suas energias</h5>
-        <section className='absolute bg-green mt-[50vh] p-10 text-center text-white rounded-lg'>
+        <section className='min-w-[700px] absolute bg-green mt-[50vh] p-10 text-center text-white rounded-lg'>
           <h3 className='text-2xl font-light mb-[10vh]'>Reserve seu pacote</h3>
           {/* inputs */}
-          <div className='grid grid-cols-2 w-[50vw]'>
-            <section className='w-[20vw] min-w-[400px] flex flex-wrap'>
-              <input className='inputName w-[20vw] rounded-md p-1 mb-2' type="text" />
-              <input className='inpurEmail w-[20vw] rounded-md p-1 my-2 pl-10' type="email" placeholder='email' />
-              <div className='flex w-[20vw]'>
+          <div className='grid grid-cols-2 w-[50vw] min-w-[620px]'>
+            <section className='w-[80%] flex flex-wrap'>
+              <input className='inputName w-[400%] rounded-md p-1 mb-2' type="text" />
+              <input className='inpurEmail w-[200%] rounded-md p-1 my-2 pl-10' type="email" placeholder='email' />
+              <div className='flex w-[100%]'>
                 <div className='p-2 w-[40%] rounded-md my-2 bg-white'>
-                  <div className='text-title flex'><img className='mr-2' src="/icons/flagBrazil.svg" alt="DDD-Brasil" /> - 55 </div>
+                  <div className='text-title flex w-[30%] min-w-[70px]'>
+                    <img className='mr-2' src="/icons/flagBrazil.svg" alt="DDD-Brasil" />
+                    - 55
+                  </div>
                 </div>
-                <input className='w-[85%] my-2 ml-1 rounded-md pl-2' type="text" placeholder='telefone' />
+                <input className='w-[70%] my-2 ml-1 rounded-md pl-2' type="text" placeholder='telefone' />
               </div>
             </section>
-            <section className='text-text grid grid-cols-2 w-[90%] '>
-              <input className='inputCheckIn pl-10 w-[10vw] h-10 rounded-md' type="text" />
-              <input className='inputCheckOut pl-10 w-[10vw] h-10 rounded-md' type="text" />
-              <input className='inputAdulto pl-10 w-[10vw] h-10 rounded-md' type="text" />
-              <input className='inputCrianca pl-10 w-[10vw] h-10 rounded-md' type="text" />
+            <section className='text-text grid grid-cols-2 gap-2 w-[90%] '>
+              <input className='inputCheckIn pl-10 w-[100%] h-10 rounded-md' type="text" />
+              <input className='inputCheckOut pl-10 w-100%] h-10 rounded-md' type="text" />
+              <input className='inputAdulto pl-10 w-[100%] h-10 rounded-md' type="text" />
+              <input className='inputCrianca pl-10 w-[100%] h-10 rounded-md' type="text" />
               <p className='text-left mt-2 text-white'>idade da criança 1:</p>
               <input type="text" className='w-[3vw] h-10 rounded-md' />
             </section>
