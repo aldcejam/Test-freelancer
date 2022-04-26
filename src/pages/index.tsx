@@ -235,7 +235,7 @@ const Home: NextPage = () => {
         <img className='absolute w-full h-[85vh]' src="/background/ocean.png" alt="" />
         <div className='w-[70vw] gradient h-[60vh] px-10 pt-20 absolute top-[15vh] inset-0 mx-auto flex justify-center'>
           <div className='absolute top-[15vh] flex'>
-            <section className='mr-16 -ml-2'>
+            <section className='mr-16 '>
               <img src="/log.svg" alt="" />
             </section>
             <section className='text-white w-[30vw] text-xs'>
