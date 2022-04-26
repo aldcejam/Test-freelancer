@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Head from 'next/head'
 import { Avaliations } from './components/Avaliations'
 import { CardComoFunciona } from './components/CardComoFunciona'
 import { CardOpcoesDeOspedagem } from './components/CardOpcoesDeOspedagem'
