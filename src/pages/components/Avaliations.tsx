@@ -1,4 +1,4 @@
-export function Avaliations(){
+export default function Avaliations(){
     return(
         <div className="flex gap-5">
             <div>

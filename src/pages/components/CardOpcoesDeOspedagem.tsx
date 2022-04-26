@@ -7,7 +7,7 @@ interface CardOpcoesDeOspedagemProps {
     price: number
 }
 
-function CardOpcoesDeOspedagemComponent({ title, subTitle,price, image }: CardOpcoesDeOspedagemProps) {
+export default function CardOpcoesDeOspedagem({ title, subTitle,price, image }: CardOpcoesDeOspedagemProps) {
     return (
         <section className="shadow-3xl flex items-center bg-white rounded-2xl mb-16">
             <div className="">
@@ -65,4 +65,3 @@ function CardOpcoesDeOspedagemComponent({ title, subTitle,price, image }: CardOp
         </section>
     )
 }
-export const CardOpcoesDeOspedagem = memo(CardOpcoesDeOspedagemComponent)

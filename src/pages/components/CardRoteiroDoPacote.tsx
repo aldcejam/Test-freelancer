@@ -9,7 +9,7 @@ interface CardRoteiroDoPacoteProps {
 
 }
 
-function CardRoteiroDoPacoteComponent({ title, text, image, withImage, withVideo, }: CardRoteiroDoPacoteProps) {
+export default function CardRoteiroDoPacote({ title, text, image, withImage, withVideo, }: CardRoteiroDoPacoteProps) {
     return (
         <article className=" flex gap-8 mb-14 lg:block lg:mx-[20%]">
             <div>
@@ -41,5 +41,3 @@ function CardRoteiroDoPacoteComponent({ title, text, image, withImage, withVideo
         </article>
     )
 }
-
-export const CardRoteiroDoPacote = memo(CardRoteiroDoPacoteComponent)

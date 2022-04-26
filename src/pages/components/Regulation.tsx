@@ -1,6 +1,5 @@
-import { memo } from "react";
 
-function RegulationComponent() {
+export default function Regulation() {
 
     return (
         <div>
@@ -91,5 +90,3 @@ function RegulationComponent() {
         </div>
     )
 }
-
-export const Regulation = memo(RegulationComponent)

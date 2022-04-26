@@ -6,7 +6,7 @@ interface CardComoFuncionaProps{
     img: string
 }
 
-function CardComoFuncionaComponent({title,text, img}: CardComoFuncionaProps){
+export default function CardComoFunciona({title,text, img}: CardComoFuncionaProps){
     return(
         <div className="w-[300px] p-10 bg-white justify-center rounded-lg shadow-3xl">
             <div className="flex justify-center p-4">
@@ -19,6 +19,3 @@ function CardComoFuncionaComponent({title,text, img}: CardComoFuncionaProps){
         </div>
     )
 }
-
-export const CardComoFunciona = memo(CardComoFuncionaComponent)
-

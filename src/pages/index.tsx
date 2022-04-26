@@ -1,10 +1,10 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { Avaliations } from './components/Avaliations'
-import { CardComoFunciona } from './components/CardComoFunciona'
-import { CardOpcoesDeOspedagem } from './components/CardOpcoesDeOspedagem'
-import { CardRoteiroDoPacote } from './components/CardRoteiroDoPacote'
-import { Regulation } from './components/Regulation'
+import  Avaliations  from './components/Avaliations'
+import  CardComoFunciona  from './components/CardComoFunciona'
+import  CardOpcoesDeOspedagem  from './components/CardOpcoesDeOspedagem'
+import  CardRoteiroDoPacote  from './components/CardRoteiroDoPacote'
+import Regulation from './components/Regulation'
 
 const Home: NextPage = () => {
   return (
