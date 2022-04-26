@@ -160,7 +160,7 @@ const Home: NextPage = () => {
       </section>
       {/* ================================= */}
 
-      <section className=' bg-white '>
+      <section className=' bg-white pb-[15vh]'>
         <div className='flex justify-center max-w-[1250px] mx-auto xl:mx-10 pt-16 px-10 mt-14 rounded-2xl'>
           <div className='w-[45%] '>
             <img className='w-[100%]' src="/Illustration/paradises.png" alt="" />
@@ -182,7 +182,7 @@ const Home: NextPage = () => {
       </section >
 
       {/* ==================== */}
-      <section className='flex justify-center relative h-[130vh]'>
+      <section className='flex justify-center relative h-[130vh] '>
         <div className='w-full absolute'>
           <img className='w-full h-[130vh]' src="/background/reserveSeusPacote.png" alt="" />
         </div>
