@@ -188,7 +188,7 @@ const Home: NextPage = () => {
         </div>
         <h5 className=' text-white absolute mt-[20vh] text-4xl font-pacifico'>Recarregue as suas energias</h5>
         <section className='min-w-[700px] absolute bg-green mt-[45vh] p-10 pb-12 px-14 text-center text-white rounded-lg'>
-          <h3 className='text-2xl font-light mb-[10vh]'>Reserve seu pacote</h3>
+          <h3 className='text-2xl font-light mb-[50px]'>Reserve seu pacote</h3>
           <div className='grid grid-cols-2 gap-8 w-[50vw] min-w-[600px] max-w-700 max-h-400'>
           {/* inputs */}
             <section className='w-[80%] min-w-[400px] flex flex-wrap '>
@@ -214,7 +214,7 @@ const Home: NextPage = () => {
               <input type="text" className='w-[3vw] h-10 rounded-md' />
             </section>
           </div>
-          <button className='bg-orange px-10 py-2 rounded-md mt-10 text-title font-semibold shadow-3xl'>Quero receber meu roteiro</button>
+          <button className='bg-orange px-12 py-3 rounded-md mt-10 text-title font-semibold shadow-3xl'>Quero receber meu roteiro</button>
         </section>
       </section>
       {/* ============================ */}
@@ -235,7 +235,7 @@ const Home: NextPage = () => {
         <img className='absolute w-full h-[85vh]' src="/background/ocean.png" alt="" />
         <div className='w-[70vw] gradient h-[60vh] px-10 pt-20 absolute top-[15vh] inset-0 mx-auto flex justify-center'>
           <div className='absolute top-[15vh] flex'>
-            <section className='mr-16'>
+            <section className='mr-16 -ml-2'>
               <img src="/log.svg" alt="" />
             </section>
             <section className='text-white w-[30vw] text-xs'>
@@ -261,10 +261,10 @@ const Home: NextPage = () => {
                 até 12x sem juros</p>
             </section>
           </div>
-          <div className='w-[80%] h-[2px] bg-text mt-[30vh] absolute'></div>
+          <div className='w-[75%] h-[2px] bg-text mt-[30vh] absolute'></div>
 
-          <div className='text-white mt-[34vh] w-[85%] flex justify-between relative'>
-            <div className='text-sm leading-7'>
+          <div className='text-white mt-[34vh] w-[80%] flex justify-between relative'>
+            <div className='text-sm leading-7 -ml-1'>
               <p className='text-[#707070]'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
               <p>CNPJ 86.744.935/0001-06</p>
             </div>

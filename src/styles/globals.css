@@ -54,7 +54,7 @@ a {
 }
 
 .gradient{
-  background: linear-gradient(0deg, rgba(2, 0, 36, 0.874) 23%, rgba(9, 9, 121, 0.825) 81%, rgba(9, 15, 125, 0.766) 86%, rgba(27, 60, 193, 0.756) 100%)
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0.874) 40%, rgba(9, 9, 121, 0.825) 81%, rgba(9, 15, 125, 0.766) 86%, rgba(27, 60, 193, 0.756) 100%)
 }
 
 .max-w-700{
