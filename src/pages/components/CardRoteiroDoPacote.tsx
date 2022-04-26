@@ -14,7 +14,7 @@ export default function CardRoteiroDoPacote({ title, text, image, withImage, wit
                 <img className="" src={image} alt="" />
             </div>
             <div className="w-[70%] leading-4">
-                <h2 className="text-xl font-semibold">{title}</h2>
+                <h2 className="text-xl text-title">{title}</h2>
                 <p className=" text-text mt-3">{text}</p>
                 <div className="flex mt-8 gap-8">
                     {

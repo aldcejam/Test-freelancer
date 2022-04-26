@@ -10,8 +10,8 @@ const Home: NextPage = () => {
   return (
     <div className='bg-gray'>
       <div className='relative h-[90vh]'>
-        <img src="/background/bgHeader.png" alt="" className='w-full h-[90vh] absolute' />
-        <header className='absolute mt-14 left-0 right-0  max-w-[1250px] mx-auto xl:mx-10 px-10 flex justify-betweenn items-center'>
+        <img src="/background/bgHeader.png" alt="" className='absolute w-full h-[90vh]' />
+        <header className='flex justify-betweenn items-center absolute inset-x-0 max-w-[1250px] mx-auto xl:mx-10 mt-14  px-10 '>
           <div>
             <img src="/log.svg" alt="" />
           </div>
