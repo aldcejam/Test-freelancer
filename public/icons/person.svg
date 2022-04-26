@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="118.794" height="19" viewBox="0 0 118.794 19">
+  <g id="Grupo_4569" data-name="Grupo 4569" transform="translate(-859.206 -864)">
+    <text id="Adultos" transform="translate(877 879)" fill="#919191" font-size="14" font-family="OpenSans, Open Sans"><tspan x="0" y="0">Adultos</tspan></text>
+    <g id="team" transform="translate(859.857 865)">
+      <g id="Grupo_41" data-name="Grupo 41" transform="translate(0.89)">
+        <g id="Grupo_40" data-name="Grupo 40" transform="translate(0 0)">
+          <circle id="Elipse_10" data-name="Elipse 10" cx="2.226" cy="2.226" r="2.226" fill="none" stroke="#919191" stroke-width="1.3"/>
+        </g>
+      </g>
+      <g id="Grupo_43" data-name="Grupo 43" transform="translate(0 5.233)">
+        <g id="Grupo_42" data-name="Grupo 42" transform="translate(0)">
+          <path id="Caminho_46" data-name="Caminho 46" d="M166.138,164.546l-.465-3.62a1.02,1.02,0,0,0-1.017-.921h-.561a.515.515,0,0,0-.362.15l-.661.661-.661-.661a.515.515,0,0,0-.362-.15h-.56a1.017,1.017,0,0,0-1.017.908L160,164.547a.513.513,0,0,0,.508.576h.553l.428,5.22a1.02,1.02,0,0,0,1.018.921h1.121a1.023,1.023,0,0,0,1.02-.93l.427-5.211h.552a.511.511,0,0,0,.384-.174A.5.5,0,0,0,166.138,164.546Z" transform="translate(-160 -160.005)" fill="none" stroke="#919191" stroke-width="1.3"/>
+        </g>
+      </g>
+    </g>
+    <path id="fi-rr-caret-down" d="M6.325,9H16.5a.91.91,0,0,1,.644,1.554l-5.089,5.085a.912.912,0,0,1-1.288,0L5.681,10.554A.91.91,0,0,1,6.325,9Z" transform="translate(960.586 861)" fill="#a7a4a4"/>
+  </g>
+</svg>

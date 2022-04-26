@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Work+Sans:wght@400;600;700&display=swap');
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.inputName {
+  background-image: url('/icons/profile.svg');
+  background-repeat: no-repeat;
+  background-position: 12px;
+}
+.inpurEmail{
+  background-image: url('/icons/email.svg');
+  background-repeat: no-repeat;
+  background-position: 10px;
+  
+}
+.inputCheckIn{
+  background-image: url('/icons/checkIn.svg');
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+.inputCheckOut{
+  background-image: url('/icons/data.svg');
+  background-repeat: no-repeat;
+  background-position-x: -2px;
+  background-position-y: -2px;
+}
+.inputAdulto{
+  background-image: url('/icons/person.svg');
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+.inputCrianca{
+  background-image: url('/icons/baby.svg');
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+.gradient{
+  background: linear-gradient(0deg, rgba(2, 0, 36, 0.874) 23%, rgba(9, 9, 121, 0.825) 81%, rgba(9, 15, 125, 0.766) 86%, rgba(27, 60, 193, 0.756) 100%)
+}

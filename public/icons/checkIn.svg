@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="83" height="19" viewBox="0 0 83 19">
+  <g id="Grupo_4567" data-name="Grupo 4567" transform="translate(-854 -808)">
+    <text id="Check-in" transform="translate(881 823)" fill="#919191" font-size="14" font-family="OpenSans, Open Sans"><tspan x="0" y="0">Check-in</tspan></text>
+    <g id="fi-rr-calendar" transform="translate(854 809)">
+      <path id="Caminho_1495" data-name="Caminho 1495" d="M12.667,1.333H12V.667a.667.667,0,1,0-1.333,0v.667H5.333V.667A.667.667,0,0,0,4,.667v.667H3.333A3.337,3.337,0,0,0,0,4.667v8A3.337,3.337,0,0,0,3.333,16h9.333A3.337,3.337,0,0,0,16,12.667v-8A3.337,3.337,0,0,0,12.667,1.333ZM1.333,4.667a2,2,0,0,1,2-2h9.333a2,2,0,0,1,2,2v.667H1.333Zm11.333,10H3.333a2,2,0,0,1-2-2v-6H14.667v6A2,2,0,0,1,12.667,14.667Z" fill="#919191"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="1" cy="1" r="1" transform="translate(7 9)" fill="#919191"/>
+      <circle id="Elipse_3" data-name="Elipse 3" cx="0.997" cy="0.997" r="0.997" transform="translate(3.668 9.004)" fill="#919191"/>
+      <circle id="Elipse_4" data-name="Elipse 4" cx="0.997" cy="0.997" r="0.997" transform="translate(10.337 9.004)" fill="#919191"/>
+    </g>
+  </g>
+</svg>

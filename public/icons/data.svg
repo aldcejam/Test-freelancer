@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142" height="46" viewBox="0 0 142 46">
+  <defs>
+    <filter id="Retângulo_1093" x="0" y="0" width="142" height="46" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_4568" data-name="Grupo 4568" transform="translate(-987 -794)">
+    <g transform="matrix(1, 0, 0, 1, 987, 794)" filter="url(#Retângulo_1093)">
+      <rect id="Retângulo_1093-2" data-name="Retângulo 1093" width="136" height="40" rx="8" transform="translate(3 3)" fill="#fbfbfb"/>
+    </g>
+    <text id="Check-out" transform="translate(1028 823)" fill="#919191" font-size="14" font-family="OpenSans, Open Sans"><tspan x="0" y="0">Check-out</tspan></text>
+    <g id="fi-rr-calendar" transform="translate(999.271 809)">
+      <path id="Caminho_1495" data-name="Caminho 1495" d="M12.667,1.333H12V.667a.667.667,0,1,0-1.333,0v.667H5.333V.667A.667.667,0,0,0,4,.667v.667H3.333A3.337,3.337,0,0,0,0,4.667v8A3.337,3.337,0,0,0,3.333,16h9.333A3.337,3.337,0,0,0,16,12.667v-8A3.337,3.337,0,0,0,12.667,1.333ZM1.333,4.667a2,2,0,0,1,2-2h9.333a2,2,0,0,1,2,2v.667H1.333Zm11.333,10H3.333a2,2,0,0,1-2-2v-6H14.667v6A2,2,0,0,1,12.667,14.667Z" fill="#919191"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="1" cy="1" r="1" transform="translate(6.729 9)" fill="#919191"/>
+      <circle id="Elipse_3" data-name="Elipse 3" cx="0.997" cy="0.997" r="0.997" transform="translate(3.668 9.004)" fill="#919191"/>
+      <circle id="Elipse_4" data-name="Elipse 4" cx="0.997" cy="0.997" r="0.997" transform="translate(10.337 9.004)" fill="#919191"/>
+    </g>
+  </g>
+</svg>
