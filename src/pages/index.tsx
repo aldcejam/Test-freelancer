@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import { Avaliations } from './components/Avaliations'
 import { CardComoFunciona } from './components/CardComoFunciona'
 import { CardOpcoesDeOspedagem } from './components/CardOpcoesDeOspedagem'
@@ -126,7 +125,7 @@ const Home: NextPage = () => {
       </section>
       {/* =========================================== */}
 
-      <section className='shadow-3xl bg-white max-w-[1250px] mx-auto xl:mx-10 py-10 px-10 mt-14 rounded-2xl'>
+      <section className="shadow-3xl bg-white max-w-[1250px] mx-auto xl:mx-10 py-10 px-10 mt-14 rounded-2xl">
         <Regulation />
       </section>
       {/* ============================= */}
@@ -196,7 +195,7 @@ const Home: NextPage = () => {
               <input className='inpurEmail w-[200%] rounded-md p-1 my-2 pl-10' type="email" placeholder='email' />
               <div className='flex w-[100%]'>
                 <div className='p-2 w-[40%] rounded-md my-2 bg-white'>
-                  <div className='text-title flex w-[30%] min-w-[65px]'>
+                  <div className='text-title flex w-[30%] min-w-[70px]'>
                     <img className='mr-2' src="/icons/flagBrazil.svg" alt="DDD-Brasil" />
                     - 55
                   </div>

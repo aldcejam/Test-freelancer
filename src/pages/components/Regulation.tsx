@@ -1,6 +1,5 @@
-import { memo } from "react";
 
-function RegulationComponent() {
+export function Regulation() {
 
     return (
         <div>
@@ -9,29 +8,30 @@ function RegulationComponent() {
                 <nav>
                     <ul>
                         <li>
-                            <a className="block py-5 pl-6 w-56 bg-lightBlue border-l-DarkBlue border-l-8 border-solid" href="">O que está incluso</a>
+                            <a className="block py-5 pl-6 w-56 bg-lightBlue border-l-DarkBlue border-l-8 border-solid" href="#">O que está incluso</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-DarkBlue border-l-8 border-solid" href="">Como utilizar</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-DarkBlue border-l-8 border-solid" href="#">Como utilizar</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="">Cancelamento e taxas</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="#">Cancelamento e taxas</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="">Hotel e comodidades</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="#">Hotel e comodidades</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="">Regulamento Completo</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="#">Regulamento Completo</a>
                         </li>
                     </ul>
                 </nav>
                 <div className="px-10 text-text">
                     <h3 className="text-2xl">Conheça o pacote</h3>
                     <br />
-                    <h4>o pacote inclui:</h4><br />
-                    <p>Aéreo: Passagem aérea de ida e volta entre a cidade de origem Campo Grande - Aeroporto Internacional de Campo Grande (CGR), em classe econômica, podendo haver conexão e/ou escala.</p>
+                    <h4>o pacote inclui:</h4>
                     <br />
-                    <p>Bagagem: Este pacote permite levar uma bagagem de mão com até 10 quilos. Desta forma, você poderá levar uma mochila ou bolsa (que deverá ser acomodada debaixo do seu assento) e uma bagagem de mão (que deverá caber no compartimento superior do avião). </p>
+                    <p>Aéreo: Passagem aérea de ida e volta entre a cidade de origem Campo Grande - Aeroporto Internacional de Campo Grande CGR, em classe econômica, podendo haver conexão e/ou escala.</p>
+                    <br />
+                    <p>Bagagem: Este pacote permite levar uma bagagem de mão com até 10 quilos. Desta forma, você poderá levar uma mochila ou bolsa que deverá ser acomodada debaixo do seu assento e uma bagagem de mão que deverá caber no compartimento superior do avião. </p>
                     <br />
                     <p>Hospedagem: Em Bonito na Pousada Caramanchão, Pousada Chão de Pedra, Pousada Flor da Guavira, Pousada Lago Azul ou outro hotel de mesma categoria econômica - com café da manhã. A hospedagem será definida pelo Hurb de acordo com a disponibilidade e tarifário promocional. </p>
                     <br />
@@ -43,7 +43,7 @@ function RegulationComponent() {
 
                     <h3 className="text-2xl">Dados do Voo</h3>
                     <br />
-                    <p>Nós ficamos responsáveis por escolher as informações do seu voo (aeroporto, companhia aérea, dias e horários de voo). Estas informações serão enviadas para sua confirmação em até 45 dias antes da primeira data que você inseriu no formulário.</p>
+                    <p>Nós ficamos responsáveis por escolher as informações do seu voo aeroporto, companhia aérea, dias e horários de voo. Estas informações serão enviadas para sua confirmação em até 45 dias antes da primeira data que você inseriu no formulário.</p>
                     <br />
                     <br />
 
@@ -68,7 +68,7 @@ function RegulationComponent() {
                     <br />
                     <p>Atenção para o período em que deseja viajar, pois o pagamento em boleto parcelado deverá ser concluído com, no mínimo, 60 dias de antecedência do período em que deseja efetivar a sua viagem.</p>
                     <br />
-                    <h4>Fique Ligado(a)!</h4>
+                    <h4>Fique Ligado"(a)"!</h4>
                     <br />
                     <p>O não pagamento de algum boleto em até 10 dias após a compra resulta no cancelamento automático do pedido.</p>
                     <br />
@@ -82,14 +82,10 @@ function RegulationComponent() {
                     <br />
                     <h3 className="text-2xl">Regras para Crianças</h3>
                     <br />
-                    <p>Crianças de até 1 ano e 11 meses completos até a data de retorno da viagem pagam uma taxa de serviço de 150 reais. Esse valor poderá ser pago antes da confirmação do voo através do link abaixo. Os dados da criança (nome completo e data de nascimento) deverão ser informados no campo “Solicitações sobre sua viagem” do formulário de agendamento. Link para taxa de serviço infantil: https://www.hurb.com/br/packages/especial/868793 </p>
+                    <p>Crianças de até 1 ano e 11 meses completos até a data de retorno da viagem pagam uma taxa de serviço de 150 reais. Esse valor poderá ser pago antes da confirmação do voo através do link abaixo. Os dados da criança nome completo e data de nascimento deverão ser informados no campo “Solicitações sobre sua viagem” do formulário de agendamento. Link para taxa de serviço infantil: https://www.hurb.com/br/packages/especial/868793 </p>
                     <p>• Crianças a partir de 2 anos pagam o mesmo valor de adulto, sendo necessária a compra do pacote para a mesma</p>
-                
-                
                 </div>
             </div>
         </div>
     )
 }
-
-export const Regulation = memo(RegulationComponent)
