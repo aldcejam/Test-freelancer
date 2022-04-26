@@ -9,24 +9,24 @@ function RegulationComponent() {
                 <nav>
                     <ul>
                         <li>
-                            <a className="block py-5 pl-6 w-56 bg-lightBlue border-l-DarkBlue border-l-8 border-solid  " href="">O que está incluso</a>
+                            <a className="block py-5 pl-6 w-56 bg-lightBlue border-l-DarkBlue border-l-8 border-solid" href="">O que está incluso</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-DarkBlue border-l-8 border-solid  " href="">Como utilizar</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-DarkBlue border-l-8 border-solid" href="">Como utilizar</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid  " href="">Cancelamento e taxas</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="">Cancelamento e taxas</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid  " href="">Hotel e comodidades</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="">Hotel e comodidades</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid  " href="">Regulamento Completo</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="">Regulamento Completo</a>
                         </li>
                     </ul>
                 </nav>
                 <div className="px-10 text-text">
-                    <h3 className="">Conheça o pacote</h3>
+                    <h3 className="text-2xl">Conheça o pacote</h3>
                     <br />
                     <h4>o pacote inclui:</h4><br />
                     <p>Aéreo: Passagem aérea de ida e volta entre a cidade de origem Campo Grande - Aeroporto Internacional de Campo Grande (CGR), em classe econômica, podendo haver conexão e/ou escala.</p>
