@@ -125,7 +125,7 @@ const Home: NextPage = () => {
       </section>
       {/* =========================================== */}
 
-      <section className="shadow-3xl bg-white max-w-[1250px] mx-auto xl:mx-10 py-10 px-10 mt-14 rounded-2xl">
+      <section className='shadow-3xl bg-white max-w-[1250px] mx-auto xl:mx-10 py-10 px-10 mt-14 rounded-2xl'>
         <Regulation />
       </section>
       {/* ============================= */}
