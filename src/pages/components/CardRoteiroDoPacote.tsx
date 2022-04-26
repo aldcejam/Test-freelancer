@@ -1,5 +1,3 @@
-
-
 interface CardRoteiroDoPacoteProps {
     withImage: boolean;
     withVideo: boolean;

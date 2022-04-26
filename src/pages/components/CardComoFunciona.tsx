@@ -1,5 +1,3 @@
-import { memo } from "react"
-
 interface CardComoFuncionaProps{
     title: string
     text: string
@@ -19,3 +17,4 @@ export default function CardComoFunciona({title,text, img}: CardComoFuncionaProp
         </div>
     )
 }
+

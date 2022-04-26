@@ -1,5 +1,4 @@
-
-export default function Regulation() {
+export default function RegulationComponent() {
 
     return (
         <div>
@@ -60,7 +59,7 @@ export default function Regulation() {
                     <br />
                     <p>Caso tenha comprado seu pacote separado das pessoas que viajarão com você, o número do pedido de cada um deverá ser informado no formulário de agendamento dos outros integrantes para agilizar o processo de reserva de todos.</p>
                     <br />
-                    <p>Obs.: Nem sempre conseguimos garantir o mesmo voo e/ou hotel para todos os viajantes com pedidos vinculados. Vai depender do número de viajantes e da disponibilidade. Caso deseje que todos estejam no mesmo voo e/ou hotel, nos informe no campo  Viajando com outras pessoas, o número dos pedidos dos outros viajantes para verificarmos a disponibilidade.</p>
+                    <p>Obs.: Nem sempre conseguimos garantir o mesmo voo e/ou hotel para todos os viajantes com pedidos vinculados. Vai depender do número de viajantes e da disponibilidade. Caso deseje que todos estejam no mesmo voo e/ou hotel, nos informe no campo  Viajando com outras pessoas”, o número dos pedidos dos outros viajantes para verificarmos a disponibilidade.</p>
                     <br />
                     <h4>Pagamentos:</h4>
                     <p>Para finalizar a compra do seu pacote, você pode optar por pagar em até 12x no cartão de crédito ou no boleto bancário à vista. Se desejar pagar no boleto parcelado, sem consulta ao SPC e SERASA, você poderá consultar o número de parcelas disponíveis na página de pagamento, antes de finalizar a compra.  </p>

@@ -1,5 +1,3 @@
-import { memo } from "react";
-
 interface CardOpcoesDeOspedagemProps {
     title: string
     subTitle: string
