@@ -1,5 +1,6 @@
+import { memo } from "react";
 
-export function Regulation() {
+function RegulationComponent() {
 
     return (
         <div>
@@ -8,30 +9,29 @@ export function Regulation() {
                 <nav>
                     <ul>
                         <li>
-                            <a className="block py-5 pl-6 w-56 bg-lightBlue border-l-DarkBlue border-l-8 border-solid" href="#">O que está incluso</a>
+                            <a className="block py-5 pl-6 w-56 bg-lightBlue border-l-DarkBlue border-l-8 border-solid  " href="">O que está incluso</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-DarkBlue border-l-8 border-solid" href="#">Como utilizar</a>
+                            <a className="block shadow-3xl py-5 pl-6 w-56 mt-3 border-l-DarkBlue border-l-8 border-solid  " href="">Como utilizar</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="#">Cancelamento e taxas</a>
+                            <a className="block shadow-3xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid  " href="">Cancelamento e taxas</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="#">Hotel e comodidades</a>
+                            <a className="block shadow-3xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid  " href="">Hotel e comodidades</a>
                         </li>
                         <li>
-                            <a className="block shadow-2xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid" href="#">Regulamento Completo</a>
+                            <a className="block shadow-3xl py-5 pl-6 w-56 mt-3 border-l-blue border-l-8 border-solid  " href="">Regulamento Completo</a>
                         </li>
                     </ul>
                 </nav>
                 <div className="px-10 text-text">
-                    <h3 className="text-2xl">Conheça o pacote</h3>
+                    <h3 className="">Conheça o pacote</h3>
                     <br />
-                    <h4>o pacote inclui:</h4>
+                    <h4>o pacote inclui:</h4><br />
+                    <p>Aéreo: Passagem aérea de ida e volta entre a cidade de origem Campo Grande - Aeroporto Internacional de Campo Grande (CGR), em classe econômica, podendo haver conexão e/ou escala.</p>
                     <br />
-                    <p>Aéreo: Passagem aérea de ida e volta entre a cidade de origem Campo Grande - Aeroporto Internacional de Campo Grande CGR, em classe econômica, podendo haver conexão e/ou escala.</p>
-                    <br />
-                    <p>Bagagem: Este pacote permite levar uma bagagem de mão com até 10 quilos. Desta forma, você poderá levar uma mochila ou bolsa que deverá ser acomodada debaixo do seu assento e uma bagagem de mão que deverá caber no compartimento superior do avião. </p>
+                    <p>Bagagem: Este pacote permite levar uma bagagem de mão com até 10 quilos. Desta forma, você poderá levar uma mochila ou bolsa (que deverá ser acomodada debaixo do seu assento) e uma bagagem de mão (que deverá caber no compartimento superior do avião). </p>
                     <br />
                     <p>Hospedagem: Em Bonito na Pousada Caramanchão, Pousada Chão de Pedra, Pousada Flor da Guavira, Pousada Lago Azul ou outro hotel de mesma categoria econômica - com café da manhã. A hospedagem será definida pelo Hurb de acordo com a disponibilidade e tarifário promocional. </p>
                     <br />
@@ -43,7 +43,7 @@ export function Regulation() {
 
                     <h3 className="text-2xl">Dados do Voo</h3>
                     <br />
-                    <p>Nós ficamos responsáveis por escolher as informações do seu voo aeroporto, companhia aérea, dias e horários de voo. Estas informações serão enviadas para sua confirmação em até 45 dias antes da primeira data que você inseriu no formulário.</p>
+                    <p>Nós ficamos responsáveis por escolher as informações do seu voo (aeroporto, companhia aérea, dias e horários de voo). Estas informações serão enviadas para sua confirmação em até 45 dias antes da primeira data que você inseriu no formulário.</p>
                     <br />
                     <br />
 
@@ -61,14 +61,14 @@ export function Regulation() {
                     <br />
                     <p>Caso tenha comprado seu pacote separado das pessoas que viajarão com você, o número do pedido de cada um deverá ser informado no formulário de agendamento dos outros integrantes para agilizar o processo de reserva de todos.</p>
                     <br />
-                    <p>Obs.: Nem sempre conseguimos garantir o mesmo voo e/ou hotel para todos os viajantes com pedidos vinculados. Vai depender do número de viajantes e da disponibilidade. Caso deseje que todos estejam no mesmo voo e/ou hotel, nos informe no campo  Viajando com outras pessoas”, o número dos pedidos dos outros viajantes para verificarmos a disponibilidade.</p>
+                    <p>Obs.: Nem sempre conseguimos garantir o mesmo voo e/ou hotel para todos os viajantes com pedidos vinculados. Vai depender do número de viajantes e da disponibilidade. Caso deseje que todos estejam no mesmo voo e/ou hotel, nos informe no campo  Viajando com outras pessoas, o número dos pedidos dos outros viajantes para verificarmos a disponibilidade.</p>
                     <br />
                     <h4>Pagamentos:</h4>
                     <p>Para finalizar a compra do seu pacote, você pode optar por pagar em até 12x no cartão de crédito ou no boleto bancário à vista. Se desejar pagar no boleto parcelado, sem consulta ao SPC e SERASA, você poderá consultar o número de parcelas disponíveis na página de pagamento, antes de finalizar a compra.  </p>
                     <br />
                     <p>Atenção para o período em que deseja viajar, pois o pagamento em boleto parcelado deverá ser concluído com, no mínimo, 60 dias de antecedência do período em que deseja efetivar a sua viagem.</p>
                     <br />
-                    <h4>Fique Ligado!</h4>
+                    <h4>Fique Ligado(a)!</h4>
                     <br />
                     <p>O não pagamento de algum boleto em até 10 dias após a compra resulta no cancelamento automático do pedido.</p>
                     <br />
@@ -82,10 +82,14 @@ export function Regulation() {
                     <br />
                     <h3 className="text-2xl">Regras para Crianças</h3>
                     <br />
-                    <p>Crianças de até 1 ano e 11 meses completos até a data de retorno da viagem pagam uma taxa de serviço de 150 reais. Esse valor poderá ser pago antes da confirmação do voo através do link abaixo. Os dados da criança nome completo e data de nascimento deverão ser informados no campo “Solicitações sobre sua viagem” do formulário de agendamento. Link para taxa de serviço infantil: https://www.hurb.com/br/packages/especial/868793 </p>
+                    <p>Crianças de até 1 ano e 11 meses completos até a data de retorno da viagem pagam uma taxa de serviço de 150 reais. Esse valor poderá ser pago antes da confirmação do voo através do link abaixo. Os dados da criança (nome completo e data de nascimento) deverão ser informados no campo “Solicitações sobre sua viagem” do formulário de agendamento. Link para taxa de serviço infantil: https://www.hurb.com/br/packages/especial/868793 </p>
                     <p>• Crianças a partir de 2 anos pagam o mesmo valor de adulto, sendo necessária a compra do pacote para a mesma</p>
+                
+                
                 </div>
             </div>
         </div>
     )
 }
+
+export const Regulation = memo(RegulationComponent)
