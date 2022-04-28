@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* ===================== TOP WEB SITE DECORATION ===================== */}
       {/* =================================================================== */}
-      <div className='relative h-[90vh]'>
+      <div className='relative h-[100vh]'>
         <Image src={'/background/bgHeader.png'} layout='fill' />
         <header className='flex justify-betweenn items-center absolute inset-x-0 container mx-auto xl:mx-10 mt-14 '>
           <div>
@@ -36,7 +36,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       <main>
         <header className='relative'>
-          <div className='shadow-3xl flex flex-wrap gap-9 items-center container mx-auto -mt-[18vh] xl:mx-10 py-10 px-10 bg-white rounded-2xl'>
+          <div className='shadow-3xl flex flex-wrap gap-9 items-center container mx-auto -mt-[14vh] xl:mx-10 py-10 px-10 bg-white rounded-2xl'>
             <div>
               <header>
                 <Title title='Pacote Bonito Lua de Mel' />
@@ -211,7 +211,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       <section className='flex justify-center relative h-[130vh] '>
         <div className='w-full absolute'>
-          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'77%'} layout='responsive' />
+          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'60vh'} layout='responsive' />
         </div>
         <h5 className=' text-white absolute mt-[20vh] text-4xl font-pacifico'>Recarregue as suas energias</h5>
         <section className='min-w-[700px] absolute bg-green mt-[45vh] p-10 pb-12 px-14 text-center text-white rounded-lg'>
@@ -254,7 +254,7 @@ const Home: NextPage = () => {
             <p>Somos uma das maiores avaliações para <br /> Bonito</p>
           </div>
           <div className='flex'>
-            <img className='mr-12' src="/logs/travelers.svg" alt="" />
+            <img className='mr-12' src="/logs/travelers.svg"  />
             <Avaliations />
           </div>
         </div>
@@ -263,7 +263,7 @@ const Home: NextPage = () => {
       {/* ========================== FOOTER ========================== */}
       {/* =================================================================== */}
       <footer className='relative'>
-        <Image src={'/background/ocean.png'} width={'100%'} height={'53%'} layout='responsive' />
+        <Image src={'/background/ocean.png'} width={'100%'} height={'46vh'} layout='responsive' />
         <div className='w-[70vw] gradient h-[60vh] px-10 pt-20 absolute top-[15vh] inset-0 mx-auto flex justify-center'>
           <div className='absolute top-[15vh] flex'>
             <section className='mr-16 '>
