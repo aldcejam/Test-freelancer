@@ -13,7 +13,7 @@ module.exports = {
       'DarkBlue': '#6394F6',
       'green': '#004740d2',
       'orange': '#F1B22B',
-      'title': '#343A40',
+      'title': '#444444',
       'text': '#747575',
       'white': '#ffffff',
       'grayBlue': '#E8F2F1',
@@ -22,6 +22,7 @@ module.exports = {
     },
     fontFamily: {
       'pacifico': ['Pacifico', 'cursive','sans'],
+      'workSans': ['Work Sans', 'Pacifico','sans'],
     },
     screens: {
       'sm': {'max': '640px'},
@@ -36,6 +37,7 @@ module.exports = {
     },
     extend: {
       boxShadow: {
+        '2xl': 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
         '3xl': 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px',
       }
     },

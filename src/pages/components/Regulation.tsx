@@ -9,19 +9,19 @@ export default function RegulationComponent() {
                 <nav>
                     <ul>
                         <li>
-                            <a className="block py-5 pl-6 w-64 bg-lightBlue border-l-DarkBlue border-l-8 border-solid  " href="">O que está incluso</a>
+                            <a className="block py-5 pl-6 w-72 bg-lightBlue border-l-DarkBlue border-l-8 border-solid  " href="">O que está incluso</a>
                         </li>
                         <li>
-                            <a className="block shadow-3xl py-5 pl-6 w-64 mt-3 border-l-DarkBlue border-l-8 border-solid  " href="">Como utilizar</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-72 mt-3 border-l-DarkBlue border-l-8 border-solid  " href="">Como utilizar</a>
                         </li>
                         <li>
-                            <a className="block shadow-3xl py-5 pl-6 w-64 mt-3 border-l-blue border-l-8 border-solid  " href="">Cancelamento e taxas</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-72 mt-3 border-l-blue border-l-8 border-solid  " href="">Cancelamento e taxas</a>
                         </li>
                         <li>
-                            <a className="block shadow-3xl py-5 pl-6 w-64 mt-3 border-l-blue border-l-8 border-solid  " href="">Hotel e comodidades</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-72 mt-3 border-l-blue border-l-8 border-solid  " href="">Hotel e comodidades</a>
                         </li>
                         <li>
-                            <a className="block shadow-3xl py-5 pl-6 w-64 mt-3 border-l-blue border-l-8 border-solid  " href="">Regulamento Completo</a>
+                            <a className="block shadow-2xl py-5 pl-6 w-72 mt-3 border-l-blue border-l-8 border-solid  " href="">Regulamento Completo</a>
                         </li>
                     </ul>
                 </nav>

@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 interface CardOpcoesDeOspedagemProps {
     title: string
     subTitle: string
@@ -8,8 +10,9 @@ interface CardOpcoesDeOspedagemProps {
 export default function CardOpcoesDeOspedagem({ title, subTitle,price, image }: CardOpcoesDeOspedagemProps) {
     return (
         <section className="shadow-3xl flex items-center bg-white rounded-2xl mb-16">
-            <div className="">
-                <img className="hover:cursor-pointer h-[320px]" src={image} alt="imagem Do local" />
+            <div className="w-[40%]">
+                <Image src={image} width='100%' height='100%' layout="responsive"/>
+
             </div>
             <div className="w-[62%]  px-14 py-10 text-text ">
                 <div className="leading-[8px]">
@@ -56,9 +59,9 @@ export default function CardOpcoesDeOspedagem({ title, subTitle,price, image }: 
                 </nav>
             </div>
             <div className="text-center pr-8 -mt-[5%]">
-                <h4>Preço do pacote com essa acomodação</h4>
-                <p className="flex items-center gap-3 justify-center">R$ <span className="text-4xl">{price}</span></p>
-                <button className='bg-orange py-3 px-12 mt-4 rounded-xl text-title font-bold'>Quero Comprar</button>
+                <h4 className="text-text">Preço do pacote com essa acomodação</h4>
+                <p className="flex items-center gap-3 justify-center">R$ <span className="text-4xl text-[#444444]">{price}</span></p>
+                <button className='bg-orange py-3 px-12 mt-4 rounded-xl font-bold'>Quero Comprar</button>
             </div>
         </section>
     )
