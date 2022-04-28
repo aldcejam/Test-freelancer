@@ -20,6 +20,10 @@ a {
   box-sizing: border-box;
 }
 
+.container{
+  max-width: 1150px;
+}
+
 .inputName {
   background-image: url('/icons/profile.svg');
   background-repeat: no-repeat;
@@ -54,7 +58,7 @@ a {
 }
 
 .gradient{
-  background: linear-gradient(0deg, rgba(2, 0, 36, 0.874) 40%, rgba(9, 9, 121, 0.825) 81%, rgba(9, 15, 125, 0.766) 86%, rgba(27, 60, 193, 0.756) 100%)
+  background: linear-gradient(0deg, rgba(2, 1, 20, 0.874) 40%, rgba(3, 3, 37, 0.825) 81%, rgba(4, 7, 54, 0.766) 86%, rgba(10, 21, 66, 0.756) 100%)
 }
 
 .max-w-700{

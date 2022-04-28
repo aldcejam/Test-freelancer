@@ -5,13 +5,17 @@ import CardComoFunciona from './components/CardComoFunciona'
 import CardOpcoesDeOspedagem from './components/CardOpcoesDeOspedagem'
 import CardRoteiroDoPacote from './components/CardRoteiroDoPacote'
 import Regulation from './components/Regulation'
+import Title from './components/Title'
 
 const Home: NextPage = () => {
   return (
     <div className='bg-gray'>
+      {/* ============================================= ===================== */}
+      {/* ===================== TOP WEB SITE DECORATION ===================== */}
+      {/* ============================================= ===================== */}
       <div className='relative h-[90vh]'>
         <img src="/background/bgHeader.png" alt="" className='absolute w-full h-[90vh]' />
-        <header className='flex justify-betweenn items-center absolute inset-x-0 max-w-[1250px] mx-auto xl:mx-10 mt-14  px-10 '>
+        <header className='flex justify-betweenn items-center absolute inset-x-0 container mx-auto xl:mx-10 mt-14 '>
           <div>
             <img src="/log.svg" alt="" />
           </div>
@@ -20,17 +24,19 @@ const Home: NextPage = () => {
             <img className='w-5' src="/menuBurguer.svg" alt="" />
           </div>
         </header>
-        <div className='absolute text-white mt-[35vh] left-0 right-0 max-w-[1250px] mx-auto xl:mx-10 px-10 '>
-          <h3 className='text-xl'>Um mergulho na</h3>
-          <h3 className='text-5xl'>Natureza</h3>
+        <div className='absolute text-white mt-[35vh] left-0 right-0 container mx-auto xl:mx-10'>
+          <p className='text-xl'>
+            Um mergulho na <br />
+            <span className='text-6xl -ml-[2px] font-semibold'>Natureza</span>
+          </p>
         </div>
       </div>
       {/* ========================================= */}
-      <section className='relative'>
-        <div className='shadow-3xl flex flex-wrap gap-9 items-center max-w-[1250px] mx-auto -mt-[18vh] xl:mx-10 py-10 px-10 bg-white rounded-2xl'>
+      <header className='relative'>
+        <div className='shadow-3xl flex flex-wrap gap-9 items-center container mx-auto -mt-[18vh] xl:mx-10 py-10 px-10 bg-white rounded-2xl'>
           <div>
             <header>
-              <h2 className='text-3xl font-normal'>Pacote Bonito Lua de Mel</h2>
+              <Title title='Pacote Bonito Lua de Mel' />
               <p className='text-text'>4 diárias + 5 passeios + Hotel</p>
             </header>
             <section className=' py-5 px-7 mt-10 border-2 border-grayBorder border-solid rounded-lg'>
@@ -74,63 +80,69 @@ const Home: NextPage = () => {
             <button className='bg-orange py-3 px-12 mt-4 rounded-xl text-title'>Quero Comprar</button>
           </aside>
         </div>
-      </section>
+      </header>
       {/* ============================================ */}
-      <section className='shadow-3xl bg-white max-w-[1250px] mx-auto xl:mx-10 pt-10 pb-1  px-10 mt-14 rounded-2xl'>
-        <h2 className='text-2xl mb-9'>Roteiro do Pacote</h2>
-        <CardRoteiroDoPacote
-          withImage={true}
-          withVideo={true}
-          image='/GrupoDeMascara.png'
-          title='1º dia - Check-in em Bonito'
-          text='Acomodação na hospedagem. Você ainda pode aproveitar para conhecer os passeios urbanos da cidade, como o Projeto Jiboia e o Aquário de Bonito, descansar e jantar em um dos restaurantes de Bonito (atividades não incluídas no pacote, contratar à parte). Ao final do dia, pernoite.'
-        />
-        <CardRoteiroDoPacote
-          withImage={true}
-          withVideo={false}
-          image='/imgDia2.png'
-          title='2º dia Grutas de São Miguel + Estância Mimosa'
-          text='Grutas de São Miguel: saída do hotel às 08h30. Pela manhã, um passeio repleto de surpresas em uma das principais grutas da cidade. Na sequência, visita e passeio nas Cachoeiras Estância Mimosa, com almoço incluso. Retorno e pernoite na hospedagem.'
-        />
-        <CardRoteiroDoPacote
-          withImage={false}
-          withVideo={true}
-          image='/imgDia3.png'
-          title='3º dia Flutuação + Balneário Nascente Azul'
-          text='Nascente Azul: saída do hotel às 08h30. O dia inteiro de atrações com o Combo Flutuação + Balneário, incluindo delicioso almoço! Retorno e pernoite na hospedagem.'
-        />
-        <CardRoteiroDoPacote
-          withImage={false}
-          withVideo={false}
-          image='/imgDia4.png'
-          title='4º dia - Balneário do Sol'
-          text='Saída do hotel às 08h30. O dia inteiro relaxando em meio às lindas paisagens do Rio Formoso + variedade de lazer para todas as idades. Check-out na hospedagem após o passeio.'
-        />
+      <section className='shadow-3xl bg-white container mx-auto xl:mx-10 pt-10 pb-1  px-10 mt-14 rounded-2xl'>
+
+        <Title title='Roteiro do Pacote' />
+        <div className='mt-9'>
+          <CardRoteiroDoPacote
+            withImage={true}
+            withVideo={true}
+            image='/GrupoDeMascara.png'
+            title='1º dia - Check-in em Bonito'
+            text='Acomodação na hospedagem. Você ainda pode aproveitar para conhecer os passeios urbanos da cidade, como o Projeto Jiboia e o Aquário de Bonito, descansar e jantar em um dos restaurantes de Bonito (atividades não incluídas no pacote, contratar à parte). Ao final do dia, pernoite.'
+          />
+          <CardRoteiroDoPacote
+            withImage={true}
+            withVideo={false}
+            image='/imgDia2.png'
+            title='2º dia Grutas de São Miguel + Estância Mimosa'
+            text='Grutas de São Miguel: saída do hotel às 08h30. Pela manhã, um passeio repleto de surpresas em uma das principais grutas da cidade. Na sequência, visita e passeio nas Cachoeiras Estância Mimosa, com almoço incluso. Retorno e pernoite na hospedagem.'
+          />
+          <CardRoteiroDoPacote
+            withImage={false}
+            withVideo={true}
+            image='/imgDia3.png'
+            title='3º dia Flutuação + Balneário Nascente Azul'
+            text='Nascente Azul: saída do hotel às 08h30. O dia inteiro de atrações com o Combo Flutuação + Balneário, incluindo delicioso almoço! Retorno e pernoite na hospedagem.'
+          />
+          <CardRoteiroDoPacote
+            withImage={false}
+            withVideo={false}
+            image='/imgDia4.png'
+            title='4º dia - Balneário do Sol'
+            text='Saída do hotel às 08h30. O dia inteiro relaxando em meio às lindas paisagens do Rio Formoso + variedade de lazer para todas as idades. Check-out na hospedagem após o passeio.'
+          />
+
+        </div>
 
       </section>
       {/* =================================== */}
-      <section className='max-w-[1250px] mx-auto xl:mx-10 pt-10 mt-14 '>
-        <h2 className='text-2xl mb-8 text-title'>Opções de Hospedagem</h2>
-        <CardOpcoesDeOspedagem
-          title='Flat Ype Hotel'
-          subTitle='Flat com cozinha equipada e apartamento mobiliado.'
-          image='/imgFlat.png'
-          price={930}
-        />
-        <CardOpcoesDeOspedagem
-          title='Hotel Lucca'
-          subTitle='Conforto e aconchego para você curtir o seu final de dia.'
-          image='/imgHotelLucca.png'
-          price={1280}
-        />
+      <section className='container mx-auto xl:mx-10 pt-10 mt-14 '>
+        <Title title='Opções de Hospedagem' />
+        <div className='mt-8'>
+          <CardOpcoesDeOspedagem
+            title='Flat Ype Hotel'
+            subTitle='Flat com cozinha equipada e apartamento mobiliado.'
+            image='/imgFlat.png'
+            price={930}
+          />
+          <CardOpcoesDeOspedagem
+            title='Hotel Lucca'
+            subTitle='Conforto e aconchego para você curtir o seu final de dia.'
+            image='/imgHotelLucca.png'
+            price={1280}
+          />
+        </div>
       </section>
       {/* =========================================== */}
 
-      <section className='shadow-3xl bg-white max-w-[1250px] mx-auto xl:mx-10 py-10 px-10 mt-14 rounded-2xl'>
+      <section className='shadow-3xl bg-white container mx-auto xl:mx-10 py-10 px-10 mt-14 rounded-2xl'>
         <Regulation />
       </section>
       {/* ============================= */}
-      <section className=' max-w-[1250px] mx-auto xl:mx-10 py-10 px-10 mt-14 rounded-2xl'>
+      <section className=' container mx-auto xl:mx-10 py-10 px-10 mt-14 rounded-2xl'>
         <div className='mb-10'>
           <h2 className='text-2xl text-title'>Como funciona</h2>
           <h3 className='text-title'>Pacotes de Data Flexível</h3>
@@ -161,7 +173,7 @@ const Home: NextPage = () => {
       {/* ================================= */}
 
       <section className=' bg-white pb-[15vh]'>
-        <div className='flex justify-center max-w-[1250px] mx-auto xl:mx-10 pt-16 px-10 mt-14 rounded-2xl'>
+        <div className='flex justify-center container mx-auto xl:mx-10 pt-16 px-10 mt-14 rounded-2xl'>
           <div className='w-[45%] '>
             <img className='w-[100%]' src="/paradises.png" alt="" />
           </div>
@@ -190,7 +202,7 @@ const Home: NextPage = () => {
         <section className='min-w-[700px] absolute bg-green mt-[45vh] p-10 pb-12 px-14 text-center text-white rounded-lg'>
           <h3 className='text-2xl font-light mb-[50px]'>Reserve seu pacote</h3>
           <div className='grid grid-cols-2 gap-8 w-[50vw] min-w-[600px] max-w-700 max-h-400'>
-          {/* inputs */}
+            {/* inputs */}
             <section className='w-[80%] min-w-[400px] flex flex-wrap '>
               <input className='inputName w-[100%] max-w-[300px] rounded-md p-2 mb-2' type="text" />
               <input className='inpurEmail w-[100%] max-w-[300px] rounded-md p-2 my-2 pl-10' type="email" placeholder='email' />
@@ -204,7 +216,7 @@ const Home: NextPage = () => {
                 <input className='w-[70%] my-2 ml-1 rounded-md pl-2' type="text" placeholder='telefone' />
               </div>
             </section>
-          {/* inputs */}
+            {/* inputs */}
             <section className='text-text grid grid-cols-2 gap-2 w-[90%] min-w-[300px]'>
               <input className='inputCheckIn pl-10 w-[100%] h-10 rounded-md' type="text" />
               <input className='inputCheckOut pl-10 w-100%] h-10 rounded-md' type="text" />
@@ -219,7 +231,7 @@ const Home: NextPage = () => {
       </section>
       {/* ============================ */}
       <section className='bg-white' >
-        <div className='flex gap-[20vw] max-w-[1250px] mx-auto xl:mx-10 py-24 px-10 rounded-2xl'>
+        <div className='flex gap-[20vw] container mx-auto xl:mx-10 py-24 px-10 rounded-2xl'>
           <div>
             <h3 className='text-2xl text-title'>Nossas Avaliações</h3>
             <p>Somos uma das maiores avaliações para <br /> Bonito</p>
@@ -257,7 +269,7 @@ const Home: NextPage = () => {
                 <a href="#"><img src="/logs/boleto.png" alt="" /></a>
                 <a href="#"><img src="/logs/pix.png" alt="" /></a>
               </div>
-              <p className='mt-2'>Parcelamos em <br />
+              <p className='mt-4'>Parcelamos em <br />
                 até 12x sem juros</p>
             </section>
           </div>
@@ -265,7 +277,7 @@ const Home: NextPage = () => {
 
           <div className='text-white mt-[34vh] w-[80%] flex justify-between relative'>
             <div className='text-sm leading-7 -ml-1'>
-              <p className='text-[#707070]'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
+              <p className='text-[#DCDCDC]'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
               <p>CNPJ 86.744.935/0001-06</p>
             </div>
             <div className=''>
