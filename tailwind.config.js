@@ -25,9 +25,11 @@ module.exports = {
       'workSans': ['Work Sans', 'Pacifico','sans'],
     },
     screens: {
+      'ssm': {'max': '400px'},
+
       'sm': {'max': '640px'},
 
-      'md': '768px',
+      'md': {'max': '768px'},
 
       'lg': {'max': '1023px'},
 
