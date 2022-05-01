@@ -23,7 +23,7 @@ export default function CardRoteiroDoPacote({ title, text, image, withImage, wit
                         withVideo ? 
                         <a href="#" className="flex items-center">
                             <img src="/iconPlay.svg" alt="" />
-                            <p className="ml-4">Ver Vídeo</p>
+                            <span className="ml-4">Ver Vídeo</span>
                         </a>
                         : null
                     }
@@ -31,7 +31,7 @@ export default function CardRoteiroDoPacote({ title, text, image, withImage, wit
                         withImage ? 
                         <a href="#" className="flex items-center">
                             <img src="/iconImage.svg" alt="" />
-                            <p className="ml-4">Ver fotos</p>
+                            <span className="ml-4">Ver fotos</span>
                         </a>
                         : null
                     }

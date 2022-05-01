@@ -48,36 +48,40 @@ const Home: NextPage = () => {
                     <img className='iconHeader' src="/shoppingCart.svg" alt="" />
                     <div className='leading-5 text-text'>
                       <h3>Esta oferta é válida até:</h3>
-                      <p>15/05/2021</p>
+                      <p>
+                        <strong className='font-normal'>
+                          <time dateTime="2021-05-15">15/05/2021</time>
+                        </strong>
+                      </p>
                     </div>
                   </li>
                   <li className='flex max-h-36 sm:mt-5 bg-grayBlue gap-3 px-6 py-4 pr-14 rounded-lg'>
                     <img className='iconHeader' src="/airplane.svg" alt="" />
                     <div className='leading-5 text-text'>
                       <h3>Período para Viagem:</h3>
-                      <p>15/05/2021 a 18/12/2021</p>
+                      <strong className='font-normal'><time dateTime="2021-05-15">15/05/2021</time> a <time dateTime="2021-12-18">18/12/2021</time></strong>
                     </div>
                   </li>
                 </ul>
                 <ul className='flex md:flex-wrap md:justify-center mt-6 gap-6'>
                   <li className='flex flex-wrap justify-center items-center gap-4 px-6 sm:px-2 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <img className='iconPadLockHeader' src="/padlock.svg" alt="iconPadlock" />
-                    <p className='text-text'>Hospedagem <br />opcional</p>
+                    <p className='text-text'><em> Hospedagem <br />opcional</em></p>
                   </li>
                   <li className='flex flex-wrap justify-center gap-4 px-6 sm:px-2 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <img className='iconHeader' src="/man.svg" alt="iconPadlock" />
-                    <p className='text-text'>Passeios<br />e atrações</p>
+                    <p className='text-text'><em>Passeios<br />e atrações</em></p>
                   </li>
                   <li className='flex flex-wrap justify-center gap-4 px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <img className='iconHeader' src="/bus.svg" alt="iconPadlock" />
-                    <p className='text-text'>Traslados para <br />Bonito e passeios</p>
+                    <p className='text-text'><em>Traslados para <br />Bonito e passeios</em></p>
                   </li>
                 </ul>
               </section>
             </div>
             <aside className=' text-center mx-auto text-text'>
               <h4>a partir de</h4>
-              <h2 className='text-2xl text-[#444444]'>10x de R$ <span className='text-5xl'>93,20</span></h2>
+              <p className='text-2xl text-[#444444]'><strong className='font-normal'>10x de R$ <span className='text-5xl'>93,20</span></strong></p>
               <h4 className='text-lg'>ou 932,00 à vista</h4>
               <p className='text-sm'>(preço por pessoas)</p>
               <button className='bg-orange py-3 px-12 mt-4 rounded-xl text-title'>Quero Comprar</button>
@@ -201,8 +205,8 @@ const Home: NextPage = () => {
               <br />
               <p className='text-text'>O acesso a flutuação da Nascente Azul é feito através de uma trilha contemplativa de aproximadamente 300 m até chegar à sala de equipamentos para a flutuação</p>
             </div>
-            <div className='col-span-12  sm:col-span-12 pt-10'>
-              <img className='w-full' src="/logs/Logs.png" alt="" />
+            <div className='col-span-12 relative md:w-[70vw] max-x-[350px] h-[35vh] msm:h-[20vh] '>
+              <Image src="/logs/Logs.png" width={'100%'} height={'100px'} layout='fill'/>
             </div>
           </div>
         </div>
@@ -233,10 +237,10 @@ const Home: NextPage = () => {
             </div>
             {/* inputs */}
             <div className='text-text grid grid-cols-2 gap-2 max-w-[300px] col-span-1 lg:col-span-2'>
-              <input className='inputCheckIn pl-10 rounded-md' type="text" placeholder='CheckIn'/>
-              <input className='inputCheckOut pl-10 rounded-md' type="text" placeholder='CheckOut'/>
+              <input className='inputCheckIn pl-10 rounded-md' type="text" placeholder='CheckIn' />
+              <input className='inputCheckOut pl-10 rounded-md' type="text" placeholder='CheckOut' />
               <input className='inputAdulto pl-9 h-10 rounded-md' type="text" placeholder='Adultos' />
-              <input className='inputCrianca pl-9 h-10 rounded-md' type="text" placeholder='Crianças'/>
+              <input className='inputCrianca pl-9 h-10 rounded-md' type="text" placeholder='Crianças' />
               <p className='text-left mt-2 text-white'>idade da criança 1:</p>
               <input type="text" className='w-[3vw] min-w-[40px] h-10 rounded-md px-2' placeholder='12' />
             </div>
@@ -248,7 +252,7 @@ const Home: NextPage = () => {
       {/* =========== SECTION TITULO: NOSSAS AVALIACOES ============ */}
       {/* =================================================================== */}
       <section className='bg-white relative flex justify-center msm:mt-[35vh]' >
-        <div className='flex lg:flex-wrap lg:gap-10 lg:justify-center justify-between py-[10vh] container'>
+        <div className='flex lg:flex-wrap lg:gap-10 lg:justify-center justify-between py-[17vh] container'>
           <div className='col-span-2 md:col-span-8'>
             <h3 className='text-2xl text-title'>Nossas Avaliações</h3>
             <p>Somos uma das maiores avaliações para <br /> Bonito</p>
@@ -280,7 +284,7 @@ const Home: NextPage = () => {
               <br />
               <h3>Horário de Atendimento</h3>
               <br />
-              <p className='break-words'>Segunda a Domingo das 07h00 às 19h00 e nosso fuso horário é 1 hora a menos que Brasília</p>
+              <p className='break-words'><strong className='font-normal'>Segunda a Domingo das 07h00 às 19h00 e nosso fuso horário é 1 hora a menos que Brasília</strong></p>
             </div>
             <div className='grid grid-cols-8 col-span-2 sm:col-span-6 ml-[6vw] md:gap-2 text-white  '>
               <h4 className='col-span-6 sm:col-span-8'>Formas de pagamento:</h4>

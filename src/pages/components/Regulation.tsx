@@ -75,7 +75,7 @@ export default function RegulationComponent() {
                         <br /><br />
                         É legal saber: em alguns casos, é possível que seja cobrado juros de parcelamento. Você pode conferir esses detalhes antes do pagamento por boleto ou cartão de crédito. Atenção!
                         <br /><br />
-                        <h4>- O Hurb não realiza personalizações/modificações nos pacotes;</h4>
+                        <strong className="font-normal">- O Hurb não realiza personalizações/modificações nos pacotes;</strong>
                         - Caso as 3 datas sugeridas pelo Viajante estejam indisponíveis, iremos enviar uma nova opção levando em consideração a proximidade às datas sugeridas;
                         <br /><br />
                         - Garantimos o mesmo voo para até 8 viajantes com pedidos vinculados. No entanto, a hospedagem irá depender da disponibilidade do estabelecimento.
