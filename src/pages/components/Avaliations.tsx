@@ -1,14 +1,17 @@
 export default function Avaliations(){
     return(
-        <div className="grid grid-cols-12 gap-5">
-            <div className="col-span-4 ">
-                 <img className="" src="/logs/tripadvisor.svg" alt="" />
+        <div className="flex gap-20 msm:gap-4">
+            <div className="col-span-4 flex flex-wrap justify-center w-20 ">
+                <strong className="text-2xl font-normal">4,5</strong>
+                 <img className="" src="/logs/tripadvisor.svg" alt="logo do tripadvisor" />
             </div>
-            <div className="col-span-4 ">
-                <img className="" src="/logs/google.svg" alt="" />
+            <div className="col-span-4 flex flex-wrap justify-center w-20">
+                <strong className="text-2xl font-normal">4,7</strong>
+                <img className="" src="/logs/google.svg" alt="logo do google" />
             </div>
-            <div className="col-span-4 ">
-                <img className="" src="/logs/facebook.svg" alt="" />
+            <div className="col-span-4 flex flex-wrap justify-center w-20">
+                <strong className="text-2xl font-normal">4,8</strong>
+                <img className="-mt-3" src="/logs/facebook.svg" alt="logo do facebook" />
             </div>
         </div>
     )

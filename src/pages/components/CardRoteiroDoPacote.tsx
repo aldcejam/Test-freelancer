@@ -12,7 +12,7 @@ interface CardRoteiroDoPacoteProps {
 export default function CardRoteiroDoPacote({ title, text, image, withImage, withVideo, }: CardRoteiroDoPacoteProps) {
     return (
         <article className="hover:cursor-pointer flex md:flex-wrap md:justify-center gap-8 mb-14">
-            <div className="w-[47%] md:w-[90%] lg:w-[70%] ">
+            <div className="w-[47%] md:w-[90%]">
                 <Image src={image} width='100%' height='55%' layout="responsive"/>
             </div>
             <div className="w-[70%] leading-4">

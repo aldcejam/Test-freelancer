@@ -23,6 +23,7 @@ a {
 .container{
   width: max(70vw, 1150px);
   max-width: 85vw;
+  
 }
 
 .inputName {
@@ -37,16 +38,15 @@ a {
   
 }
 .inputCheckIn{
-  background-image: url('/icons/checkIn.svg');
+  background-image: url('/icons/check.svg');
   background-repeat: no-repeat;
   background-position: 10px;
   height: 33px;
 }
 .inputCheckOut{
-  background-image: url('/icons/data.svg');
+  background-image: url('/icons/check.svg');
   background-repeat: no-repeat;
-  background-position-x: -2px;
-  background-position-y: -6px;
+  background-position: 10px;
   height: 33px;
 }
 .inputAdulto{
@@ -62,7 +62,8 @@ a {
   height: 33px;
 }
 
-.gradient{
+
+.colorGradient{
   background: linear-gradient(0deg, rgba(2, 1, 20, 0.874) 40%, rgba(3, 3, 37, 0.825) 81%, rgba(4, 7, 54, 0.766) 86%, rgba(10, 21, 66, 0.756) 100%)
 }
 

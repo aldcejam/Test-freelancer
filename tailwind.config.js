@@ -27,6 +27,8 @@ module.exports = {
     screens: {
       'ssm': {'max': '400px'},
 
+      'msm': {'max': '500px'},
+      
       'sm': {'max': '640px'},
 
       'md': {'max': '768px'},

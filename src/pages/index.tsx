@@ -38,11 +38,11 @@ const Home: NextPage = () => {
         <section className='relative'>
           <div className='shadow-3xl flex flex-wrap  gap-9 items-center container mx-auto -mt-[14vh] py-10 px-10 bg-white rounded-2xl'>
             <div>
-              <Title title='Pacote Bonito Lua de Mel' />
+              <h1 className='text-title text-3xl'>Pacote Bonito Lua de Mel</h1>
               <p className='text-text'>4 diárias + 5 passeios + Hotel</p>
             </div>
             <div className='lg:flex justify-center lg:container'>
-              <section className='md:flex md:gap-5 sm:flex-wrap py-5 px-7 border-2 border-grayBorder border-solid rounded-lg'>
+              <section className='md:flex md:gap-5 sm:flex-wrap py-5 px-7 sm:px-2 border-2 border-grayBorder border-solid rounded-lg'>
                 <ul className='flex gap-6 md:flex-wrap items-center justify-center md:gap-0'>
                   <li className='flex  max-h-28 bg-grayBlue gap-3 px-6 py-4 pr-14 rounded-lg'>
                     <img className='iconHeader' src="/shoppingCart.svg" alt="" />
@@ -60,11 +60,11 @@ const Home: NextPage = () => {
                   </li>
                 </ul>
                 <ul className='flex md:flex-wrap md:justify-center mt-6 gap-6'>
-                  <li className='flex flex-wrap justify-center items-center gap-4 px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                  <li className='flex flex-wrap justify-center items-center gap-4 px-6 sm:px-2 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <img className='iconPadLockHeader' src="/padlock.svg" alt="iconPadlock" />
                     <p className='text-text'>Hospedagem <br />opcional</p>
                   </li>
-                  <li className='flex flex-wrap justify-center gap-4 px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                  <li className='flex flex-wrap justify-center gap-4 px-6 sm:px-2 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <img className='iconHeader' src="/man.svg" alt="iconPadlock" />
                     <p className='text-text'>Passeios<br />e atrações</p>
                   </li>
@@ -87,8 +87,10 @@ const Home: NextPage = () => {
         {/* =================================================================== */}
         {/* ================ SECTION TITULO: ROTEIRO DO PACOTE ================ */}
         {/* =================================================================== */}
-        <section className='ssm:max-x-[70vw] shadow-3xl bg-white container mx-auto  pt-10 pb-1  px-10 mt-14 rounded-2xl'>
-          <Title title='Roteiro do Pacote' />
+        <section className='ssm:max-x-[70vw] shadow-3xl bg-white container mx-auto pt-10 pb-1 px-10 msm:px-0 mt-14 rounded-2xl'>
+          <div className='msm:px-4'>
+            <Title title='Roteiro do Pacote' />
+          </div>
           <div className='mt-9'>
             <CardRoteiroDoPacote
               withImage={true}
@@ -153,7 +155,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* ================== SECTION TITULO: COMO FUNCIONA ================== */}
       {/* =================================================================== */}
-      <section className=' container mx-auto py-10 px-10 mt-14 rounded-2xl'>
+      <section className=' container mx-auto py-10 px-10 md:px-0 mt-14 rounded-2xl'>
         <div className='mb-10'>
           <Title title='Como funciona' />
           <h3 className='text-title'>Pacotes de Data Flexível</h3>
@@ -209,33 +211,34 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* =========== SECTION TITULO: RECARREGUE AS SUAS ENERGIAS ============ */}
       {/* =================================================================== */}
-      <section className='flex justify-center relative h-[130vh] '>
-        <div className='w-full absolute h-[130vh]'>
-          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'60vh'} layout='responsive' />
+      <section className='relative h-[130vh] flex justify-center '>
+        <div className='w-full relative h-[130vh] md:h-[180vh]'>
+          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'60vh'} layout='fill' />
         </div>
         <h5 className=' text-white absolute mt-[20vh] text-4xl font-pacifico'>Recarregue as suas energias</h5>
-        <div className='absolute w-[65vw] max-w-[90vw] sm:w-[80vw] bg-green mt-[45vh] p-10 pb-12 px-14 text-center text-white rounded-lg'>
+        <div className='bg-green absolute mt-[45vh] p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
           <h3 className='text-2xl font-light mb-[50px]'>Reserve seu pacote</h3>
-          <div className='flex flex-wrap justify-center gap-8 '>
+          <div className='flex md:flex-wrap justify-center gap-8'>
             {/* inputs */}
-            <div className='grid grid-cols-10 gap-2 max-w-[350px]'>
+            <div className='grid grid-cols-10 gap-2 max-w-[350px] lg:col-span-2'>
               <input className='inputName col-span-10 rounded-md p-2 mb-2' type="text" />
-              <input className='inpurEmail col-span-10 rounded-md p-2 my-2 pl-10' type="email" placeholder='email' />
-              <div className='flex p-2 col-span-3 min-w-[70px]  rounded-md my-2 bg-white text-text px-2'>
-
-                <img className='mr-2' src="/icons/flagBrazil.svg" alt="DDD-Brasil" />
-                - 55
+              <input className='inpurEmail col-span-10 rounded-md p-2 mb-2 pl-10' type="email" placeholder='email' />
+              <div className='col-span-10 grid grid-cols-6 gap-3'>
+                <div className='col-span-2 msm:col-span-3 flex rounded-md bg-white text-text px-2 py-2 '>
+                  <img className='mr-2' src="/icons/flagBrazil.svg" alt="DDD-Brasil" />
+                  - 55
+                </div>
+                <input className='col-span-4 msm:col-span-6 rounded-md pl-2 py-2' type="text" placeholder='telefone' />
               </div>
-              <input className='my-2 ml-1 col-span-7 rounded-md pl-2' type="text" placeholder='telefone' />
             </div>
             {/* inputs */}
-            <div className='text-text grid grid-cols-2 gap-2 max-w-[300px]'>
-              <input className='inputCheckIn pl-10 rounded-md' type="text" />
-              <input className='inputCheckOut pl-10 rounded-md' type="text" />
-              <input className='inputAdulto pl-10 h-10 rounded-md' type="text" />
-              <input className='inputCrianca pl-10 h-10 rounded-md' type="text" />
+            <div className='text-text grid grid-cols-2 gap-2 max-w-[300px] col-span-1 lg:col-span-2'>
+              <input className='inputCheckIn pl-10 rounded-md' type="text" placeholder='CheckIn'/>
+              <input className='inputCheckOut pl-10 rounded-md' type="text" placeholder='CheckOut'/>
+              <input className='inputAdulto pl-9 h-10 rounded-md' type="text" placeholder='Adultos' />
+              <input className='inputCrianca pl-9 h-10 rounded-md' type="text" placeholder='Crianças'/>
               <p className='text-left mt-2 text-white'>idade da criança 1:</p>
-              <input type="text" className='w-[3vw] min-w-[40px] h-10 rounded-md' />
+              <input type="text" className='w-[3vw] min-w-[40px] h-10 rounded-md px-2' placeholder='12' />
             </div>
           </div>
           <button className='bg-orange px-12 py-3 rounded-md mt-10 text-title font-medium shadow-3xl'>Quero receber meu roteiro</button>
@@ -244,16 +247,14 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* =========== SECTION TITULO: NOSSAS AVALIACOES ============ */}
       {/* =================================================================== */}
-      <section className='bg-white' >
-        <div className='grid grid-cols-8 lg:flex-wrap lg:justify-center lg:gap-10 justify-between container mx-auto py-24 px-10 rounded-2xl'>
+      <section className='bg-white relative flex justify-center msm:mt-[35vh]' >
+        <div className='flex lg:flex-wrap lg:gap-10 lg:justify-center justify-between py-[10vh] container'>
           <div className='col-span-2 md:col-span-8'>
             <h3 className='text-2xl text-title'>Nossas Avaliações</h3>
             <p>Somos uma das maiores avaliações para <br /> Bonito</p>
           </div>
-          <div className='flex justify-between col-span-6 md:col-span-8 '>
-            <div className=''>
-              <img className='mr-12 ' src="/logs/travelers.svg" />
-            </div>
+          <div className='flex sm:flex-wrap justify-center gap-10 col-span-6 md:col-span-8 '>
+            <img className='2-20' src="/logs/travelers.svg" />
             <div className=''>
               <Avaliations />
             </div>
@@ -264,10 +265,10 @@ const Home: NextPage = () => {
       {/* ========================== FOOTER ========================== */}
       {/* =================================================================== */}
       <footer className='relative h-[70vh]'>
-        <div className='h-[60vh]'>
-          <Image className='absolute' src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='responsive' />
+        <div className='relative h-[100vh] md:h-[130vh]'>
+          <Image src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='fill' />
         </div>
-        <div className='absolute grid grid-cols-6 w-[70vw] lg:w-[90vw] gradient h-[70vh] sm:h-[100vh] px-[6vw] pt-20 md:pt-5 top-[15vh] inset-0 mx-auto justify-center'>
+        <div className='colorGradient absolute grid grid-cols-6 w-[70vw] lg:w-[90vw] h-[75vh] sm:h-[115vh] px-[6vw] pt-20 md:pt-5 top-[15vh] inset-0 mx-auto justify-center'>
           <div className='grid grid-cols-5 col-span-6 top-[10vh] ml-[2vw] md:gap-7'>
             <div className='col-span-1 sm:col-span-2'>
               <img className='mr-0' src="/log.svg" alt="" />
@@ -275,13 +276,13 @@ const Home: NextPage = () => {
             <div className='text-white text-xs col-span-2 sm:col-span-3'>
               <h3>Onde Estamos</h3>
               <br />
-              <p>R. Cel. Pilad Rebuá, 1853 Centro - Bonito/MS</p>
+              <address>R. Cel. Pilad Rebuá, 1853 Centro - Bonito/MS</address>
               <br />
               <h3>Horário de Atendimento</h3>
               <br />
               <p className='break-words'>Segunda a Domingo das 07h00 às 19h00 e nosso fuso horário é 1 hora a menos que Brasília</p>
             </div>
-            <div className='grid grid-cols-8 col-span-2 sm:col-span-6 ml-[6vw] gap-2 text-white  '>
+            <div className='grid grid-cols-8 col-span-2 sm:col-span-6 ml-[6vw] md:gap-2 text-white  '>
               <h4 className='col-span-6 sm:col-span-8'>Formas de pagamento:</h4>
               <div className='grid grid-cols-3 col-span-6 sm:col-span-8 gap-2 mt-2'>
                 <a href="#"><img src="/logs/american.png" alt="" /></a>
@@ -291,13 +292,13 @@ const Home: NextPage = () => {
                 <a href="#"><img src="/logs/boleto.png" alt="" /></a>
                 <a href="#"><img src="/logs/pix.png" alt="" /></a>
               </div>
-              <p className='mt-4 col-span-6 sm:col-span-3'>Parcelamos em <br />
+              <p className='mt-2 col-span-6 sm:col-span-5'>Parcelamos em <br />
                 até 12x sem juros</p>
             </div>
           </div>
           <div className='col-span-5 w-[55vw] lg:w-[70vw] h-[2px] bg-text mt-[1vh] '></div>
 
-          <div className=' flex justify-between col-span-5 text-white'>
+          <div className='flex justify-between col-span-5 text-white'>
             <div className='text-sm leading-7'>
               <p className='text-[#DCDCDC]'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
               <p>CNPJ 86.744.935/0001-06</p>
