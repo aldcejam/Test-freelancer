@@ -11,8 +11,8 @@ import { useState } from 'react'
 
 const Home: NextPage = () => {
   const [menuBurguerSituation, setMenuBurguerSituation] = useState(false)
-  const activeMenuBurguer = ()=>{
-    menuBurguerSituation? setMenuBurguerSituation(false):setMenuBurguerSituation(true)
+  const activeMenuBurguer = () => {
+    menuBurguerSituation ? setMenuBurguerSituation(false) : setMenuBurguerSituation(true)
   }
   return (
     <div className='bg-gray'>
@@ -23,13 +23,13 @@ const Home: NextPage = () => {
         <Image src={'/background/bgHeader.png'} layout='fill' objectFit='cover' />
         <div className='flex justify-betweenn items-center absolute inset-x-0 container mx-auto mt-14 '>
           <div>
-            <img  src="/log.svg" alt="menu hamburguer" />
+            <img src="/log.svg" alt="menu hamburguer" />
           </div>
           <div className='flex gap-3 absolute right-0'>
             <p className='text-white'>Menu</p>
-            <img onClick={()=> {activeMenuBurguer()}} className='w-5 cursor-pointer' src="/menuBurguer.svg" alt="" />
+            <img onClick={() => { activeMenuBurguer() }} className='w-5 cursor-pointer' src="/menuBurguer.svg" alt="" />
           </div>
-              <MenuBurguer isActive={menuBurguerSituation}/>
+          <MenuBurguer isActive={menuBurguerSituation} />
         </div>
         <div className='absolute text-white mt-[35vh] left-0 right-0 container mx-auto'>
           <p className='text-xl'>
@@ -51,7 +51,7 @@ const Home: NextPage = () => {
             <div className='flex lg:flex-wrap justify-center gap-5 lg:container mt-10'>
               <section className='md:flex md:gap-5 sm:flex-wrap py-5 px-7 sm:px-2 text-sm border-2 border-grayBorder border-solid rounded-lg'>
                 <ul className='flex gap-6 md:flex-wrap justify-center md:gap-0'>
-                  <li className='flex  max-h-28 bg-grayBlue gap-3 px-6 py-4 pr-14 rounded-lg'>
+                  <li className='flex max-h-24 sm:w-[80%] sm:justify-center bg-grayBlue gap-3 px-6 py-4 pr-14 md:pr-4 rounded-lg'>
                     <img className='iconHeader' src="/shoppingCart.svg" alt="" />
                     <div className='leading-5 text-text'>
                       <h3>Esta oferta é válida até:</h3>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
                       </p>
                     </div>
                   </li>
-                  <li className='flex max-h-36 sm:mt-5 bg-grayBlue gap-3 px-6 py-4 pr-14 rounded-lg'>
+                  <li className='flex max-h-28  sm:w-[80%] sm:justify-center sm:mt-5 bg-grayBlue gap-3 pl-6 py-4 pr-14 md:pr-4 rounded-lg'>
                     <img className='iconHeader' src="/airplane.svg" alt="" />
                     <div className='leading-5 text-text'>
                       <h3>Período para Viagem:</h3>
@@ -70,20 +70,20 @@ const Home: NextPage = () => {
                     </div>
                   </li>
                 </ul>
-                <ul className='flex md:flex-wrap md:justify-center mt-6 gap-6 md:gap-4'>
-                  <li className='flex items-center sm:w-[220px] px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                <ul className='flex md:flex-wrap md:justify-center mt-6 md:mt-0 gap-6 md:gap-4'>
+                  <li className='flex items-center sm:w-[80%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <div className='flex flex-wrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconPadLockHeader' src="/padlock.svg" alt="iconPadlock" />
                       <p className='text-text'><em> Hospedagem <br />opcional</em></p>
                     </div>
                   </li>
-                  <li className='flex items-center sm:w-[220px] px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                  <li className='flex items-center sm:w-[80%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <div className='flex flex-wrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconHeader' src="/man.svg" alt="iconPadlock" />
                       <p className='text-text'><em>Passeios<br />e atrações</em></p>
                     </div>
                   </li>
-                  <li className='flex items-center sm:w-[220px] px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                  <li className='flex items-center sm:w-[80%] sm:justify-center px-6  py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <div className='flex flex-wrap md:flex-nowrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconHeader' src="/bus.svg" alt="iconPadlock" />
                       <p className='text-text'><em>Traslados para <br />Bonito e passeios</em></p>
@@ -177,27 +177,35 @@ const Home: NextPage = () => {
           <Title title='Como funciona' />
           <h3 className='text-title'>Pacotes de Data Flexível</h3>
         </div>
-        <div className='flex flex-wrap gap-3 justify-start'>
-          <CardComoFunciona
-            title='Solicitamos a reserva'
-            text='Rios de águas cristalinas, grutas, fauna e flora preservadas e considerado um dos principais destinos de ecoturismo do Brasil. '
-            img='/cards/person1.svg'
-          />
-          <CardComoFunciona
-            title='Personalizando o Pacote'
-            text='Rios de águas cristalinas, grutas, fauna e flora preservadas e considerado um dos principais destinos de ecoturismo do Brasil.  '
-            img='/cards/person2.svg'
-          />
-          <CardComoFunciona
-            title='Realizando o Pagamento'
-            text='Rios de águas cristalinas, grutas, fauna e flora preservadas e considerado um dos principais destinos de ecoturismo do Brasil. '
-            img='/cards/person3.svg'
-          />
-          <CardComoFunciona
-            title='Viajando ao Destino'
-            text='Rios de águas cristalinas, grutas, fauna e flora preservadas e considerado um dos principais destinos de ecoturismo do Brasil. '
-            img='/cards/person4.svg'
-          />
+        <div className='grid grid-cols-12 gap-3 justify-start'>
+          <div className='col-span-12 minsm:col-span-6 minmd:col-span-4 minlg:col-span-3'>
+            <CardComoFunciona
+              title='Solicitamos a reserva'
+              text='Rios de águas cristalinas, grutas, fauna e flora preservadas e considerado um dos principais destinos de ecoturismo do Brasil. '
+              img='/cards/person1.svg'
+            />
+          </div>
+          <div className='col-span-12 minsm:col-span-6 minmd:col-span-4 minlg:col-span-3'>
+            <CardComoFunciona
+              title='Personalizando o Pacote'
+              text='Rios de águas cristalinas, grutas, fauna e flora preservadas e considerado um dos principais destinos de ecoturismo do Brasil.  '
+              img='/cards/person2.svg'
+            />
+          </div>
+          <div className='col-span-12 minsm:col-span-6 minmd:col-span-4 minlg:col-span-3'>
+            <CardComoFunciona
+              title='Realizando o Pagamento'
+              text='Rios de águas cristalinas, grutas, fauna e flora preservadas e considerado um dos principais destinos de ecoturismo do Brasil. '
+              img='/cards/person3.svg'
+            />
+          </div>
+          <div className='col-span-12 minsm:col-span-6 minmd:col-span-4 minlg:col-span-3'>
+            <CardComoFunciona
+              title='Viajando ao Destino'
+              text='Rios de águas cristalinas, grutas, fauna e flora preservadas e considerado um dos principais destinos de ecoturismo do Brasil. '
+              img='/cards/person4.svg'
+            />
+          </div>
         </div>
       </section>
       {/* =================================================================== */}

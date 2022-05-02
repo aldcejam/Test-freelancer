@@ -21,21 +21,43 @@ module.exports = {
       'gray': '#EEEEEE'
     },
     fontFamily: {
-      'pacifico': ['Pacifico', 'cursive','sans'],
-      'workSans': ['Work Sans', 'Pacifico','sans'],
+      'pacifico': ['Pacifico', 'cursive', 'sans'],
+      'workSans': ['Work Sans', 'Pacifico', 'sans'],
     },
     screens: {
-      'ssm': {'max': '400px'},
+      'minssm': '400px',
 
-      'msm': {'max': '500px'},
-      
-      'sm': {'max': '640px'},
+      'minmsm': '500px',
 
-      'md': {'max': '768px'},
+      'minsm': '640px',
 
-      'lg': {'max': '1023px'},
+      'minmd': '768px',
 
-      'xl': {'max': '1280px'},
+      'minlg': '1023px',
+
+      'minxl': '1280px',
+
+      'ssm': '400px',
+
+      'msm': {
+        'max': '500px'
+      },
+
+      'sm': {
+        'max': '640px'
+      },
+
+      'md': {
+        'max': '768px'
+      },
+
+      'lg': {
+        'max': '1023px'
+      },
+
+      'xl': {
+        'max': '1280px'
+      },
 
       '2xl': '1536px',
     },
