@@ -206,7 +206,7 @@ const Home: NextPage = () => {
       <section className=' bg-white pb-[15vh]'>
         <div className='grid grid-cols-12 ssm:px-0 gap-10 md:gap-0 justify-center container mx-auto pt-16 mt-14 rounded-2xl'>
           <div className='col-span-6 sm:px-0 md:col-span-12'>
-            <Image src={'/paradises.png'} width={'100%'} height={'100%'} layout='responsive' objectFit='cover' />
+            <Image src={'/paradises.png'} width={'100%'} height={'100%'} layout='responsive' objectFit='contain' />
           </div>
 
           <div className='grid grid-cols-12 col-span-6 md:col-span-12 py-10 '>
@@ -217,7 +217,7 @@ const Home: NextPage = () => {
               <br />
               <p className='text-text'>O acesso a flutuação da Nascente Azul é feito através de uma trilha contemplativa de aproximadamente 300 m até chegar à sala de equipamentos para a flutuação</p>
             </div>
-            <div className='col-span-12 relative h-[200px] mt-10 ssm:mt-0'>
+            <div className='col-span-12 -ml-[40px] lg:ml-0 relative h-[200px] mt-10 ssm:mt-0'>
               <Image src="/logs/Logs.png" width={'100%'} height={'100px'} layout='fill' objectFit='contain' />
             </div>
           </div>
