@@ -6,8 +6,14 @@ import CardRoteiroDoPacote from './components/CardRoteiroDoPacote'
 import Regulation from './components/Regulation'
 import Title from './components/Title'
 import Image from 'next/image'
+import MenuBurguer from './components/MenuBurguer'
+import { useState } from 'react'
 
 const Home: NextPage = () => {
+  const [menuBurguerSituation, setMenuBurguerSituation] = useState(false)
+  const activeMenuBurguer = ()=>{
+    menuBurguerSituation? setMenuBurguerSituation(false):setMenuBurguerSituation(true)
+  }
   return (
     <div className='bg-gray'>
       {/* =================================================================== */}
@@ -17,12 +23,13 @@ const Home: NextPage = () => {
         <Image src={'/background/bgHeader.png'} layout='fill' objectFit='cover' />
         <div className='flex justify-betweenn items-center absolute inset-x-0 container mx-auto mt-14 '>
           <div>
-            <img src="/log.svg" alt="" />
+            <img  src="/log.svg" alt="menu hamburguer" />
           </div>
           <div className='flex gap-3 absolute right-0'>
             <p className='text-white'>Menu</p>
-            <img className='w-5' src="/menuBurguer.svg" alt="" />
+            <img onClick={()=> {activeMenuBurguer()}} className='w-5 cursor-pointer' src="/menuBurguer.svg" alt="" />
           </div>
+              <MenuBurguer isActive={menuBurguerSituation}/>
         </div>
         <div className='absolute text-white mt-[35vh] left-0 right-0 container mx-auto'>
           <p className='text-xl'>
@@ -35,7 +42,7 @@ const Home: NextPage = () => {
       {/* ============= HEADER TITULO: PACOTE BONITO LUA DE MEL ============= */}
       {/* =================================================================== */}
       <main>
-      <section className='relative '>
+        <section className='relative '>
           <div className='shadow-3xl container mx-auto -mt-[14vh] py-10 px-10 bg-white rounded-2xl'>
             <div>
               <h1 className='text-title text-3xl'>Pacote Bonito Lua de Mel</h1>
@@ -196,7 +203,6 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* =========== SECTION TITULO: BONITO UM LUGAR FANTASTICO ============ */}
       {/* =================================================================== */}
-
       <section className=' bg-white pb-[15vh]'>
         <div className='grid grid-cols-12 ssm:px-0 gap-10 md:gap-0 justify-center container mx-auto pt-16 mt-14 rounded-2xl'>
           <div className='col-span-6 sm:px-0 md:col-span-12'>
@@ -211,8 +217,8 @@ const Home: NextPage = () => {
               <br />
               <p className='text-text'>O acesso a flutuação da Nascente Azul é feito através de uma trilha contemplativa de aproximadamente 300 m até chegar à sala de equipamentos para a flutuação</p>
             </div>
-            <div className='col-span-12 relative h-[200px] '>
-              <Image src="/logs/Logs.png" width={'100%'} height={'100px'} layout='fill' />
+            <div className='col-span-12 relative h-[200px] mt-10 ssm:mt-0'>
+              <Image src="/logs/Logs.png" width={'100%'} height={'100px'} layout='fill' objectFit='contain' />
             </div>
           </div>
         </div>
@@ -223,7 +229,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       <section className='relative h-[130vh] min-h-[900px] max-h-[1000px] flex justify-center'>
         <div className='w-full relative h-[100%] '>
-          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'60vh'} layout='fill' objectFit='cover'/>
+          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'60vh'} layout='fill' objectFit='cover' />
         </div>
         <h5 className=' text-white absolute mt-[20vh] text-4xl font-pacifico'>Recarregue as suas energias</h5>
         <div className='bg-green absolute mt-[45vh] msm:w-[90vw] sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
@@ -258,7 +264,7 @@ const Home: NextPage = () => {
       {/* =========== SECTION TITULO: NOSSAS AVALIACOES ============ */}
       {/* =================================================================== */}
       <section className='bg-white relative flex justify-center' >
-        <div className='flex lg:flex-wrap lg:gap-10 lg:justify-center justify-between py-[17vh] container'>
+        <div className='flex gap-4 lg:flex-wrap lg:gap-10 lg:justify-center justify-between py-[17vh] container'>
           <div className='col-span-2 md:col-span-8'>
             <h3 className='text-2xl text-title'>Nossas Avaliações</h3>
             <p>Somos uma das maiores avaliações para <br /> Bonito</p>
