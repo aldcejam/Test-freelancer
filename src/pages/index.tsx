@@ -172,12 +172,12 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* ================== SECTION TITULO: COMO FUNCIONA ================== */}
       {/* =================================================================== */}
-      <section className='container mx-auto py-10 md:px-0 mt-14 rounded-2xl'>
+      <section className='container mx-auto py-10 mt-14 rounded-2xl'>
         <div className='mb-10'>
           <Title title='Como funciona' />
           <h3 className='text-title'>Pacotes de Data Flexível</h3>
         </div>
-        <div className='flex flex-wrap gap-3 justify-center md:justify-start'>
+        <div className='flex flex-wrap gap-3 justify-start'>
           <CardComoFunciona
             title='Solicitamos a reserva'
             text='Rios de águas cristalinas, grutas, fauna e flora preservadas e considerado um dos principais destinos de ecoturismo do Brasil. '

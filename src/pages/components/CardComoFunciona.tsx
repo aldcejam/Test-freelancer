@@ -6,7 +6,7 @@ interface CardComoFuncionaProps{
 
 export default function CardComoFunciona({title,text, img}: CardComoFuncionaProps){
     return(
-        <div className="hover:cursor-pointer w-[20%] min-w-[250px] p-10 bg-white justify-center rounded-lg shadow-3xl">
+        <div className="hover:cursor-pointer w-[20%] sm:w-full min-w-[250px] p-10 bg-white justify-center rounded-lg shadow-3xl">
             <div className="flex justify-center p-4">
                 <img  src={img} alt="" />
             </div>
