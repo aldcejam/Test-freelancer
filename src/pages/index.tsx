@@ -209,16 +209,16 @@ const Home: NextPage = () => {
             <Image src={'/paradises.png'} width={'100%'} height={'100%'} layout='responsive' objectFit='contain' />
           </div>
 
-          <div className='grid grid-cols-12 col-span-6 md:col-span-12 py-10 '>
-            <div className='col-span-12 sm:col-span-12'>
+          <div className='flex flex-wrap gap-5 lg:gap-0 justify-center col-span-6 md:col-span-12 py-10 '>
+            <div >
               <Title title='Bonito: um lugar fantástico' />
               <br />
               <p className='text-text'>Localizado a 31 km da cidade de Bonito – MS, o passeio de flutuação da Nascente Azul é feita na nascente do Rio Bonito.</p>
               <br />
               <p className='text-text'>O acesso a flutuação da Nascente Azul é feito através de uma trilha contemplativa de aproximadamente 300 m até chegar à sala de equipamentos para a flutuação</p>
             </div>
-            <div className='col-span-12 -ml-[40px] lg:ml-0 relative h-[200px] mt-10 ssm:mt-0'>
-              <Image src="/logs/Logs.png" width={'100%'} height={'100px'} layout='fill' objectFit='contain' />
+            <div className='relative h-[250px] lg:h-[200px] w-[100%] md:mt-10'>
+              <Image src="/logs/Logs.png" width={'90%'} height={'100px'} layout='fill' objectFit='contain' />
             </div>
           </div>
         </div>
