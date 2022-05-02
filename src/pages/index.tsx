@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       {/* ===================== TOP WEB SITE DECORATION ===================== */}
       {/* =================================================================== */}
       <div className='relative h-[100vh]'>
-        <Image src={'/background/bgHeader.png'} layout='fill' />
+        <Image src={'/background/bgHeader.png'} layout='fill' objectFit='cover' />
         <div className='flex justify-betweenn items-center absolute inset-x-0 container mx-auto mt-14 '>
           <div>
             <img src="/log.svg" alt="" />
@@ -35,15 +35,15 @@ const Home: NextPage = () => {
       {/* ============= HEADER TITULO: PACOTE BONITO LUA DE MEL ============= */}
       {/* =================================================================== */}
       <main>
-        <section className='relative'>
-          <div className='shadow-3xl flex flex-wrap  gap-9 items-center container mx-auto -mt-[14vh] py-10 px-10 bg-white rounded-2xl'>
+      <section className='relative '>
+          <div className='shadow-3xl container mx-auto -mt-[14vh] py-10 px-10 bg-white rounded-2xl'>
             <div>
               <h1 className='text-title text-3xl'>Pacote Bonito Lua de Mel</h1>
               <p className='text-text'>4 diárias + 5 passeios + Hotel</p>
             </div>
-            <div className='lg:flex justify-center lg:container'>
-              <section className='md:flex md:gap-5 sm:flex-wrap py-5 px-7 sm:px-2 border-2 border-grayBorder border-solid rounded-lg'>
-                <ul className='flex gap-6 md:flex-wrap items-center justify-center md:gap-0'>
+            <div className='flex lg:flex-wrap justify-center gap-5 lg:container mt-10'>
+              <section className='md:flex md:gap-5 sm:flex-wrap py-5 px-7 sm:px-2 text-sm border-2 border-grayBorder border-solid rounded-lg'>
+                <ul className='flex gap-6 md:flex-wrap justify-center md:gap-0'>
                   <li className='flex  max-h-28 bg-grayBlue gap-3 px-6 py-4 pr-14 rounded-lg'>
                     <img className='iconHeader' src="/shoppingCart.svg" alt="" />
                     <div className='leading-5 text-text'>
@@ -63,29 +63,35 @@ const Home: NextPage = () => {
                     </div>
                   </li>
                 </ul>
-                <ul className='flex md:flex-wrap md:justify-center mt-6 gap-6'>
-                  <li className='flex flex-wrap justify-center items-center gap-4 px-6 sm:px-2 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
-                    <img className='iconPadLockHeader' src="/padlock.svg" alt="iconPadlock" />
-                    <p className='text-text'><em> Hospedagem <br />opcional</em></p>
+                <ul className='flex md:flex-wrap md:justify-center mt-6 gap-6 md:gap-4'>
+                  <li className='flex items-center sm:w-[220px] px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                    <div className='flex flex-wrap justify-center items-center gap-4 min-w-[100px]'>
+                      <img className='iconPadLockHeader' src="/padlock.svg" alt="iconPadlock" />
+                      <p className='text-text'><em> Hospedagem <br />opcional</em></p>
+                    </div>
                   </li>
-                  <li className='flex flex-wrap justify-center gap-4 px-6 sm:px-2 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
-                    <img className='iconHeader' src="/man.svg" alt="iconPadlock" />
-                    <p className='text-text'><em>Passeios<br />e atrações</em></p>
+                  <li className='flex items-center sm:w-[220px] px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                    <div className='flex flex-wrap justify-center items-center gap-4 min-w-[100px]'>
+                      <img className='iconHeader' src="/man.svg" alt="iconPadlock" />
+                      <p className='text-text'><em>Passeios<br />e atrações</em></p>
+                    </div>
                   </li>
-                  <li className='flex flex-wrap justify-center gap-4 px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
-                    <img className='iconHeader' src="/bus.svg" alt="iconPadlock" />
-                    <p className='text-text'><em>Traslados para <br />Bonito e passeios</em></p>
+                  <li className='flex items-center sm:w-[220px] px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                    <div className='flex flex-wrap justify-center items-center gap-4 min-w-[100px]'>
+                      <img className='iconHeader' src="/bus.svg" alt="iconPadlock" />
+                      <p className='text-text'><em>Traslados para <br />Bonito e passeios</em></p>
+                    </div>
                   </li>
                 </ul>
               </section>
+              <aside className=' text-center mx-auto text-text'>
+                <h4>a partir de</h4>
+                <p className='text-2xl text-[#444444]'><strong className='font-normal'>10x de R$ <span className='text-5xl'>93,20</span></strong></p>
+                <h4 className='text-lg'>ou 932,00 à vista</h4>
+                <p className='text-sm'>(preço por pessoas)</p>
+                <button className='bg-orange py-3 px-12 mt-4 rounded-xl text-title'>Quero Comprar</button>
+              </aside>
             </div>
-            <aside className=' text-center mx-auto text-text'>
-              <h4>a partir de</h4>
-              <p className='text-2xl text-[#444444]'><strong className='font-normal'>10x de R$ <span className='text-5xl'>93,20</span></strong></p>
-              <h4 className='text-lg'>ou 932,00 à vista</h4>
-              <p className='text-sm'>(preço por pessoas)</p>
-              <button className='bg-orange py-3 px-12 mt-4 rounded-xl text-title'>Quero Comprar</button>
-            </aside>
           </div>
         </section>
         {/* =================================================================== */}
@@ -159,12 +165,12 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* ================== SECTION TITULO: COMO FUNCIONA ================== */}
       {/* =================================================================== */}
-      <section className=' container mx-auto py-10 px-10 md:px-0 mt-14 rounded-2xl'>
+      <section className='container mx-auto py-10 md:px-0 mt-14 rounded-2xl'>
         <div className='mb-10'>
           <Title title='Como funciona' />
           <h3 className='text-title'>Pacotes de Data Flexível</h3>
         </div>
-        <div className='flex flex-wrap gap-3 justify-center'>
+        <div className='flex flex-wrap gap-3 justify-center md:justify-start'>
           <CardComoFunciona
             title='Solicitamos a reserva'
             text='Rios de águas cristalinas, grutas, fauna e flora preservadas e considerado um dos principais destinos de ecoturismo do Brasil. '
@@ -194,7 +200,7 @@ const Home: NextPage = () => {
       <section className=' bg-white pb-[15vh]'>
         <div className='grid grid-cols-12 ssm:px-0 gap-10 md:gap-0 justify-center container mx-auto pt-16 mt-14 rounded-2xl'>
           <div className='col-span-6 sm:px-0 md:col-span-12'>
-            <Image src={'/paradises.png'} width={'100%'} height={'100%'} layout='responsive' />
+            <Image src={'/paradises.png'} width={'100%'} height={'100%'} layout='responsive' objectFit='cover' />
           </div>
 
           <div className='grid grid-cols-12 col-span-6 md:col-span-12 py-10 '>
@@ -205,8 +211,8 @@ const Home: NextPage = () => {
               <br />
               <p className='text-text'>O acesso a flutuação da Nascente Azul é feito através de uma trilha contemplativa de aproximadamente 300 m até chegar à sala de equipamentos para a flutuação</p>
             </div>
-            <div className='col-span-12 relative md:w-[70vw] max-x-[350px] h-[35vh] msm:h-[20vh] '>
-              <Image src="/logs/Logs.png" width={'100%'} height={'100px'} layout='fill'/>
+            <div className='col-span-12 relative h-[200px] '>
+              <Image src="/logs/Logs.png" width={'100%'} height={'100px'} layout='fill' />
             </div>
           </div>
         </div>
@@ -215,24 +221,24 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* =========== SECTION TITULO: RECARREGUE AS SUAS ENERGIAS ============ */}
       {/* =================================================================== */}
-      <section className='relative h-[130vh] flex justify-center '>
-        <div className='w-full relative h-[130vh] md:h-[180vh]'>
-          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'60vh'} layout='fill' />
+      <section className='relative h-[130vh] min-h-[900px] max-h-[1000px] flex justify-center'>
+        <div className='w-full relative h-[100%] '>
+          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'60vh'} layout='fill' objectFit='cover'/>
         </div>
         <h5 className=' text-white absolute mt-[20vh] text-4xl font-pacifico'>Recarregue as suas energias</h5>
-        <div className='bg-green absolute mt-[45vh] p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
+        <div className='bg-green absolute mt-[45vh] msm:w-[90vw] sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
           <h3 className='text-2xl font-light mb-[50px]'>Reserve seu pacote</h3>
           <div className='flex md:flex-wrap justify-center gap-8'>
             {/* inputs */}
             <div className='grid grid-cols-10 gap-2 max-w-[350px] lg:col-span-2'>
               <input className='inputName col-span-10 rounded-md p-2 mb-2' type="text" />
               <input className='inpurEmail col-span-10 rounded-md p-2 mb-2 pl-10' type="email" placeholder='email' />
-              <div className='col-span-10 grid grid-cols-6 gap-3'>
-                <div className='col-span-2 msm:col-span-3 flex rounded-md bg-white text-text px-2 py-2 '>
+              <div className='col-span-10 grid grid-cols-12 gap-3'>
+                <div className='col-span-4 ssm:col-span-5 flex rounded-md bg-white text-text px-2 py-2 '>
                   <img className='mr-2' src="/icons/flagBrazil.svg" alt="DDD-Brasil" />
                   - 55
                 </div>
-                <input className='col-span-4 msm:col-span-6 rounded-md pl-2 py-2' type="text" placeholder='telefone' />
+                <input className='col-span-8 ssm:col-span-7 rounded-md pl-2 py-2' type="text" placeholder='telefone' />
               </div>
             </div>
             {/* inputs */}
@@ -251,7 +257,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* =========== SECTION TITULO: NOSSAS AVALIACOES ============ */}
       {/* =================================================================== */}
-      <section className='bg-white relative flex justify-center msm:mt-[35vh]' >
+      <section className='bg-white relative flex justify-center' >
         <div className='flex lg:flex-wrap lg:gap-10 lg:justify-center justify-between py-[17vh] container'>
           <div className='col-span-2 md:col-span-8'>
             <h3 className='text-2xl text-title'>Nossas Avaliações</h3>
@@ -269,25 +275,25 @@ const Home: NextPage = () => {
       {/* ========================== FOOTER ========================== */}
       {/* =================================================================== */}
       <footer className='relative h-[70vh]'>
-        <div className='relative h-[100vh] md:h-[130vh]'>
-          <Image src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='fill' />
+        <div className='relative h-[100vh] md:h-[160vh] min-h-[500px] '>
+          <Image src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
         </div>
-        <div className='colorGradient absolute grid grid-cols-6 w-[70vw] lg:w-[90vw] h-[75vh] sm:h-[115vh] px-[6vw] pt-20 md:pt-5 top-[15vh] inset-0 mx-auto justify-center'>
-          <div className='grid grid-cols-5 col-span-6 top-[10vh] ml-[2vw] md:gap-7'>
+        <div className='colorGradient absolute grid grid-cols-6 w-[70vw] msm:w-[90vw] h-[80vh] min-h-[420px] sm:h-[110vh] px-[6vw] pt-20 md:pt-5 top-[15vh] inset-0 mx-auto justify-center'>
+          <div className='grid grid-cols-5 col-span-6 md:gap-7'>
             <div className='col-span-1 sm:col-span-2'>
               <img className='mr-0' src="/log.svg" alt="" />
             </div>
             <div className='text-white text-xs col-span-2 sm:col-span-3'>
-              <h3>Onde Estamos</h3>
+              <h3 className='font-medium'>Onde Estamos</h3>
               <br />
               <address>R. Cel. Pilad Rebuá, 1853 Centro - Bonito/MS</address>
               <br />
-              <h3>Horário de Atendimento</h3>
+              <h3 className='font-medium'>Horário de Atendimento</h3>
               <br />
               <p className='break-words'><strong className='font-normal'>Segunda a Domingo das 07h00 às 19h00 e nosso fuso horário é 1 hora a menos que Brasília</strong></p>
             </div>
             <div className='grid grid-cols-8 col-span-2 sm:col-span-6 ml-[6vw] md:gap-2 text-white  '>
-              <h4 className='col-span-6 sm:col-span-8'>Formas de pagamento:</h4>
+              <h4 className='font-medium col-span-6 sm:col-span-8'>Formas de pagamento:</h4>
               <div className='grid grid-cols-3 col-span-6 sm:col-span-8 gap-2 mt-2'>
                 <a href="#"><img src="/logs/american.png" alt="" /></a>
                 <a href="#"><img src="/logs/elo.png" alt="" /></a>
@@ -300,9 +306,9 @@ const Home: NextPage = () => {
                 até 12x sem juros</p>
             </div>
           </div>
-          <div className='col-span-5 w-[55vw] lg:w-[70vw] h-[2px] bg-text mt-[1vh] '></div>
+          <div className='col-span-6 w-[100%] h-[2px] bg-text mt-[1vh] '></div>
 
-          <div className='flex justify-between col-span-5 text-white'>
+          <div className='flex sm:flex-wrap justify-between col-span-6 text-white'>
             <div className='text-sm leading-7'>
               <p className='text-[#DCDCDC]'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
               <p>CNPJ 86.744.935/0001-06</p>

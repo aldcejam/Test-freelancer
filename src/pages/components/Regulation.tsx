@@ -1,5 +1,7 @@
 import Title from "./Title";
 
+
+
 export default function RegulationComponent() {
 
     return (
@@ -9,7 +11,7 @@ export default function RegulationComponent() {
                 <nav className="lg:mb-10">
                     <ul className="lg:flex lg:flex-wrap lg:gap-6">
                         <li>
-                            <a className="block py-5 pl-6 liRegulation ssm:max-w-[200px] bg-lightBlue border-l-DarkBlue border-l-8 border-solid  " href="">O que está incluso</a>
+                            <a className="block py-5 pl-6 liRegulation ssm:max-w-[200px] bg-lightBlue border-l-DarkBlue border-l-8 border-solid" >O que está incluso</a>
                         </li>
                         <li>
                             <a className="block shadow-2xl py-5 pl-6 liRegulation ssm:max-w-[200px] mt-3 lg:mt-0 border-l-blue border-l-8 border-solid  " href="">Como utilizar</a>
