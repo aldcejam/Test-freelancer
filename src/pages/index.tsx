@@ -77,7 +77,7 @@ const Home: NextPage = () => {
                     </div>
                   </li>
                   <li className='flex items-center sm:w-[220px] px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
-                    <div className='flex flex-wrap justify-center items-center gap-4 min-w-[100px]'>
+                    <div className='flex flex-wrap md:flex-nowrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconHeader' src="/bus.svg" alt="iconPadlock" />
                       <p className='text-text'><em>Traslados para <br />Bonito e passeios</em></p>
                     </div>
