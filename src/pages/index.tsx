@@ -49,7 +49,7 @@ const Home: NextPage = () => {
               <p className='text-text'>4 diárias + 5 passeios + Hotel</p>
             </div>
             <div className='flex lg:flex-wrap justify-center items-center gap-5 lg:container mt-10'>
-              <section className='md:flex md:gap-5 sm:flex-wrap sm:px-0 px-7  py-5 text-sm minmsm:border-2 border-grayBorder border-solid rounded-lg'>
+              <section className='md:flex md:gap-5 sm:flex-wrap sm:px-0 px-7  py-5 text-sm minsm:border-2 border-grayBorder border-solid rounded-lg'>
                 <ul className='flex justify-between sm:justify-center md:flex-wrap md:gap-0'>
                   <li className='w-[48%] min-w-[200px] md:pr-4 flex max-h-24 sm:w-[100%] sm:justify-center bg-grayBlue gap-3 pl-6 py-4 rounded-lg'>
                     <img className='w-8' src="/shoppingCart.svg" alt="" />
@@ -248,15 +248,15 @@ const Home: NextPage = () => {
               <input className='inputName col-span-10 rounded-md p-2 mb-2' type="text" />
               <input className='inpurEmail col-span-10 rounded-md p-2 mb-2 pl-10' type="email" placeholder='email' />
               <div className='col-span-10 grid grid-cols-12 gap-3'>
-                <div className='col-span-4 ssm:col-span-5 flex rounded-md bg-white text-text px-2 py-2 '>
+                <div className='col-span-5 flex rounded-md bg-white text-text px-2 py-2 '>
                   <img className='mr-2' src="/icons/flagBrazil.svg" alt="DDD-Brasil" />
                   - 55
                 </div>
-                <input className='col-span-8 ssm:col-span-7 rounded-md pl-2 py-2' type="text" placeholder='telefone' />
+                <input className='col-span-7 rounded-md pl-2 py-2' type="text" placeholder='telefone' />
               </div>
             </div>
             {/* inputs */}
-            <div className='text-text grid grid-cols-2 gap-2 max-w-[350px] col-span-1 lg:col-span-2'>
+            <div className='text-text grid grid-cols-2 gap-2 max-w-[350px] lg:col-span-2'>
               <input className='inputCheckIn pl-10 rounded-md' type="text" placeholder='CheckIn' />
               <input className='inputCheckOut pl-10 rounded-md' type="text" placeholder='CheckOut' />
               <input className='inputAdulto pl-9 h-10 rounded-md' type="text" placeholder='Adultos' />

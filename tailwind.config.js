@@ -38,7 +38,9 @@ module.exports = {
 
       'minxl': '1280px',
 
-      'ssm': '400px',
+      'ssm': {
+        'max': '400px'
+      },
 
       'msm': {
         'max': '500px'

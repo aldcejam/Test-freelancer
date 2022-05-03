@@ -57,7 +57,7 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image }:
                     </a>
                 </nav>
             </div>
-            <div className="col-span-1 lg:col-span-4 text-center pr-8 lg:pr:0 -mt-[5%] lg:my-4">
+            <div className="col-span-1 lg:col-span-4 text-center pr-8 lg:pr:0 sm:px-10 -mt-[5%] lg:my-4">
                 <h4 className="text-text">Preço do pacote com essa acomodação</h4>
                 <p className="flex items-center gap-3 justify-center">R$ <span className="text-4xl text-[#444444]">{price}</span></p>
                 <button className='bg-orange lg:ml-3 py-3 px-12 mt-4 rounded-xl font-bold'>Quero Comprar</button>
