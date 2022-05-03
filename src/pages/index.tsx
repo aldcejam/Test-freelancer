@@ -48,11 +48,11 @@ const Home: NextPage = () => {
               <h1 className='text-title text-3xl'>Pacote Bonito Lua de Mel</h1>
               <p className='text-text'>4 diárias + 5 passeios + Hotel</p>
             </div>
-            <div className='flex lg:flex-wrap justify-center gap-5 lg:container mt-10'>
-              <section className='md:flex md:gap-5 sm:flex-wrap sm:px-2 px-7 py-5 text-sm border-2 border-grayBorder border-solid rounded-lg'>
+            <div className='flex lg:flex-wrap justify-center items-center gap-5 lg:container mt-10'>
+              <section className='md:flex md:gap-5 sm:flex-wrap sm:px-2 px-7 py-5 text-sm minmsm:border-2 border-grayBorder border-solid rounded-lg'>
                 <ul className='flex justify-between sm:justify-center md:flex-wrap md:gap-0'>
-                  <li className='w-[48%] min-w-[200px] md:pr-4 flex max-h-24 sm:w-[80%] sm:justify-center bg-grayBlue gap-3 pl-6 py-4 rounded-lg'>
-                    <img className='iconHeader' src="/shoppingCart.svg" alt="" />
+                  <li className='w-[48%] min-w-[200px] md:pr-4 flex max-h-24 sm:w-[100%] sm:justify-center bg-grayBlue gap-3 pl-6 py-4 rounded-lg'>
+                    <img className='w-8' src="/shoppingCart.svg" alt="" />
                     <div className='leading-5 text-text'>
                       <h3>Esta oferta é válida até:</h3>
                       <p>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
                       </p>
                     </div>
                   </li>
-                  <li className='w-[48%] min-w-[200px] md:pr-4 flex max-h-28  sm:w-[80%] sm:justify-center sm:mt-5 bg-grayBlue gap-3 pl-6 py-4 rounded-lg'>
+                  <li className='w-[48%] min-w-[200px] md:pr-4 flex max-h-28  sm:w-[100%] sm:justify-center sm:mt-5 bg-grayBlue gap-3 pl-6 py-4 rounded-lg'>
                     <img className='iconHeader' src="/airplane.svg" alt="" />
                     <div className='leading-5 text-text'>
                       <h3>Período para Viagem:</h3>
@@ -71,19 +71,19 @@ const Home: NextPage = () => {
                   </li>
                 </ul>
                 <ul className='flex md:flex-wrap md:justify-center mt-6 md:mt-0 gap-4 md:gap-3'>
-                  <li className='flex items-center sm:w-[80%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                  <li className='flex items-center sm:w-[100%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <div className='flex minssm:flex-wrap justify-center items-center gap-4 min-w-[100px]'>
-                      <img className='iconPadLockHeader' src="/padlock.svg" alt="iconPadlock" />
+                      <img className='h-8' src="/padlock.svg" alt="iconPadlock" />
                       <p className='text-text'><em> Hospedagem <br />opcional</em></p>
                     </div>
                   </li>
-                  <li className='flex items-center sm:w-[80%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                  <li className='flex items-center sm:w-[100%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <div className='flex minssm:flex-wrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconHeader' src="/man.svg" alt="iconPadlock" />
                       <p className='text-text'><em>Passeios<br />e atrações</em></p>
                     </div>
                   </li>
-                  <li className='flex minssm:flex-wrap sm:w-[80%] sm:justify-center px-6  py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                  <li className='flex minssm:flex-wrap sm:w-[100%] sm:justify-center px-6  py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <div className='flex flex-wrap md:flex-nowrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconHeader' src="/bus.svg" alt="iconPadlock" />
                       <p className='text-text'><em>Traslados para <br />Bonito e passeios</em></p>
@@ -91,13 +91,13 @@ const Home: NextPage = () => {
                   </li>
                 </ul>
               </section>
-              <aside className=' text-center mx-auto text-text'>
+              <div className=' text-center mx-auto text-text'>
                 <h4>a partir de</h4>
                 <p className='text-2xl text-[#444444]'><strong className='font-normal'>10x de R$ <span className='text-5xl'>93,20</span></strong></p>
                 <h4 className='text-lg'>ou 932,00 à vista</h4>
                 <p className='text-sm'>(preço por pessoas)</p>
                 <button className='bg-orange py-3 px-12 mt-4 rounded-xl text-title'>Quero Comprar</button>
-              </aside>
+              </div>
             </div>
           </div>
         </section>
@@ -256,7 +256,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             {/* inputs */}
-            <div className='text-text grid grid-cols-2 gap-2 max-w-[300px] col-span-1 lg:col-span-2'>
+            <div className='text-text grid grid-cols-2 gap-2 max-w-[350px] col-span-1 lg:col-span-2'>
               <input className='inputCheckIn pl-10 rounded-md' type="text" placeholder='CheckIn' />
               <input className='inputCheckOut pl-10 rounded-md' type="text" placeholder='CheckOut' />
               <input className='inputAdulto pl-9 h-10 rounded-md' type="text" placeholder='Adultos' />
@@ -288,16 +288,16 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* ========================== FOOTER ========================== */}
       {/* =================================================================== */}
-      <footer className='relative h-[80vh] md:h-[100vh] max-h-[400px]  sm:max-h-[630px] md:bg-black'>
+      <footer className='relative h-[80vh] md:h-[100vh] max-h-[400px]  sm:max-h-[700px] md:bg-black'>
         <div className='relative h-[80vh] min-h-[500px] max-h-[500px] md:hidden md:h-0'>
           <Image src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
         </div>
-        <div className='colorGradient absolute md:block grid grid-cols-6 w-[80vw] max-w-[1100px] md:w-[100vw] min-h-[360px] max-h-[450px] sm:max-h-[630px] px-[6vw] pt-14 top-[10vh] md:top-0 inset-0 mx-auto justify-center'>
-          <div className='grid grid-cols-5 col-span-6 md:gap-7'>
-            <div className='col-span-1 sm:col-span-2'>
+        <div className='colorGradient absolute md:block grid grid-cols-6 w-[80vw] max-w-[1100px] md:w-[100vw] min-h-[360px] max-h-[450px] sm:max-h-[700px] px-[6vw] pt-14 top-[10vh] md:top-0 inset-0 mx-auto justify-center'>
+          <div className='relative flex sm:flex-wrap justify-end sm:justify-start col-span-6 gap-7'>
+            <div className='mr-10'>
               <img className='mr-0' src="/log.svg" alt="" />
             </div>
-            <div className='text-white text-xs col-span-2 sm:col-span-3'>
+            <div className=' text-white text-xs'>
               <h3 className='font-medium'>Onde Estamos</h3>
               <br />
               <address>R. Cel. Pilad Rebuá, 1853 Centro - Bonito/MS</address>
@@ -306,7 +306,7 @@ const Home: NextPage = () => {
               <br />
               <p className='break-words'><strong className='font-normal'>Segunda a Domingo das 07h00 às 19h00 e nosso fuso horário é 1 hora a menos que Brasília</strong></p>
             </div>
-            <div className='grid grid-cols-8 col-span-2 sm:col-span-6 ml-[6vw] md:gap-2 text-white  '>
+            <div className='grid grid-cols-8 md:gap-2 text-white  '>
               <h4 className='font-medium col-span-6 sm:col-span-8'>Formas de pagamento:</h4>
               <div className='grid grid-cols-3 col-span-6 sm:col-span-8 gap-2 mt-2'>
                 <a href="#"><img src="/logs/american.png" alt="" /></a>
@@ -322,13 +322,13 @@ const Home: NextPage = () => {
           </div>
           <div className='col-span-6 w-[100%] h-[2px] bg-text mt-[1%] md:mt-[20px]'></div>
 
-          <div className='flex sm:flex-wrap justify-between gap-10 col-span-6 md:mt-[20px] text-white'>
+          <div className='flex sm:flex-wrap justify-between gap-10 sm:gap-3 col-span-6 md:mt-[20px] text-white'>
             <div className='text-sm leading-7'>
               <p className='text-[#DCDCDC]'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
               <p>CNPJ 86.744.935/0001-06</p>
             </div>
             <div className=''>
-              <img src="/icons/websocorro.svg" alt="" />
+              <img src="/icons/websocorro.svg" alt="logo-web-socorro" />
             </div>
           </div>
         </div>
