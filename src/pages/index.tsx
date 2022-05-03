@@ -292,7 +292,7 @@ const Home: NextPage = () => {
         <div className='relative h-[80vh] min-h-[500px] max-h-[500px] md:hidden md:h-0'>
           <Image src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
         </div>
-        <div className='colorGradient absolute md:block grid grid-cols-6 w-[80vw] max-w-[1100px] md:w-[100vw] min-h-[360px] max-h-[450px] sm:max-h-[630px] px-[6vw] pt-14 top-[8vh] md:top-0 inset-0 mx-auto justify-center'>
+        <div className='colorGradient absolute md:block grid grid-cols-6 w-[80vw] max-w-[1100px] md:w-[100vw] min-h-[360px] max-h-[450px] sm:max-h-[630px] px-[6vw] pt-14 top-[10vh] md:top-0 inset-0 mx-auto justify-center'>
           <div className='grid grid-cols-5 col-span-6 md:gap-7'>
             <div className='col-span-1 sm:col-span-2'>
               <img className='mr-0' src="/log.svg" alt="" />
