@@ -252,17 +252,17 @@ const Home: NextPage = () => {
                   <img className='mr-2' src="/icons/flagBrazil.svg" alt="DDD-Brasil" />
                   - 55
                 </div>
-                <input className='col-span-7 rounded-md pl-2 py-2' type="text" placeholder='telefone' />
+                <input className='col-span-7 rounded-md pl-2 py-2' type="number" placeholder='telefone' />
               </div>
             </div>
             {/* inputs */}
-            <div className='text-text grid grid-cols-2 gap-2 max-w-[350px] lg:col-span-2'>
-              <input className='inputCheckIn pl-10 rounded-md' type="text" placeholder='CheckIn' />
-              <input className='inputCheckOut pl-10 rounded-md' type="text" placeholder='CheckOut' />
-              <input className='inputAdulto pl-9 h-10 rounded-md' type="text" placeholder='Adultos' />
-              <input className='inputCrianca pl-9 h-10 rounded-md' type="text" placeholder='Crianças' />
-              <p className='text-left mt-2 text-white'>idade da criança 1:</p>
-              <input type="text" className='w-[3vw] min-w-[40px] h-10 rounded-md px-2' placeholder='12' />
+            <div className='text-text grid grid-cols-2 msm:grid-cols-12 gap-2 max-w-[350px] lg:col-span-2'>
+              <input className='inputCheckIn pl-10 rounded-md msm:col-span-12 msm:w-[88vw] msm:max-w-[350px]' type="text" placeholder='CheckIn' />
+              <input className='inputCheckOut pl-10 rounded-md msm:col-span-12' type="text" placeholder='CheckOut' />
+              <input className='inputAdulto pl-9 h-10 rounded-md msm:col-span-12' type="text" placeholder='Adultos' />
+              <input className='inputCrianca pl-9 h-10 rounded-md msm:col-span-12' type="text" placeholder='Crianças' />
+              <p className='text-left mt-2 text-white msm:col-span-6'>idade da criança 1:</p>
+              <input type="text" className='w-[3vw] min-w-[40px] h-10 rounded-md px-2 msm:col-span-6' placeholder='12' />
             </div>
           </div>
           <button className='bg-orange px-12 py-3 rounded-md mt-10 text-title font-medium shadow-3xl'>Quero receber meu roteiro</button>
