@@ -49,7 +49,7 @@ const Home: NextPage = () => {
               <p className='text-text'>4 diárias + 5 passeios + Hotel</p>
             </div>
             <div className='flex lg:flex-wrap justify-center items-center gap-5 lg:container mt-10'>
-              <section className='md:flex md:gap-5 sm:flex-wrap sm:px-2 px-7 py-5 text-sm minmsm:border-2 border-grayBorder border-solid rounded-lg'>
+              <section className='md:flex md:gap-5 sm:flex-wrap sm:px-0 px-7  py-5 text-sm minmsm:border-2 border-grayBorder border-solid rounded-lg'>
                 <ul className='flex justify-between sm:justify-center md:flex-wrap md:gap-0'>
                   <li className='w-[48%] min-w-[200px] md:pr-4 flex max-h-24 sm:w-[100%] sm:justify-center bg-grayBlue gap-3 pl-6 py-4 rounded-lg'>
                     <img className='w-8' src="/shoppingCart.svg" alt="" />
@@ -177,7 +177,7 @@ const Home: NextPage = () => {
           <Title title='Como funciona' />
           <h3 className='text-title'>Pacotes de Data Flexível</h3>
         </div>
-        <div className='grid grid-cols-12 gap-3 justify-start'>
+        <div className='grid grid-cols-12 gap-7 justify-start'>
           <div className='col-span-12 minsm:col-span-6 minmd:col-span-4 minlg:col-span-3'>
             <CardComoFunciona
               title='Solicitamos a reserva'
@@ -272,7 +272,7 @@ const Home: NextPage = () => {
       {/* =========== SECTION TITULO: NOSSAS AVALIACOES ============ */}
       {/* =================================================================== */}
       <section className='bg-white relative flex justify-center' >
-        <div className='flex gap-4 lg:flex-wrap lg:gap-10 lg:justify-center justify-between py-[120px] container'>
+        <div className='flex gap-10 lg:flex-wrap lg:gap-10 lg:justify-center justify-between py-[120px] container'>
           <div className='col-span-2 md:col-span-8'>
             <h3 className='text-2xl text-title'>Nossas Avaliações</h3>
             <p>Somos uma das maiores avaliações para <br /> Bonito</p>
@@ -297,13 +297,11 @@ const Home: NextPage = () => {
             <div className='mr-10'>
               <img className='mr-0' src="/log.svg" alt="" />
             </div>
-            <div className=' text-white text-xs'>
+            <div className=' text-white text-xs leading-5'>
               <h3 className='font-medium'>Onde Estamos</h3>
-              <br />
               <address>R. Cel. Pilad Rebuá, 1853 Centro - Bonito/MS</address>
               <br />
               <h3 className='font-medium'>Horário de Atendimento</h3>
-              <br />
               <p className='break-words'><strong className='font-normal'>Segunda a Domingo das 07h00 às 19h00 e nosso fuso horário é 1 hora a menos que Brasília</strong></p>
             </div>
             <div className='grid grid-cols-8 md:gap-2 text-white  '>
@@ -316,7 +314,7 @@ const Home: NextPage = () => {
                 <a href="#"><img src="/logs/boleto.png" alt="" /></a>
                 <a href="#"><img src="/logs/pix.png" alt="" /></a>
               </div>
-              <p className='mt-2 col-span-6 sm:col-span-5'>Parcelamos em <br />
+              <p className='mt-2 col-span-6 sm:col-span-5 font-light'>Parcelamos em <br />
                 até 12x sem juros</p>
             </div>
           </div>

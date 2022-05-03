@@ -15,7 +15,7 @@ export default function RegulationComponent() {
     return (
         <div>
             <Title title="Regulamento" />
-            <div className="flex gap-20 lg:flex-wrap mt-7">
+            <div className="flex gap-10 lg:flex-wrap mt-7">
                 <nav className="lg:mb-10">
                     <ul className="lg:flex lg:flex-wrap lg:gap-6">
                         <li>
@@ -52,7 +52,7 @@ export default function RegulationComponent() {
                 </nav>
                 {
                     optionsRegulationActive == 'oQueEstaIncluso' ?
-                        <div className=" sm:px-0 text-text max-w-[60vw]">
+                        <div className=" sm:px-0 text-text max-w-[60vw] lg:max-w-[70vw]">
                             <h3 className="text-2xl">Conheça o pacote</h3>
                             <br />
                             <p className="break-words">

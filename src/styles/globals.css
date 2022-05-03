@@ -84,9 +84,9 @@ a {
   width: clamp(200px, 60vw, 300px);
 }
 
-@media(min-width: 600px) {
+@media(max-width: 600px) {
   .liRegulation {
-    width: clamp(250px, 55vw, 300px);
+    width: clamp(220px, 70vw, 400px);
   }
 }
 

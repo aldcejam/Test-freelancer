@@ -11,7 +11,7 @@ export default function Avaliations(){
             </div>
             <div className="col-span-4 flex flex-wrap justify-center w-32">
                 <strong className="text-2xl font-normal">4,8</strong>
-                <img className="-mt-3 ssm:mt-2" src="/logs/facebook.svg" alt="logo do facebook" />
+                <img className="-mt-3 msm:mt-2" src="/logs/facebook.svg" alt="logo do facebook" />
             </div>
         </div>
     )
