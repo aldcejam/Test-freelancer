@@ -242,7 +242,7 @@ const Home: NextPage = () => {
         <h5 className=' text-white absolute mt-[13vh] minssm:mt-[12vh] minmd:mt-[20vh] text-4xl text-center font-pacifico '>Recarregue as suas energias</h5>
         <div className='bg-green absolute md:w-[100vw] mt-[45vh] md:mt-0 bottom-[15vh] md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
           <h3 className='text-2xl font-light mb-[50px]'>Reserve seu pacote</h3>
-          <div className='flex md:flex-wrap justify-center gap-8'>
+          <div className='flex md:flex-wrap justify-center gap-8 md:gap-4'>
             {/* inputs */}
             <div className='grid grid-cols-10 gap-2 max-w-[350px] lg:col-span-2'>
               <input className='inputName col-span-10 rounded-md p-2 mb-2' type="text" />
