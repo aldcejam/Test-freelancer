@@ -1,6 +1,6 @@
 export default function Avaliations(){
     return(
-        <div className="flex ssm:flex-wrap justify-center gap-14 msm:gap-4">
+        <div className="flex sm:flex-wrap justify-center gap-14 msm:gap-4">
             <div className="col-span-4 flex flex-wrap justify-center w-32 ">
                 <strong className="text-2xl font-normal">4,5</strong>
                  <img className="mt-2" src="/logs/tripadvisor.svg" alt="logo do tripadvisor" />

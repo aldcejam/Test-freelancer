@@ -49,9 +49,9 @@ const Home: NextPage = () => {
               <p className='text-text'>4 diárias + 5 passeios + Hotel</p>
             </div>
             <div className='flex lg:flex-wrap justify-center gap-5 lg:container mt-10'>
-              <section className='md:flex md:gap-5 sm:flex-wrap py-5 px-7 sm:px-2 text-sm border-2 border-grayBorder border-solid rounded-lg'>
-                <ul className='flex gap-6 md:flex-wrap justify-center md:gap-0'>
-                  <li className='flex max-h-24 sm:w-[80%] sm:justify-center bg-grayBlue gap-3 px-6 py-4 pr-14 md:pr-4 rounded-lg'>
+              <section className='md:flex md:gap-5 sm:flex-wrap sm:px-2 px-7 py-5 text-sm border-2 border-grayBorder border-solid rounded-lg'>
+                <ul className='flex justify-between sm:justify-center md:flex-wrap md:gap-0'>
+                  <li className='w-[48%] min-w-[200px] md:pr-4 flex max-h-24 sm:w-[80%] sm:justify-center bg-grayBlue gap-3 pl-6 py-4 rounded-lg'>
                     <img className='iconHeader' src="/shoppingCart.svg" alt="" />
                     <div className='leading-5 text-text'>
                       <h3>Esta oferta é válida até:</h3>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
                       </p>
                     </div>
                   </li>
-                  <li className='flex max-h-28  sm:w-[80%] sm:justify-center sm:mt-5 bg-grayBlue gap-3 pl-6 py-4 pr-14 md:pr-4 rounded-lg'>
+                  <li className='w-[48%] min-w-[200px] md:pr-4 flex max-h-28  sm:w-[80%] sm:justify-center sm:mt-5 bg-grayBlue gap-3 pl-6 py-4 rounded-lg'>
                     <img className='iconHeader' src="/airplane.svg" alt="" />
                     <div className='leading-5 text-text'>
                       <h3>Período para Viagem:</h3>
@@ -70,7 +70,7 @@ const Home: NextPage = () => {
                     </div>
                   </li>
                 </ul>
-                <ul className='flex md:flex-wrap md:justify-center mt-6 md:mt-0 gap-6 md:gap-4'>
+                <ul className='flex md:flex-wrap md:justify-center mt-6 md:mt-0 gap-4 md:gap-3'>
                   <li className='flex items-center sm:w-[80%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <div className='flex flex-wrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconPadLockHeader' src="/padlock.svg" alt="iconPadlock" />
@@ -235,12 +235,12 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* =========== SECTION TITULO: RECARREGUE AS SUAS ENERGIAS ============ */}
       {/* =================================================================== */}
-      <section className='relative h-[130vh] min-h-[900px] max-h-[1000px] flex justify-center'>
+      <section className='relative h-[130vh] min-h-[800px] max-h-[1000px] md:max-h-[800px] flex justify-center '>
         <div className='w-full relative h-[100%] '>
-          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'60vh'} layout='fill' objectFit='cover' />
+          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
         </div>
-        <h5 className=' text-white absolute mt-[20vh] text-4xl font-pacifico'>Recarregue as suas energias</h5>
-        <div className='bg-green absolute mt-[45vh] msm:w-[90vw] sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
+        <h5 className=' text-white absolute mt-[13vh] minssm:mt-[12vh] minmd:mt-[20vh] text-4xl text-center font-pacifico '>Recarregue as suas energias</h5>
+        <div className='bg-green absolute md:w-[100vw] mt-[45vh] md:mt-0 bottom-[15vh] md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
           <h3 className='text-2xl font-light mb-[50px]'>Reserve seu pacote</h3>
           <div className='flex md:flex-wrap justify-center gap-8'>
             {/* inputs */}
@@ -272,7 +272,7 @@ const Home: NextPage = () => {
       {/* =========== SECTION TITULO: NOSSAS AVALIACOES ============ */}
       {/* =================================================================== */}
       <section className='bg-white relative flex justify-center' >
-        <div className='flex gap-4 lg:flex-wrap lg:gap-10 lg:justify-center justify-between py-[17vh] container'>
+        <div className='flex gap-4 lg:flex-wrap lg:gap-10 lg:justify-center justify-between py-[120px] container'>
           <div className='col-span-2 md:col-span-8'>
             <h3 className='text-2xl text-title'>Nossas Avaliações</h3>
             <p>Somos uma das maiores avaliações para <br /> Bonito</p>
@@ -288,11 +288,11 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* ========================== FOOTER ========================== */}
       {/* =================================================================== */}
-      <footer className='relative h-[70vh]'>
-        <div className='relative h-[100vh] md:h-[160vh] min-h-[500px] '>
+      <footer className='relative h-[80vh] md:h-[100vh] max-h-[400px]  sm:max-h-[630px] md:bg-black'>
+        <div className='relative h-[80vh] min-h-[500px] max-h-[500px] md:hidden md:h-0'>
           <Image src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
         </div>
-        <div className='colorGradient absolute grid grid-cols-6 w-[70vw] msm:w-[90vw] h-[80vh] min-h-[420px] sm:h-[110vh] px-[6vw] pt-20 md:pt-5 top-[15vh] inset-0 mx-auto justify-center'>
+        <div className='colorGradient absolute md:block grid grid-cols-6 w-[80vw] max-w-[1100px] md:w-[100vw] min-h-[360px] max-h-[450px] sm:max-h-[630px] px-[6vw] pt-14 top-[8vh] md:top-0 inset-0 mx-auto justify-center'>
           <div className='grid grid-cols-5 col-span-6 md:gap-7'>
             <div className='col-span-1 sm:col-span-2'>
               <img className='mr-0' src="/log.svg" alt="" />
@@ -320,9 +320,9 @@ const Home: NextPage = () => {
                 até 12x sem juros</p>
             </div>
           </div>
-          <div className='col-span-6 w-[100%] h-[2px] bg-text mt-[1vh] '></div>
+          <div className='col-span-6 w-[100%] h-[2px] bg-text mt-[1%] md:mt-[20px]'></div>
 
-          <div className='flex sm:flex-wrap justify-between col-span-6 text-white'>
+          <div className='flex sm:flex-wrap justify-between gap-10 col-span-6 md:mt-[20px] text-white'>
             <div className='text-sm leading-7'>
               <p className='text-[#DCDCDC]'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
               <p>CNPJ 86.744.935/0001-06</p>

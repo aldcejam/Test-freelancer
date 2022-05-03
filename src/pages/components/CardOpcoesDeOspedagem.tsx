@@ -10,8 +10,8 @@ interface CardOpcoesDeOspedagemProps {
 export default function CardOpcoesDeOspedagem({ title, subTitle, price, image }: CardOpcoesDeOspedagemProps) {
     return (
         <article className="relative shadow-3xl grid grid-cols-4 items-center bg-white rounded-xl mb-16">
-            <div className="relative col-span-1 lg:col-span-4 h-[100%] lg:h-[110%] min-h-[300px] w-[120%] lg:w-[100%] ">
-                <Image src={image} width='100%' height='100vh' layout="fill" />
+            <div className="relative col-span-1 lg:col-span-4 h-[100%] lg:h-[110%] min-h-[300px] w-[120%] max-w-[450px] lg:max-w-[100%] lg:w-[100%] ">
+                <Image src={image} width='100%' height='100%' layout="fill" />
             </div>
             <div className="col-span-2 lg:col-span-4  pl-14 lg:pl-2 pr-5 lg:pr-0 py-10 text-text ">
                 <div className="leading-[8px] px-10 msm:px-2">

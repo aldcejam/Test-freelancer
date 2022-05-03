@@ -18,7 +18,8 @@ module.exports = {
       'white': '#ffffff',
       'grayBlue': '#E8F2F1',
       'grayBorder': '#D4D4D4',
-      'gray': '#EEEEEE'
+      'gray': '#EEEEEE',
+      'black': '#060D3B'
     },
     fontFamily: {
       'pacifico': ['Pacifico', 'cursive', 'sans'],

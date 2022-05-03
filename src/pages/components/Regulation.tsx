@@ -9,8 +9,8 @@ export default function RegulationComponent() {
         setOptionsRegulationActive(nameRegulation)
     }
 
-    const comumStyle = 'cursor-pointer block shadow-2xl py-5 pl-6 liRegulation ssm:max-w-[200px] mt-3 lg:mt-0 border-l-blue border-l-8 border-solid'
-    const activeStyle = 'duration-1000 cursor-pointer bg-lightBlue block py-5 pl-6 liRegulation ssm:max-w-[200px] mt-3 lg:mt-0 border-l-DarkBlue border-l-8 border-solid'
+    const comumStyle = 'cursor-pointer block shadow-2xl py-5 pl-6 liRegulation mt-3 lg:mt-0 border-l-blue border-l-8 border-solid'
+    const activeStyle = 'duration-1000 cursor-pointer bg-lightBlue liRegulation block py-5 pl-6 mt-3 lg:mt-0 border-l-DarkBlue border-l-8 border-solid'
 /*  */
     return (
         <div>
