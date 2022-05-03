@@ -72,18 +72,18 @@ const Home: NextPage = () => {
                 </ul>
                 <ul className='flex md:flex-wrap md:justify-center mt-6 md:mt-0 gap-4 md:gap-3'>
                   <li className='flex items-center sm:w-[80%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
-                    <div className='flex flex-wrap justify-center items-center gap-4 min-w-[100px]'>
+                    <div className='flex minssm:flex-wrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconPadLockHeader' src="/padlock.svg" alt="iconPadlock" />
                       <p className='text-text'><em> Hospedagem <br />opcional</em></p>
                     </div>
                   </li>
                   <li className='flex items-center sm:w-[80%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
-                    <div className='flex flex-wrap justify-center items-center gap-4 min-w-[100px]'>
+                    <div className='flex minssm:flex-wrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconHeader' src="/man.svg" alt="iconPadlock" />
                       <p className='text-text'><em>Passeios<br />e atrações</em></p>
                     </div>
                   </li>
-                  <li className='flex items-center sm:w-[80%] sm:justify-center px-6  py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                  <li className='flex minssm:flex-wrap sm:w-[80%] sm:justify-center px-6  py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
                     <div className='flex flex-wrap md:flex-nowrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconHeader' src="/bus.svg" alt="iconPadlock" />
                       <p className='text-text'><em>Traslados para <br />Bonito e passeios</em></p>
