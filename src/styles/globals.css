@@ -106,7 +106,7 @@ a {
 @keyframes sizeMenuBurguer {
   from {
     height: 0;
-    width: 200px;
+    width: 60vw;
   }
 
   to {
