@@ -288,11 +288,11 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* ========================== FOOTER ========================== */}
       {/* =================================================================== */}
-      <footer className='relative h-[105vh] minsm:h-[99vh] minsm:max-h-[350px]  md:bg-black'>
-        <div className='relative h-[105vh] minsm:h-[99vh] min-h-[370px] minmd:min-h-[350px] md:hidden md:h-0'>
+      <footer className='relative h-[105vh] minmsm:h-[96vh] minsm:h-[99vh] minsm:max-h-[350px] md:bg-black'>
+        <div className='relative h-[105vh] minmsm:h-[96vh] minsm:h-[99vh] min-h-[370px] minmd:min-h-[350px] md:hidden md:h-0'>
           <Image src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
         </div>
-        <div className='colorGradient absolute md:block flex flex-wrap h-[105vh] minsm:h-[99vh] min-h-[390px] minmd:min-h-[350px] minsm:max-h-[330px] minsm:min-h-[350px] w-[80vw] max-w-[1100px] md:w-[100vw] px-[6vw] pt-14 top-[10vh] md:top-0 inset-0 mx-auto justify-center'>
+        <div className='colorGradient absolute md:block flex flex-wrap h-[105vh] minmsm:h-[96vh] minsm:h-[99vh] min-h-[390px] minmd:min-h-[350px] minsm:max-h-[330px] minsm:min-h-[350px] w-[80vw] max-w-[1100px] md:w-[100vw] px-[6vw] pt-14 top-[10vh] md:top-0 inset-0 mx-auto justify-center'>
           <div className='relative flex sm:flex-wrap justify-end sm:justify-start col-span-6 gap-7'>
             <div className='mr-10'>
               <img className='mr-0' src="/log.svg" alt="" />
