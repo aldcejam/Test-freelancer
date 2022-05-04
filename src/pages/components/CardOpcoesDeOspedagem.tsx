@@ -19,7 +19,7 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image }:
                     <h3 className="hover:cursor-pointer text-sm ">{subTitle}</h3>
                 </div>
                 {/* ============ specifications ============ */}
-                <div className="grid grid-cols-2 msm:grid-cols-1 lg:col-span-4 px-10 msm:px-5 ">
+                <div className="box grid grid-cols-2 msm:grid-cols-1 lg:col-span-4">
                     <div className="flex gap-5 mt-4 items-center">
                         <img className="w-7" src="/icons/bed.svg" alt="" />
                         <strong className="font-normal">2 pessoas</strong>

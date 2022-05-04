@@ -27,6 +27,17 @@ a {
 .container {
   width: min(80vw, 1150px);
 }
+.box{
+  padding-left: 40px;
+  padding-right: 40px;
+}
+@media(max-width: 500px) {
+  .box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 
 @media(max-width: 600px) {
   .container {
@@ -120,4 +131,35 @@ a {
 
 .maxWidthItenMenuBurguer {
   width: clamp(200px, 60vw, 900px);
+}
+
+
+.footer {
+  height: 105vh;
+  max-height: 650px;
+}
+.footerItem{
+  min-height: 350px;
+}
+
+@media(min-width: 500px) {
+  .footer {
+    height: 96vh;
+  }
+  .footer .footerItem{
+    height: 96vh;
+  }
+}
+
+@media(min-width: 640px) {
+  .footer {
+    height: 99vh;
+  }
+
+}
+@media(min-width: 768px) {
+  .footerItem {
+    min-height: 350px;
+  }
+
 }

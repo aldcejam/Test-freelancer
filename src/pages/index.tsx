@@ -38,12 +38,12 @@ const Home: NextPage = () => {
           </p>
         </div>
       </div>
+      <main>
       {/* =================================================================== */}
       {/* ============= HEADER TITULO: PACOTE BONITO LUA DE MEL ============= */}
       {/* =================================================================== */}
-      <main>
         <section className='relative '>
-          <div className='shadow-3xl container mx-auto -mt-[14vh] py-10 px-10 msm:px-5 bg-white rounded-2xl'>
+          <div className='shadow-3xl container mx-auto -mt-[14vh] py-10 box msm:px-5 bg-white rounded-2xl'>
             <div>
               <h1 className='text-title text-3xl'>Pacote Bonito Lua de Mel</h1>
               <p className='text-text'>4 diárias + 5 passeios + Hotel</p>
@@ -71,20 +71,20 @@ const Home: NextPage = () => {
                   </li>
                 </ul>
                 <ul className='flex md:flex-wrap md:justify-center mt-6 md:mt-0 gap-4 md:gap-3'>
-                  <li className='flex items-center sm:w-[100%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
-                    <div className='flex minssm:flex-wrap justify-center items-center gap-4 min-w-[100px]'>
+                  <li className='flex items-center sm:w-[100%] sm:justify-center pl-6 pr-3 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                    <div className='flex minssm:flex-wrap md:flex-nowrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='h-8' src="/padlock.svg" alt="iconPadlock" />
                       <p className='text-text'><em> Hospedagem <br />opcional</em></p>
                     </div>
                   </li>
-                  <li className='flex items-center sm:w-[100%] sm:justify-center px-6 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
-                    <div className='flex minssm:flex-wrap justify-center items-center gap-4 min-w-[100px]'>
+                  <li className='flex items-center sm:w-[100%] sm:justify-center pl-6 pr-3 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                    <div className='flex minssm:flex-wrap md:flex-nowrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconHeader' src="/man.svg" alt="iconPadlock" />
                       <p className='text-text'><em>Passeios<br />e atrações</em></p>
                     </div>
                   </li>
-                  <li className='flex minssm:flex-wrap sm:w-[100%] sm:justify-center px-6  py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
-                    <div className='flex flex-wrap md:flex-nowrap justify-center items-center gap-4 min-w-[100px]'>
+                  <li className='flex items-center sm:w-[100%] sm:justify-center pl-6 pr-3 py-4 border-2 border-solid border-grayBorder rounded-md leading-4'>
+                    <div className='flex minssm:flex-wrap md:flex-nowrap justify-center items-center gap-4 min-w-[100px]'>
                       <img className='iconHeader' src="/bus.svg" alt="iconPadlock" />
                       <p className='text-text'><em>Traslados para <br />Bonito e passeios</em></p>
                     </div>
@@ -104,7 +104,7 @@ const Home: NextPage = () => {
         {/* =================================================================== */}
         {/* ================ SECTION TITULO: ROTEIRO DO PACOTE ================ */}
         {/* =================================================================== */}
-        <section className='ssm:max-x-[70vw] shadow-3xl bg-white container mx-auto pt-10 pb-1 px-10 msm:px-0 mt-14 rounded-2xl'>
+        <section className='ssm:max-x-[70vw] shadow-3xl bg-white container mx-auto pt-10 pb-1 box mt-14 rounded-2xl'>
           <div className='msm:px-4'>
             <Title title='Roteiro do Pacote' />
           </div>
@@ -165,7 +165,7 @@ const Home: NextPage = () => {
         {/* =================================================================== */}
         {/* =================== SECTION TITULO: REGULAMENTO =================== */}
         {/* =================================================================== */}
-        <section className='shadow-3xl bg-white container mx-auto  py-10 px-10 mt-14 rounded-2xl'>
+        <section className='box shadow-3xl bg-white container mx-auto py-10 mt-14 rounded-2xl'>
           <Regulation />
         </section>
       </main>
@@ -257,10 +257,10 @@ const Home: NextPage = () => {
             </div>
             {/* inputs */}
             <div className='text-text grid grid-cols-2 msm:grid-cols-12 gap-2 max-w-[350px] lg:col-span-2'>
-              <input className='inputCheckIn pl-10 rounded-md msm:col-span-12 msm:w-[88vw] msm:max-w-[350px] ' type="text" placeholder='CheckIn' />
-              <input className='inputCheckOut pl-10 rounded-md msm:col-span-12' type="text" placeholder='CheckOut' />
-              <input className='inputAdulto pl-9 h-10 rounded-md msm:col-span-12' type="text" placeholder='Adultos' />
-              <input className='inputCrianca pl-9 h-10 rounded-md msm:col-span-12' type="text" placeholder='Crianças' />
+              <input className='inputCheckIn pl-10 py-5 rounded-md msm:col-span-12 msm:w-[88vw] msm:max-w-[350px] ' type="text" placeholder='CheckIn' />
+              <input className='inputCheckOut pl-10 py-5 rounded-md msm:col-span-12' type="text" placeholder='CheckOut' />
+              <input className='inputAdulto pl-9 h-10 py-5 rounded-md msm:col-span-12' type="text" placeholder='Adultos' />
+              <input className='inputCrianca pl-9 h-10 py-5 rounded-md msm:col-span-12' type="text" placeholder='Crianças' />
               <p className='text-left mt-2 text-white msm:col-span-6'>idade da criança 1:</p>
               <input type="text" className='w-[3vw] min-w-[40px] h-10 rounded-md px-2 msm:col-span-6' placeholder='12' />
             </div>
@@ -288,11 +288,11 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* ========================== FOOTER ========================== */}
       {/* =================================================================== */}
-      <footer className='relative h-[105vh] minmsm:h-[96vh] minsm:h-[99vh] minsm:max-h-[350px] md:bg-black'>
-        <div className='relative h-[105vh] minmsm:h-[96vh] minsm:h-[99vh] min-h-[370px] minmd:min-h-[350px] md:hidden md:h-0'>
+      <footer className='relative footer minsm:max-h-[350px] md:bg-black'>
+        <div className='relative footer footerItem md:hidden md:h-0'>
           <Image src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
         </div>
-        <div className='colorGradient absolute md:block flex flex-wrap h-[105vh] minmsm:h-[96vh] minsm:h-[99vh] min-h-[390px] minmd:min-h-[350px] minsm:max-h-[330px] minsm:min-h-[350px] w-[80vw] max-w-[1100px] md:w-[100vw] px-[6vw] pt-14 top-[10vh] md:top-0 inset-0 mx-auto justify-center'>
+        <div className='colorGradient absolute md:block flex flex-wrap footer footerIten minsm:max-h-[330px] minsm:min-h-[350px] w-[80vw] max-w-[1100px] md:w-[100vw] px-[6vw] pt-14 top-[10vh] md:top-0 inset-0 mx-auto justify-center'>
           <div className='relative flex sm:flex-wrap justify-end sm:justify-start col-span-6 gap-7'>
             <div className='mr-10'>
               <img className='mr-0' src="/log.svg" alt="" />
@@ -324,7 +324,7 @@ const Home: NextPage = () => {
           </div>
           <div className='col-span-6 w-full h-[2px] bg-text mt-[1%] md:mt-[20px]'></div>
 
-          <div className='flex w-full sm:flex-wrap justify-between gap-10 sm:gap-3 col-span-6 md:mt-[20px] minmlg:-mt-[6vh] text-white'>
+          <div className='flex w-full sm:flex-wrap justify-between gap-10 sm:gap-3 col-span-6 md:mt-[20px] minmlg:-mt-[3vh] text-white'>
             <div className='text-sm leading-7'>
               <p className='text-[#DCDCDC]'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
               <p>CNPJ 86.744.935/0001-06</p>
