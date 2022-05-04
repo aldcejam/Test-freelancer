@@ -98,7 +98,8 @@ a {
   }
 
   to {
-    height: 200px;
+    /* item menun burguer = 50px (two items = 100px)  */
+    height: 100px;
   }
 }
 
