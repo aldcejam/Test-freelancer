@@ -33,6 +33,8 @@ module.exports = {
       'minsm': '640px',
 
       'minmd': '768px',
+      
+      'minmlg': '850px',
 
       'minlg': '1023px',
 

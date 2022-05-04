@@ -43,7 +43,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       <main>
         <section className='relative '>
-          <div className='shadow-3xl container mx-auto -mt-[14vh] py-10 px-10 bg-white rounded-2xl'>
+          <div className='shadow-3xl container mx-auto -mt-[14vh] py-10 px-10 msm:px-5 bg-white rounded-2xl'>
             <div>
               <h1 className='text-title text-3xl'>Pacote Bonito Lua de Mel</h1>
               <p className='text-text'>4 diárias + 5 passeios + Hotel</p>
@@ -177,7 +177,7 @@ const Home: NextPage = () => {
           <Title title='Como funciona' />
           <h3 className='text-title'>Pacotes de Data Flexível</h3>
         </div>
-        <div className='grid grid-cols-12 gap-7 justify-start'>
+        <div className='grid grid-cols-12 gap-4 justify-start'>
           <div className='col-span-12 minsm:col-span-6 minmd:col-span-4 minlg:col-span-3'>
             <CardComoFunciona
               title='Solicitamos a reserva'
@@ -225,7 +225,7 @@ const Home: NextPage = () => {
               <br />
               <p className='text-text'>O acesso a flutuação da Nascente Azul é feito através de uma trilha contemplativa de aproximadamente 300 m até chegar à sala de equipamentos para a flutuação</p>
             </div>
-            <div className='relative h-[250px] lg:h-[200px] w-[100%] md:mt-10'>
+            <div className='relative h-[250px] lg:h-[200px] w-[100%] md:minmd:mt-4 mt-6 ssm:mt-0'>
               <Image src="/logs/Logs.png" width={'90%'} height={'100px'} layout='fill' objectFit='contain' />
             </div>
           </div>
@@ -239,7 +239,7 @@ const Home: NextPage = () => {
         <div className='w-full relative h-[100%] '>
           <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
         </div>
-        <h5 className=' text-white absolute mt-[13vh] minssm:mt-[12vh] minmd:mt-[20vh] text-4xl text-center font-pacifico '>Recarregue as suas energias</h5>
+        <h5 className=' text-white absolute mt-[13vh] minssm:mt-[12vh] minmd:mt-[20vh]  text-4xl text-center font-pacifico '>Recarregue as suas energias</h5>
         <div className='bg-green absolute md:w-[100vw] mt-[45vh] md:mt-0 bottom-[15vh] md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
           <h3 className='text-2xl font-light mb-[50px]'>Reserve seu pacote</h3>
           <div className='flex md:flex-wrap justify-center gap-8 md:gap-4'>
@@ -257,7 +257,7 @@ const Home: NextPage = () => {
             </div>
             {/* inputs */}
             <div className='text-text grid grid-cols-2 msm:grid-cols-12 gap-2 max-w-[350px] lg:col-span-2'>
-              <input className='inputCheckIn pl-10 rounded-md msm:col-span-12 msm:w-[88vw] msm:max-w-[350px]' type="text" placeholder='CheckIn' />
+              <input className='inputCheckIn pl-10 rounded-md msm:col-span-12 msm:w-[88vw] msm:max-w-[350px] ' type="text" placeholder='CheckIn' />
               <input className='inputCheckOut pl-10 rounded-md msm:col-span-12' type="text" placeholder='CheckOut' />
               <input className='inputAdulto pl-9 h-10 rounded-md msm:col-span-12' type="text" placeholder='Adultos' />
               <input className='inputCrianca pl-9 h-10 rounded-md msm:col-span-12' type="text" placeholder='Crianças' />
@@ -288,11 +288,11 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* ========================== FOOTER ========================== */}
       {/* =================================================================== */}
-      <footer className='relative h-[80vh] md:h-[100vh] max-h-[400px]  sm:max-h-[700px] md:bg-black'>
-        <div className='relative h-[80vh] min-h-[500px] max-h-[500px] md:hidden md:h-0'>
+      <footer className='relative h-[105vh] minsm:h-[99vh] minsm:max-h-[350px]  md:bg-black'>
+        <div className='relative h-[105vh] minsm:h-[99vh] min-h-[370px] minmd:min-h-[350px] md:hidden md:h-0'>
           <Image src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
         </div>
-        <div className='colorGradient absolute md:block grid grid-cols-6 w-[80vw] max-w-[1100px] md:w-[100vw] min-h-[360px] max-h-[450px] sm:max-h-[700px] px-[6vw] pt-14 top-[10vh] md:top-0 inset-0 mx-auto justify-center'>
+        <div className='colorGradient absolute md:block flex flex-wrap h-[105vh] minsm:h-[99vh] min-h-[390px] minmd:min-h-[350px] minsm:max-h-[330px] minsm:min-h-[350px] w-[80vw] max-w-[1100px] md:w-[100vw] px-[6vw] pt-14 top-[10vh] md:top-0 inset-0 mx-auto justify-center'>
           <div className='relative flex sm:flex-wrap justify-end sm:justify-start col-span-6 gap-7'>
             <div className='mr-10'>
               <img className='mr-0' src="/log.svg" alt="" />
@@ -304,23 +304,27 @@ const Home: NextPage = () => {
               <h3 className='font-medium'>Horário de Atendimento</h3>
               <p className='break-words'><strong className='font-normal'>Segunda a Domingo das 07h00 às 19h00 e nosso fuso horário é 1 hora a menos que Brasília</strong></p>
             </div>
-            <div className='grid grid-cols-8 md:gap-2 text-white  '>
-              <h4 className='font-medium col-span-6 sm:col-span-8'>Formas de pagamento:</h4>
-              <div className='grid grid-cols-3 col-span-6 sm:col-span-8 gap-2 mt-2'>
-                <a href="#"><img src="/logs/american.png" alt="" /></a>
-                <a href="#"><img src="/logs/elo.png" alt="" /></a>
-                <a href="#"><img src="/logs/mastercard.png" alt="" /></a>
-                <a href="#"><img src="/logs/visa.png" alt="" /></a>
-                <a href="#"><img src="/logs/boleto.png" alt="" /></a>
-                <a href="#"><img src="/logs/pix.png" alt="" /></a>
+            <div className='flex flex-wrap  md:gap-2 text-white max-w-[170px]'>
+              <h4 className='font-medium text-sm col-span-6 sm:col-span-8'>Formas de pagamento:</h4>
+              <div className='flex flex-wrap justify-end col-span-6 sm:col-span-8 gap-2 -mt-2 md:mt-1'>
+                <div className='flex gap-2'>
+                  <a href="#"><img src="/logs/american.png" alt="" /></a>
+                  <a href="#"><img src="/logs/elo.png" alt="" /></a>
+                  <a href="#"><img src="/logs/mastercard.png" alt="" /></a>
+                </div>
+                <div className='flex gap-2'>
+                  <a href="#"><img src="/logs/visa.png" alt="" /></a>
+                  <a href="#"><img src="/logs/boleto.png" alt="" /></a>
+                  <a href="#"><img src="/logs/pix.png" alt="" /></a>
+                </div>
               </div>
-              <p className='mt-2 col-span-6 sm:col-span-5 font-light'>Parcelamos em <br />
+              <p className='mt-2 col-span-6 sm:col-span-5 font-light text-sm leading-4 w-full'>Parcelamos em <br />
                 até 12x sem juros</p>
             </div>
           </div>
-          <div className='col-span-6 w-[100%] h-[2px] bg-text mt-[1%] md:mt-[20px]'></div>
+          <div className='col-span-6 w-full h-[2px] bg-text mt-[1%] md:mt-[20px]'></div>
 
-          <div className='flex sm:flex-wrap justify-between gap-10 sm:gap-3 col-span-6 md:mt-[20px] text-white'>
+          <div className='flex w-full sm:flex-wrap justify-between gap-10 sm:gap-3 col-span-6 md:mt-[20px] minmlg:-mt-[6vh] text-white'>
             <div className='text-sm leading-7'>
               <p className='text-[#DCDCDC]'>@ 2021 - Ygarapé Tour - Todos os direitos reservados</p>
               <p>CNPJ 86.744.935/0001-06</p>
