@@ -144,11 +144,13 @@ a {
 .footer {
   height: 110vh;
   min-height: 700px;
+  max-height: 400px;
 }
 
 @media(min-width: 400px) {
   .footer {
     min-height: 650px;
+    max-height: 650px;
   }
 }
 
