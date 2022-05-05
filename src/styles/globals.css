@@ -135,27 +135,28 @@ a {
 
 
 .footer {
-  height: 105vh;
-  max-height: 650px;
-}
-.footerItem{
-  min-height: 350px;
+  height: 110vh;
+  min-height: 700px;
 }
 
-@media(min-width: 500px) {
+
+@media(min-width: 400px) {
   .footer {
-    height: 96vh;
-  }
-  .footer .footerItem{
-    height: 96vh;
+    min-height: 650px;
   }
 }
 
 @media(min-width: 640px) {
   .footer {
     height: 99vh;
+    min-height: 350px;
+    
   }
-
+  .footerItem{
+    min-height: 350px;
+    min-height: 600px;
+  }
+  
 }
 @media(min-width: 768px) {
   .footerItem {
