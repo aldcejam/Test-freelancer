@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       <div className='relative h-[100vh]'>
         <Image src={'/background/bgHeader.png'} layout='fill' objectFit='cover' />
-        <div className='flex justify-betweenn items-center absolute inset-x-0 container mx-auto mt-14 '>
+        <div className='flex justify-betweenn items-center absolute inset-x-0 container mx-auto mt-12 '>
           <div>
             <img src="/log.svg" alt="menu hamburguer" />
           </div>
@@ -39,9 +39,9 @@ const Home: NextPage = () => {
         </div>
       </div>
       <main>
-      {/* =================================================================== */}
-      {/* ============= HEADER TITULO: PACOTE BONITO LUA DE MEL ============= */}
-      {/* =================================================================== */}
+        {/* =================================================================== */}
+        {/* ============= HEADER TITULO: PACOTE BONITO LUA DE MEL ============= */}
+        {/* =================================================================== */}
         <section className='relative '>
           <div className='shadow-3xl container mx-auto -mt-[14vh] py-10 box msm:px-5 bg-white rounded-2xl'>
             <div>
@@ -62,8 +62,8 @@ const Home: NextPage = () => {
                       </p>
                     </div>
                   </li>
-                  <li className='w-[48%] min-w-[200px] md:pr-4 flex max-h-28  sm:w-[100%] sm:justify-center sm:mt-5 bg-grayBlue gap-3 pl-6 py-4 rounded-lg'>
-                    <img className='iconHeader' src="/airplane.svg" alt="" />
+                  <li className='w-[48%] min-w-[200px] md:pr-4 flex items-center pr-1 max-h-24  sm:w-[100%] sm:justify-center sm:mt-5 bg-grayBlue gap-3 pl-6 py-4 rounded-lg'>
+                    <img className='w-8' src="/airplane.svg" alt="" />
                     <div className='leading-5 text-text'>
                       <h3>Período para Viagem:</h3>
                       <strong className='font-normal'><time dateTime="2021-05-15">15/05/2021</time> a <time dateTime="2021-12-18">18/12/2021</time></strong>
@@ -235,34 +235,35 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* =========== SECTION TITULO: RECARREGUE AS SUAS ENERGIAS ============ */}
       {/* =================================================================== */}
-      <section className='relative h-[130vh] min-h-[800px] max-h-[1000px] md:max-h-[800px] flex justify-center '>
-        <div className='w-full relative h-[100%] '>
+      <section className='relative h-[130vh] min-h-[800px] msm:min-h-[900px] max-h-[1000px] md:max-h-[800px] flex justify-center '>
+        <div className='w-full relative h-full'>
           <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
         </div>
         <h5 className=' text-white absolute mt-[13vh] minssm:mt-[12vh] minmd:mt-[20vh]  text-4xl text-center font-pacifico '>Recarregue as suas energias</h5>
-        <div className='bg-green absolute md:w-[100vw] mt-[45vh] md:mt-0 bottom-[15vh] md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
+        <div className='bg-green absolute md:w-[100vw] bottom-[15vh] md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
           <h3 className='text-2xl font-light mb-[50px]'>Reserve seu pacote</h3>
-          <div className='flex md:flex-wrap justify-center gap-8 md:gap-4'>
+          <div className='grid grid-cols-2 sm:grid-cols-1 gap-5 justify-items-center'>
             {/* inputs */}
-            <div className='grid grid-cols-10 gap-2 max-w-[350px] lg:col-span-2'>
-              <input className='inputName col-span-10 rounded-md p-2 mb-2' type="text" />
-              <input className='inpurEmail col-span-10 rounded-md p-2 mb-2 pl-10' type="email" placeholder='email' />
-              <div className='col-span-10 grid grid-cols-12 gap-3'>
-                <div className='col-span-5 flex rounded-md bg-white text-text px-2 py-2 '>
+            <div className='grid gap-2 max-w-[350px] text-black'>
+              <input className='inputName inputFormulario' type="text" placeholder='Nome' />
+              <input className='inpurEmail inputFormulario' type="email" placeholder='Email' />
+              <div className='grid grid-cols-8 gap-2'>
+                <div className='bg-white h-[40px] pl-3 py-3 rounded-md col-span-2'>
                   <img className='mr-2' src="/icons/flagBrazil.svg" alt="DDD-Brasil" />
-                  - 55
                 </div>
-                <input className='col-span-7 rounded-md pl-2 py-2' type="number" placeholder='telefone' />
+                <input className='rounded-md pl-3 col-span-6' type="number" placeholder='telefone' />
               </div>
             </div>
             {/* inputs */}
-            <div className='text-text grid grid-cols-2 msm:grid-cols-12 gap-2 max-w-[350px] lg:col-span-2'>
-              <input className='inputCheckIn pl-10 py-5 rounded-md msm:col-span-12 msm:w-[88vw] msm:max-w-[350px] ' type="text" placeholder='CheckIn' />
-              <input className='inputCheckOut pl-10 py-5 rounded-md msm:col-span-12' type="text" placeholder='CheckOut' />
-              <input className='inputAdulto pl-9 h-10 py-5 rounded-md msm:col-span-12' type="text" placeholder='Adultos' />
-              <input className='inputCrianca pl-9 h-10 py-5 rounded-md msm:col-span-12' type="text" placeholder='Crianças' />
-              <p className='text-left mt-2 text-white msm:col-span-6'>idade da criança 1:</p>
-              <input type="text" className='w-[3vw] min-w-[40px] h-10 rounded-md px-2 msm:col-span-6' placeholder='12' />
+            <div className='grid grid-cols-2 gap-2 max-w-[350px] text-black'>
+              <input className='inputCheckIn inputFormulario msm:col-span-2' type="text" placeholder='CheckIn' />
+              <input className='inputCheckOut inputFormulario msm:col-span-2' type="text" placeholder='CheckOut' />
+              <input className='inputAdulto inputFormulario msm:col-span-2' type="text" placeholder='Adultos' />
+              <input className='inputCrianca inputFormulario msm:col-span-2' type="text" placeholder='Crianças' />
+              <div className='col-span-2  grid grid-cols-8 gap-2'>
+                <p className='text-left text-white col-span-4 '>idade da criança 1:</p>
+                <input type="text" className='rounded-md px-2 col-span-3 max-w-[50px] min-h-[40px]' placeholder='12' />
+              </div>
             </div>
           </div>
           <button className='bg-orange px-12 py-3 rounded-md mt-10 text-title font-medium shadow-3xl'>Quero receber meu roteiro</button>

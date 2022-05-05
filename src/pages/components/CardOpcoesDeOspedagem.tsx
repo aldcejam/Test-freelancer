@@ -13,13 +13,13 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image }:
             <div className="relative col-span-1 lg:col-span-4 h-[100%] lg:h-[110%] min-h-[300px] w-[120%] max-w-[450px] lg:max-w-[100%] lg:w-[100%] ">
                 <Image src={image} width='100%' height='100%' layout="fill" />
             </div>
-            <div className="col-span-2 lg:col-span-4  pl-14 lg:pl-2 pr-5 lg:pr-0 py-10 text-text ">
-                <div className="leading-[8px] px-10 msm:px-5">
+            <div className="col-span-2 lg:col-span-4  pl-14 py-10 text-text ">
+                <div className="leading-[8px] -ml-[10px] minlg:pl-10">
                     <h2 className="hover:cursor-pointer text-2xl leading-6 font-normal">{title}</h2>
                     <h3 className="hover:cursor-pointer text-sm ">{subTitle}</h3>
                 </div>
                 {/* ============ specifications ============ */}
-                <div className="box grid grid-cols-2 msm:grid-cols-1 lg:col-span-4">
+                <div className="grid grid-cols-2 msm:grid-cols-1 lg:col-span-4 -ml-[10px] minlg:pl-10">
                     <div className="flex gap-5 mt-4 items-center">
                         <img className="w-7" src="/icons/bed.svg" alt="" />
                         <strong className="font-normal">2 pessoas</strong>
@@ -46,7 +46,7 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image }:
                     </div>
                 </div>
 
-                <nav className="flex gap-6 mt-10 px-10 msm:px-5">
+                <nav className="flex gap-6 mt-10 -ml-[10px] minlg:pl-10">
                     <a href="#" className="flex">
                         <img src="/iconPlay.svg" alt="" />
                         <p className="ml-4">Ver Vídeo</p>
