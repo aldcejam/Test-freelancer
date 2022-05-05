@@ -135,35 +135,31 @@ a {
 
 
 .footer {
-  height: 110vh;
-  min-height: 700px;
+  height: 105vh;
+  max-height: 650px;
 }
 .footerItem{
-  display: inline;
+  min-height: 350px;
 }
 
-
-
-@media(min-width: 400px) {
+@media(min-width: 500px) {
   .footer {
-    min-height: 650px;
+    height: 96vh;
+  }
+  .footer .footerItem{
+    height: 96vh;
   }
 }
 
 @media(min-width: 640px) {
   .footer {
     height: 99vh;
-    min-height: 350px;
-    
   }
-  .footerItem{
-    min-height: 350px;
-    min-height: 600px;
-  }
-  
+
 }
 @media(min-width: 768px) {
   .footerItem {
     min-height: 350px;
   }
+
 }
