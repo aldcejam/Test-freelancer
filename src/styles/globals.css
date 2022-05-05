@@ -150,7 +150,7 @@ a {
 @media(min-width: 400px) {
   .footer {
     min-height: 650px;
-    max-height: 650px;
+    max-height: 690px;
   }
 }
 
