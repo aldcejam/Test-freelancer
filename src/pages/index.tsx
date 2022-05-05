@@ -260,7 +260,7 @@ const Home: NextPage = () => {
               <input className='inputCheckOut inputFormulario msm:col-span-2' type="text" placeholder='CheckOut' />
               <input className='inputAdulto inputFormulario msm:col-span-2' type="text" placeholder='Adultos' />
               <input className='inputCrianca inputFormulario msm:col-span-2' type="text" placeholder='Crianças' />
-              <div className='col-span-2  grid grid-cols-8 gap-2'>
+              <div className='col-span-2 msm:col-span-1 grid grid-cols-8 gap-2'>
                 <p className='text-left text-white col-span-4 '>idade da criança 1:</p>
                 <input type="text" className='rounded-md px-2 col-span-3 max-w-[50px] min-h-[40px]' placeholder='12' />
               </div>
