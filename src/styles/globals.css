@@ -133,13 +133,9 @@ a {
   width: clamp(200px, 60vw, 900px);
 }
 
-
 .footer {
   height: 110vh;
   min-height: 700px;
-}
-.footerItem{
-  display: inline;
 }
 
 @media(min-width: 400px) {
