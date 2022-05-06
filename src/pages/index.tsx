@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import Avaliations from './components/Avaliations'
 import CardComoFunciona from './components/CardComoFunciona'
-import CardOpcoesDeOspedagem from './components/CardOpcoesDeOspedagem'
-import CardRoteiroDoPacote from './components/CardRoteiroDoPacote'
+import CardOpcoesDeOspedagem from './components/CardOpcoesDeOspedagem/CardOpcoesDeOspedagem'
+import CardRoteiroDoPacote from './components/CardRoteiroDoPacote/CardRoteiroDoPacote'
 import Regulation from './components/Regulation'
 import Title from './components/Title'
 import Image from 'next/image'
@@ -110,28 +110,44 @@ const Home: NextPage = () => {
           </div>
           <div className='mt-9'>
             <CardRoteiroDoPacote
-              withImage={true}
+              withGroupImages={true}
+              groupImages={
+                [
+                  { srcImg: '/background/ocean.png' },
+                  { srcImg: '/background/bgHeader.png' },
+                  { srcImg: '/background/bgHeader.png' },
+                  { srcImg: '/background/ocean.png' }
+                ]
+              }
               withVideo={true}
               image='/GrupoDeMascara.png'
               title='1º dia - Check-in em Bonito'
               text='Acomodação na hospedagem. Você ainda pode aproveitar para conhecer os passeios urbanos da cidade, como o Projeto Jiboia e o Aquário de Bonito, descansar e jantar em um dos restaurantes de Bonito (atividades não incluídas no pacote, contratar à parte). Ao final do dia, pernoite.'
             />
             <CardRoteiroDoPacote
-              withImage={true}
+              withGroupImages={true}
+              groupImages={
+                [
+                  { srcImg: '/background/ocean.png' },
+                  { srcImg: '/background/bgHeader.png' },
+                  { srcImg: '/background/bgHeader.png' },
+                  { srcImg: '/background/ocean.png' }
+                ]
+              }
               withVideo={false}
               image='/imgDia2.png'
               title='2º dia Grutas de São Miguel + Estância Mimosa'
               text='Grutas de São Miguel: saída do hotel às 08h30. Pela manhã, um passeio repleto de surpresas em uma das principais grutas da cidade. Na sequência, visita e passeio nas Cachoeiras Estância Mimosa, com almoço incluso. Retorno e pernoite na hospedagem.'
             />
             <CardRoteiroDoPacote
-              withImage={false}
+              withGroupImages={false}
               withVideo={true}
               image='/imgDia3.png'
               title='3º dia Flutuação + Balneário Nascente Azul'
               text='Nascente Azul: saída do hotel às 08h30. O dia inteiro de atrações com o Combo Flutuação + Balneário, incluindo delicioso almoço! Retorno e pernoite na hospedagem.'
             />
             <CardRoteiroDoPacote
-              withImage={false}
+              withGroupImages={false}
               withVideo={false}
               image='/imgDia4.png'
               title='4º dia - Balneário do Sol'
@@ -152,12 +168,28 @@ const Home: NextPage = () => {
               subTitle='Flat com cozinha equipada e apartamento mobiliado.'
               image='/imgFlat.png'
               price={930}
+              groupImages={
+                [
+                  { srcImg: '/background/ocean.png' },
+                  { srcImg: '/background/bgHeader.png' },
+                  { srcImg: '/background/ocean.png' },
+                  { srcImg: '/background/bgHeader.png' }
+                ]
+              }
             />
             <CardOpcoesDeOspedagem
               title='Hotel Lucca'
               subTitle='Conforto e aconchego para você curtir o seu final de dia.'
               image='/imgHotelLucca.png'
               price={1280}
+              groupImages={
+                [
+                  { srcImg: '/background/bgHeader.png' },
+                  { srcImg: '/background/ocean.png' },
+                  { srcImg: '/background/ocean.png' },
+                  { srcImg: '/background/bgHeader.png' }
+                ]
+              }
             />
           </div>
         </section>
@@ -226,7 +258,7 @@ const Home: NextPage = () => {
               <p className='text-text'>O acesso a flutuação da Nascente Azul é feito através de uma trilha contemplativa de aproximadamente 300 m até chegar à sala de equipamentos para a flutuação</p>
             </div>
             <div className='relative h-[250px] lg:h-[200px] w-[100%] md:minmd:mt-4 mt-6 ssm:mt-0'>
-              <Image src="/logs/Logs.png" width={'90%'} height={'100px'} layout='fill' objectFit='contain' />
+              <Image src="/logs/Logs.png" layout='fill' objectFit='contain' />
             </div>
           </div>
         </div>
@@ -237,7 +269,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       <section className='relative h-[130vh] min-h-[800px] msm:min-h-[900px] max-h-[1000px] md:max-h-[800px] flex justify-center '>
         <div className='w-full relative h-full'>
-          <Image src={'/background/reserveSeusPacote.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
+          <Image src={'/background/reserveSeusPacote.png'} layout='fill' objectFit='cover' />
         </div>
         <h5 className=' text-white absolute mt-[13vh] minssm:mt-[12vh] minmd:mt-[20vh]  text-4xl text-center font-pacifico '>Recarregue as suas energias</h5>
         <div className='bg-green absolute md:w-[100vw] bottom-[15vh] md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
@@ -291,7 +323,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       <footer className='relative footer minsm:max-h-[350px] md:bg-black'>
         <div className='relative footer footerItem md:hidden md:h-0'>
-          <Image src={'/background/ocean.png'} width={'100%'} height={'100%'} layout='fill' objectFit='cover' />
+          <Image src={'/background/ocean.png'} layout='fill' objectFit='cover' />
         </div>
         <div className='colorGradient absolute md:block flex flex-wrap footer footerIten minsm:max-h-[330px] w-[80vw] max-w-[1100px] md:w-[100vw] px-[6vw] minmsm:pt-14 pt-20  top-[10vh] md:top-0 inset-0 mx-auto justify-center'>
           <div className='relative flex sm:flex-wrap justify-end sm:justify-start col-span-6 gap-7'>

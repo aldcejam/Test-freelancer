@@ -171,3 +171,24 @@ a {
     min-height: 350px;
   }
 }
+
+/* ===== Style Slide ===== */
+.awssld{
+  --organic-arrow-thickness: 3px !important;
+  --organic-arrow-height: 30px !important;
+  --control-button-opacity: 1 !important;
+  --slider-transition-duration: 50ms !important;
+  --organic-arrow-color: #ffffff !important;
+  --content-background-color: #000 !important;
+/*   --slider-height-percentage: 100% !important;
+  --loader-bar-color: #851515 !important;
+  --loader-bar-height: 6px !important;
+  --control-button-width: 10% !important;
+  --control-button-height: 25% !important;
+  --control-button-hover-opacity: 0.75 !important;
+  --control-button-background: transparent !important;
+  --transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95) !important;
+  --organic-arrow-border-radius: 100 !important;
+  --control-bullet-color: #6a6a6a !important;
+  --control-bullet-active-color: #6a6a6a !important; */
+}

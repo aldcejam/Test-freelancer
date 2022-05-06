@@ -1,17 +1,30 @@
 import Image from "next/image"
+import { useState } from "react"
+import Modal from 'react-modal'
+import Slide from "../Slide"
 
 interface CardOpcoesDeOspedagemProps {
     title: string
     subTitle: string
     image: string
     price: number
+    groupImages: Array<{srcImg:string}>
 }
 
-export default function CardOpcoesDeOspedagem({ title, subTitle, price, image }: CardOpcoesDeOspedagemProps) {
+export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, groupImages}: CardOpcoesDeOspedagemProps) {
+    const [isOpenGalery, setIsOpenGalery] = useState(false)
+
+    const handleOpenGalery = () => {
+        setIsOpenGalery(true)
+    }
+    const handleCloseGalery = () => {
+        setIsOpenGalery(false)
+    }
+
     return (
         <article className="relative shadow-3xl grid grid-cols-4 items-center bg-white rounded-xl mb-16">
             <div className="relative col-span-1 lg:col-span-4 h-[100%] lg:h-[110%] min-h-[300px] w-[120%] max-w-[450px] lg:max-w-[100%] lg:w-[100%] ">
-                <Image src={image} width='100%' height='100%' layout="fill" />
+                <Image src={image} layout="fill" />
             </div>
             <div className="col-span-2 lg:col-span-4  pl-14 py-10 text-text ">
                 <div className="leading-[8px] -ml-[10px] minlg:pl-10">
@@ -47,14 +60,27 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image }:
                 </div>
 
                 <nav className="flex gap-6 mt-10 -ml-[10px] minlg:pl-10">
-                    <a href="#" className="flex">
+                    <button className="flex">
                         <img src="/iconPlay.svg" alt="" />
                         <p className="ml-4">Ver Vídeo</p>
-                    </a>
-                    <a href="#" className="flex">
+                    </button>
+                    <button className="flex" onClick={handleOpenGalery}>
                         <img src="/iconImage.svg" alt="" />
                         <p className="ml-4">Ver fotos</p>
-                    </a>
+                    </button>
+                    <Modal
+                        isOpen={isOpenGalery}
+                        onRequestClose={handleCloseGalery}
+                        className='relative w-full h-full bg-[#000]'>
+                        <div
+                            onClick={handleCloseGalery}
+                            className="absolute z-50 top-5 right-5 cursor-pointer w-10">
+                            <img src="/icons/close.svg" alt="" />
+                        </div>
+                        <div className="flex items-center h-full">
+                            <Slide groupImages={groupImages}/>
+                        </div>
+                    </Modal>
                 </nav>
             </div>
             <div className="col-span-1 lg:col-span-4 text-center pr-8 lg:pr:0 minsm:px-0 minsm:mx-6 px-10 msm:px-5 -mt-[5%] lg:my-4">
