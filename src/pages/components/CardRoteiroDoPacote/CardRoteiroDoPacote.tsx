@@ -47,6 +47,7 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
                             : null
                     }
                     <Modal
+                    
                         isOpen={isOpenGalery}
                         onRequestClose={handleCloseGalery}
                         className='relative w-full h-full bg-[#000]'>

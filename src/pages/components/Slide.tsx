@@ -13,7 +13,7 @@ export default function Slide({ groupImages }: SlideProps) {
                 groupImages ?
                     groupImages.map((image) => {
                         return (
-                            <div>
+                            <div key={image.srcImg}>
                                 <Image src={image.srcImg} layout='fill' objectFit='contain' />
                             </div>
                         )
