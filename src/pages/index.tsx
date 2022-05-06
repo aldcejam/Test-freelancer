@@ -104,8 +104,8 @@ const Home: NextPage = () => {
         {/* =================================================================== */}
         {/* ================ SECTION TITULO: ROTEIRO DO PACOTE ================ */}
         {/* =================================================================== */}
-        <section className='ssm:max-x-[70vw] shadow-3xl bg-white container mx-auto pt-10 pb-1 box mt-14 rounded-2xl'>
-          <div className='msm:px-4'>
+        <section className='ssm:max-x-[70vw] container mx-auto pt-10 pb-1 mt-14 rounded-2xl'>
+          <div className=''>
             <Title title='Roteiro do Pacote' />
           </div>
           <div className='mt-9'>
