@@ -22,12 +22,12 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
         setIsOpenGalery(false)
     }
     return (
-        <article className="hover:cursor-pointer bg-white flex md:flex-wrap md:justify-center gap-8 mb-14 rounded-xl shadow-3xl">
+        <article className="hover:cursor-pointer bg-white overflow-hidden flex md:flex-wrap md:justify-center gap-8 mb-14 rounded-xl shadow-3xl">
             <div className="relative h-[300px] w-full minmd:w-[40%]">
                 <Image src={image} layout="fill" objectFit="cover" />
             </div>
             <div className="w-[70%] md:w-[90%] pb-7 pr-5 minlg:pr-10 minmd:py-10 leading-4">
-                <h2 className="text-xl text-text">{title}</h2>
+                <h2 className="text-xl text-text font-semibold">{title}</h2>
                 <p className=" text-text mt-3">{text}</p>
                 <div className="flex mt-8 gap-8">
                     {

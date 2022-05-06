@@ -28,7 +28,7 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
             </div>
             <div className="col-span-2 lg:col-span-4  pl-14 py-10 text-text ">
                 <div className="leading-[8px] -ml-[10px] minlg:pl-10">
-                    <h2 className="hover:cursor-pointer text-2xl leading-6 font-normal">{title}</h2>
+                    <h2 className="hover:cursor-pointer text-2xl leading-6 font-semibold">{title}</h2>
                     <h3 className="hover:cursor-pointer text-sm ">{subTitle}</h3>
                 </div>
                 {/* ============ specifications ============ */}

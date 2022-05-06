@@ -34,7 +34,7 @@ const Home: NextPage = () => {
         <div className='absolute text-white mt-[35vh] left-0 right-0 container mx-auto'>
           <p className='text-xl'>
             Um mergulho na <br />
-            <span className='text-6xl -ml-[2px] font-medium font-workSans'>Natureza</span>
+            <span className='text-6xl -ml-[2px] font-semibold font-workSans'>Natureza</span>
           </p>
         </div>
       </div>
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
         <section className='relative '>
           <div className='shadow-3xl container mx-auto -mt-[14vh] py-10 box msm:px-5 bg-white rounded-2xl'>
             <div>
-              <h1 className='text-title text-3xl'>Pacote Bonito Lua de Mel</h1>
+              <h1 className='text-title text-3xl font-semibold '>Pacote Bonito Lua de Mel</h1>
               <p className='text-text'>4 diárias + 5 passeios + Hotel</p>
             </div>
             <div className='flex lg:flex-wrap justify-center items-center gap-5 lg:container mt-10'>
@@ -258,7 +258,7 @@ const Home: NextPage = () => {
               <p className='text-text'>O acesso a flutuação da Nascente Azul é feito através de uma trilha contemplativa de aproximadamente 300 m até chegar à sala de equipamentos para a flutuação</p>
             </div>
             <div className='relative h-[250px] lg:h-[200px] w-[100%] md:minmd:mt-4 mt-6 ssm:mt-0'>
-              <Image src="/logs/Logs.png" layout='fill' objectFit='contain' />
+              <Image src="/logs/Logs.svg" layout='fill' objectFit='contain' />
             </div>
           </div>
         </div>
@@ -267,16 +267,16 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* =========== SECTION TITULO: RECARREGUE AS SUAS ENERGIAS ============ */}
       {/* =================================================================== */}
-      <section className='relative h-[130vh] min-h-[800px] msm:min-h-[900px] max-h-[1000px] md:max-h-[800px] flex justify-center '>
+      <section className='relative h-[130vh] min-h-[800px] msm:min-h-[900px] max-h-[1000px] sm:max-h-[1100px] flex justify-center '>
         <div className='w-full relative h-full'>
           <Image src={'/background/reserveSeusPacote.png'} layout='fill' objectFit='cover' />
         </div>
-        <h5 className=' text-white absolute mt-[13vh] minssm:mt-[12vh] minmd:mt-[20vh]  text-4xl text-center font-pacifico '>Recarregue as suas energias</h5>
-        <div className='bg-green absolute md:w-[100vw] bottom-[15vh] md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center text-white rounded-lg'>
-          <h3 className='text-2xl font-light mb-[50px]'>Reserve seu pacote</h3>
+        <h5 className=' text-white absolute mt-[13vh] minssm:mt-[12vh] text-5xl minmsm:text-6xl text-center font-pacifico '>Recarregue as suas energias</h5>
+        <div className='bg-green absolute md:w-[100vw] bottom-10 md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center  rounded-lg'>
+          <h3 className='text-white text-3xl mb-[50px] font-semibold'>Reserve seu pacote</h3>
           <div className='grid grid-cols-2 sm:grid-cols-1 gap-5 justify-items-center'>
             {/* inputs */}
-            <div className='grid gap-2 max-w-[350px] text-black'>
+            <div className='col-span-2 minmd:col-span-1 grid gap-4 max-w-[350px]'>
               <input className='inputName inputFormulario' type="text" placeholder='Nome' />
               <input className='inpurEmail inputFormulario' type="email" placeholder='Email' />
               <div className='grid grid-cols-8 gap-2'>
@@ -287,16 +287,24 @@ const Home: NextPage = () => {
               </div>
             </div>
             {/* inputs */}
-            <div className='grid grid-cols-2 gap-2 max-w-[350px] text-black'>
+            <div className='col-span-2 minmd:col-span-1 grid grid-cols-2 gap-4 max-w-[350px] text-black'>
               <input className='inputCheckIn inputFormulario msm:col-span-2' type="text" placeholder='CheckIn' />
               <input className='inputCheckOut inputFormulario msm:col-span-2' type="text" placeholder='CheckOut' />
               <input className='inputAdulto inputFormulario msm:col-span-2' type="text" placeholder='Adultos' />
               <input className='inputCrianca inputFormulario msm:col-span-2' type="text" placeholder='Crianças' />
-              <div className='col-span-2 msm:col-span-1 grid grid-cols-8 gap-2'>
-                <p className='text-left text-white col-span-4 '>idade da criança 1:</p>
-                <input type="text" className='rounded-md px-2 col-span-3 max-w-[50px] min-h-[40px]' placeholder='12' />
+              <div className='col-span-2 msm:col-span-2 grid grid-cols-8 gap-4'>
+                <p className='text-left text-white col-span-4 '>idade da criança:</p>
+                <input type="text" className='rounded-md px-2 col-span-4 min-h-[45px]' placeholder='12' />
               </div>
             </div>
+            <div className='col-span-2 w-[90vw] minssm:w-[350px] minmd:w-full'>
+              <input type='text' name="mensagem" className='w-[100%] h-20 rounded-lg border-0 px-2' placeholder='Mensagem'/>
+            </div>
+            <div className='col-span-2 w-[90vw] minssm:w-[350px] minmd:w-full relative flex items-center'>
+              <input type="checkbox" name="" className="absolute left-0" />
+              <label className='text-white absolute left-5'>estou viajando com meu pet</label>
+            </div>
+
           </div>
           <button className='bg-orange px-12 py-3 rounded-md mt-10 text-title font-medium shadow-3xl'>Quero receber meu roteiro</button>
         </div>
@@ -322,7 +330,7 @@ const Home: NextPage = () => {
       {/* ========================== FOOTER ========================== */}
       {/* =================================================================== */}
       <footer className='relative footer minsm:max-h-[350px] md:bg-black'>
-        <div className='relative footer footerItem md:hidden md:h-0'>
+        <div className='relative footer footerItem md:hidden md:h-0 minlg:max-h-[570px] minmlg:min-h-[500px]'>
           <Image src={'/background/ocean.png'} layout='fill' objectFit='cover' />
         </div>
         <div className='colorGradient absolute md:block flex flex-wrap footer footerIten minsm:max-h-[330px] w-[80vw] max-w-[1100px] md:w-[100vw] px-[6vw] minmsm:pt-14 pt-20  top-[10vh] md:top-0 inset-0 mx-auto justify-center'>

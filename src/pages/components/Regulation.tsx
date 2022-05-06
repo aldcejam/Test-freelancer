@@ -53,7 +53,7 @@ export default function RegulationComponent() {
                 {
                     optionsRegulationActive == 'oQueEstaIncluso' ?
                         <div className=" sm:px-0 text-text max-w-[60vw] lg:max-w-[70vw]">
-                            <h3 className="text-2xl">Conheça o pacote</h3>
+                            <h3 className="text-2xl font-medium">Conheça o pacote</h3>
                             <br />
                             <p className="break-words">
                                 o pacote inclui:<br /><br />
@@ -69,18 +69,18 @@ export default function RegulationComponent() {
                                 <br /><br />
                                 <br />
 
-                                <strong className="text-2xl leading-10 font-normal">Dados do Voo</strong>
+                                <strong className="text-2xl leading-10 font-medium">Dados do Voo</strong>
                                 <br />
                                 Nós ficamos responsáveis por escolher as informações do seu voo (aeroporto, companhia aérea, dias e horários de voo). Estas informações serão enviadas para sua confirmação em até 45 dias antes da primeira data que você inseriu no formulário.
                                 <br /><br />
                                 <br />
 
-                                <strong className="text-2xl leading-10 font-normal">Tipo de Acomodação</strong><br />
+                                <strong className="text-2xl leading-10 font-medium">Tipo de Acomodação</strong><br />
                                 Quarto individual, duplo ou triplo, de acordo com o número de viajantes.
                                 <br /><br />
                                 <br />
 
-                                <strong className="text-2xl leading-10 font-normal">Importante</strong>
+                                <strong className="text-2xl leading-10 font-medium">Importante</strong>
                                 <br />
                                 Para garantir a oferta no precinho Hurb, você deve comprar 2 pacotes para validar a acomodação dupla ou 3 pacotes para validar a acomodação tripla.
                                 <br /><br />
@@ -108,7 +108,7 @@ export default function RegulationComponent() {
                                 - Garantimos o mesmo voo para até 8 viajantes com pedidos vinculados. No entanto, a hospedagem irá depender da disponibilidade do estabelecimento.
                                 <br /><br />
                                 <br /><br />
-                                <strong className="text-2xl leading-10 font-normal">Regras para Crianças</strong>
+                                <strong className="text-2xl leading-10 font-medium">Regras para Crianças</strong>
                                 <br />
                                 Crianças de até 1 ano e 11 meses completos até a data de retorno da viagem pagam uma taxa de serviço de 150 reais. Esse valor poderá ser pago antes da confirmação do voo através do link abaixo. Os dados da criança (nome completo e data de nascimento) deverão ser informados no campo “Solicitações sobre sua viagem” do formulário de agendamento. Link para taxa de serviço infantil: https://www.hurb.com/br/packages/especial/868793
                                 • Crianças a partir de 2 anos pagam o mesmo valor de adulto, sendo necessária a compra do pacote para a mesma
