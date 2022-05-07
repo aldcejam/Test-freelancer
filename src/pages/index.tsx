@@ -143,7 +143,7 @@ const Home: NextPage = () => {
             <CardRoteiroDoPacote
               withGroupImages={false}
               withVideo={true}
-              linkIframeVideo='https://www.youtube.com/embed/wN4F2yDjV10'
+              linkIframeVideo='https://www.youtube.com/embed/yxjy3b9kiaA'
               image='/imgDia3.png'
               title='3º dia Flutuação + Balneário Nascente Azul'
               text='Nascente Azul: saída do hotel às 08h30. O dia inteiro de atrações com o Combo Flutuação + Balneário, incluindo delicioso almoço! Retorno e pernoite na hospedagem.'
