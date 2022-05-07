@@ -64,7 +64,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'pacifico': ['Pacifico', 'cursive', 'sans'],
+        'pacifico': ['Pacifico'],
         'workSans': ['Work Sans', 'Pacifico', 'sans'],
       },
       boxShadow: {
