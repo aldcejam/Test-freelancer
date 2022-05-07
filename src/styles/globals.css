@@ -177,15 +177,14 @@ a {
   --content-background-color: #000 !important;
   --control-bullet-color: #ffffff !important;
   --control-bullet-active-color: #84ff7e !important;
+  --control-button-width: 10px !important;
 /*   --slider-height-percentage: 100% !important;
   --loader-bar-color: #851515 !important;
   --loader-bar-height: 6px !important;
-  --control-button-width: 10% !important;
-  --control-button-height: 25% !important;
+  --control-button-height: 10px !important;
   --control-button-hover-opacity: 0.75 !important;
   --control-button-background: transparent !important;
   --transition-bezier: cubic-bezier(0.5, 0.075, 0.25, 0.95) !important;
-  --organic-arrow-border-radius: 100 !important;
-  --control-bullet-color: #6a6a6a !important;
-  --control-bullet-active-color: #6a6a6a !important; */
+  --organic-arrow-border-radius: 100 !important; */
 }
+

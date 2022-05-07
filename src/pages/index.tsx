@@ -249,11 +249,11 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       <section className=' bg-white pb-[7vh]'>
         <div className='grid grid-cols-12 ssm:px-0 gap-10 md:gap-0 justify-center container mx-auto pt-16 mt-14 rounded-2xl'>
-          <div className='col-span-6 sm:px-0 md:col-span-12 md:mx-[20%] max-w-[500px] pb-10'>
+          <div className='col-span-6 sm:px-0 md:col-span-12 md:mx-[7%] max-w-[800px] pb-10'>
             <Image src={'/paradises.png'} width={'100%'} height={'100%'} layout='responsive' objectFit='contain' />
           </div>
 
-          <div className='flex flex-wrap gap-5 lg:gap-0 justify-center col-span-6 md:col-span-12 '>
+          <div className='flex flex-wrap lg:gap-0 justify-center col-span-6 md:col-span-12 '>
             <div >
               <Title title='Bonito: um lugar fantástico' />
               <br />
@@ -333,7 +333,7 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* ========================== FOOTER ========================== */}
       {/* =================================================================== */}
-      <footer className='relative footer minsm:max-h-[350px] md:bg-black'>
+      <footer className='relative footer minmd:max-h-[500px] minsm:max-h-[350px] md:bg-black'>
         <div className='relative footer footerItem md:hidden md:h-0 minlg:max-h-[570px] minmlg:min-h-[500px]'>
           <Image src={'/background/ocean.png'} layout='fill' objectFit='cover' />
         </div>
