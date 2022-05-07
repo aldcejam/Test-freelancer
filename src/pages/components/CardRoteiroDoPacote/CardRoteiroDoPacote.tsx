@@ -10,9 +10,12 @@ interface CardRoteiroDoPacoteProps {
     text: string
     image: string;
     groupImages?: Array<{ srcImg: string }>
+    linkIframeVideo?: string
 }
 
-export default function CardRoteiroDoPacote({ title, text, image, withGroupImages, withVideo, groupImages }: CardRoteiroDoPacoteProps) {
+export default function CardRoteiroDoPacote({ title, text, image, withGroupImages, withVideo, groupImages, linkIframeVideo }: CardRoteiroDoPacoteProps) {
+    /* ====== Galery ======== */
+
     const [isOpenGalery, setIsOpenGalery] = useState(false)
 
     const handleOpenGalery = () => {
@@ -20,6 +23,15 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
     }
     const handleCloseGalery = () => {
         setIsOpenGalery(false)
+    }
+    /* ====== Video ======== */
+    const [isOpenVideo, setIsOpenVideo] = useState(false)
+
+    const handleOpenVideo = () => {
+        setIsOpenVideo(true)
+    }
+    const handleCloseVideo = () => {
+        setIsOpenVideo(false)
     }
     return (
         <article className="hover:cursor-pointer bg-white overflow-hidden flex md:flex-wrap md:justify-center gap-8 mb-14 rounded-xl shadow-3xl">
@@ -32,7 +44,7 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
                 <div className="flex mt-8 gap-8">
                     {
                         withVideo ?
-                            <a href="#" className="flex items-center">
+                            <a onClick={handleOpenVideo} href="#" className="flex items-center">
                                 <img src="/iconPlay.svg" alt="" />
                                 <span className="ml-4">Ver Vídeo</span>
                             </a>
@@ -46,8 +58,9 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
                             </div>
                             : null
                     }
+                    {/* ======= Galery ======= */}
                     <Modal
-                    
+
                         isOpen={isOpenGalery}
                         onRequestClose={handleCloseGalery}
                         className='relative w-full h-full bg-[#000]'>
@@ -58,6 +71,20 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
                         </div>
                         <div className="flex items-center h-full">
                             <Slide groupImages={groupImages} />
+                        </div>
+                    </Modal>
+                    {/* ======= Video ======= */}
+                    <Modal
+                        isOpen={isOpenVideo}
+                        onRequestClose={handleCloseVideo}
+                        className='relative w-full h-full bg-[#000]'>
+                        <div
+                            onClick={handleCloseVideo}
+                            className="absolute z-50 top-5 right-5 cursor-pointer w-10">
+                            <img src="/icons/close.svg" alt="" />
+                        </div>
+                        <div className="flex items-center h-full w-full">
+                            <iframe width="100%" height="100%" src={linkIframeVideo}  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                         </div>
                     </Modal>
 

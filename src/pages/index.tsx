@@ -120,6 +120,7 @@ const Home: NextPage = () => {
                 ]
               }
               withVideo={true}
+              linkIframeVideo='https://www.youtube.com/embed/kj4QE9dhYho'
               image='/GrupoDeMascara.png'
               title='1º dia - Check-in em Bonito'
               text='Acomodação na hospedagem. Você ainda pode aproveitar para conhecer os passeios urbanos da cidade, como o Projeto Jiboia e o Aquário de Bonito, descansar e jantar em um dos restaurantes de Bonito (atividades não incluídas no pacote, contratar à parte). Ao final do dia, pernoite.'
@@ -142,6 +143,7 @@ const Home: NextPage = () => {
             <CardRoteiroDoPacote
               withGroupImages={false}
               withVideo={true}
+              linkIframeVideo='https://www.youtube.com/embed/wN4F2yDjV10'
               image='/imgDia3.png'
               title='3º dia Flutuação + Balneário Nascente Azul'
               text='Nascente Azul: saída do hotel às 08h30. O dia inteiro de atrações com o Combo Flutuação + Balneário, incluindo delicioso almoço! Retorno e pernoite na hospedagem.'
@@ -176,6 +178,7 @@ const Home: NextPage = () => {
                   { srcImg: '/background/bgHeader.png' }
                 ]
               }
+              linkIframeVideo='https://www.youtube.com/embed/8yhp6Ht9ZYY'
             />
             <CardOpcoesDeOspedagem
               title='Hotel Lucca'
@@ -190,6 +193,7 @@ const Home: NextPage = () => {
                   { srcImg: '/background/bgHeader.png' }
                 ]
               }
+              linkIframeVideo='https://www.youtube.com/embed/8yhp6Ht9ZYY'
             />
           </div>
         </section>

@@ -8,10 +8,12 @@ interface CardOpcoesDeOspedagemProps {
     subTitle: string
     image: string
     price: number
-    groupImages: Array<{srcImg:string}>
+    groupImages: Array<{ srcImg: string }>
+    linkIframeVideo: string
 }
 
-export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, groupImages}: CardOpcoesDeOspedagemProps) {
+export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, groupImages, linkIframeVideo}: CardOpcoesDeOspedagemProps) {
+    /* ====== Galery ======== */
     const [isOpenGalery, setIsOpenGalery] = useState(false)
 
     const handleOpenGalery = () => {
@@ -20,7 +22,15 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
     const handleCloseGalery = () => {
         setIsOpenGalery(false)
     }
+    /* ====== Video ======== */
+    const [isOpenVideo, setIsOpenVideo] = useState(false)
 
+    const handleOpenVideo = () => {
+        setIsOpenVideo(true)
+    }
+    const handleCloseVideo = () => {
+        setIsOpenVideo(false)
+    }
     return (
         <article className="relative shadow-3xl grid grid-cols-4 items-center bg-white rounded-xl mb-16">
             <div className="relative col-span-1 lg:col-span-4 h-[100%] lg:h-[110%] min-h-[300px] w-[120%] max-w-[450px] lg:max-w-[100%] lg:w-[100%] ">
@@ -60,7 +70,7 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
                 </div>
 
                 <nav className="flex gap-6 mt-10 -ml-[10px] minlg:pl-10">
-                    <button className="flex">
+                    <button className="flex" onClick={handleOpenVideo}>
                         <img src="/iconPlay.svg" alt="" />
                         <p className="ml-4">Ver Vídeo</p>
                     </button>
@@ -68,6 +78,8 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
                         <img src="/iconImage.svg" alt="" />
                         <p className="ml-4">Ver fotos</p>
                     </button>
+
+                    {/* ======= Galery ======= */}
                     <Modal
                         isOpen={isOpenGalery}
                         onRequestClose={handleCloseGalery}
@@ -78,7 +90,21 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
                             <img src="/icons/close.svg" alt="" />
                         </div>
                         <div className="flex items-center h-full">
-                            <Slide groupImages={groupImages}/>
+                            <Slide groupImages={groupImages} />
+                        </div>
+                    </Modal>
+                    {/* ======= Video ======= */}
+                    <Modal
+                        isOpen={isOpenVideo}
+                        onRequestClose={handleCloseVideo}
+                        className='relative w-full h-full bg-[#000]'>
+                        <div
+                            onClick={handleCloseVideo}
+                            className="absolute z-50 top-5 right-5 cursor-pointer w-10">
+                            <img src="/icons/close.svg" alt="" />
+                        </div>
+                        <div className="flex items-center h-full w-full">
+                            <iframe width="100%" height="100%" src={linkIframeVideo}  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                         </div>
                     </Modal>
                 </nav>
