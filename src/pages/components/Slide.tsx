@@ -8,7 +8,7 @@ interface SlideProps {
 export default function Slide({ groupImages }: SlideProps) {
 
     return (
-        <AwesomeSlider bullets={false} animation="cubeAnimation">
+        <AwesomeSlider bullets={true} animation="cubeAnimation">
             {
                 groupImages ?
                     groupImages.map((image) => {
