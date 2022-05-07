@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { useState } from "react"
 import Modal from 'react-modal'
-import Slide from "../Slide"
+import Slide from "../Galery"
 
 interface CardOpcoesDeOspedagemProps {
     title: string

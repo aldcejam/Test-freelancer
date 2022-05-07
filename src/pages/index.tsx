@@ -275,8 +275,8 @@ const Home: NextPage = () => {
         <div className='w-full relative h-full'>
           <Image src={'/background/reserveSeusPacote.png'} layout='fill' objectFit='cover' />
         </div>
-        <h5 className=' text-white absolute mt-[13vh] px-4 minssm:mt-[12vh] text-5xl minmsm:text-6xl text-center font-pacifico' >Recarregue as suas energias</h5>
-        <div className='bg-green absolute md:w-[100vw] bottom-10 md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center rounded-lg'>
+        <h5 className=' text-white absolute mt-[13vh] px-4 minssm:mt-[12vh] text-5xl minmsm:text-4xl text-center font-pacifico' >Recarregue as suas energias</h5>
+        <div className='bg-green absolute md:w-[100vw] bottom-[15%] md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center rounded-lg'>
           <h3 className='text-white text-3xl mb-[50px] font-semibold'>Reserve seu pacote</h3>
           <div className='grid grid-cols-2 sm:grid-cols-1 gap-5 justify-items-center'>
             {/* inputs */}

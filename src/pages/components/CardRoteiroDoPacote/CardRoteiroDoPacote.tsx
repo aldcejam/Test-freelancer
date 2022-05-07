@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
-import Slide from "../Slide";
+import Slide from "../Galery";
 import Modal from 'react-modal'
 
 interface CardRoteiroDoPacoteProps {
