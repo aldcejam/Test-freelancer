@@ -21,10 +21,6 @@ module.exports = {
       'gray': '#EEEEEE',
       'black': '#060D3B'
     },
-    fontFamily: {
-      'pacifico': ['Pacifico', 'cursive', 'sans'],
-      'workSans': ['Work Sans', 'Pacifico', 'sans'],
-    },
     screens: {
       'minssm': '400px',
 
@@ -33,7 +29,7 @@ module.exports = {
       'minsm': '640px',
 
       'minmd': '768px',
-      
+
       'minmlg': '850px',
 
       'minlg': '1023px',
@@ -67,6 +63,10 @@ module.exports = {
       '2xl': '1536px',
     },
     extend: {
+      fontFamily: {
+        'pacifico': ['Pacifico', 'cursive', 'sans'],
+        'workSans': ['Work Sans', 'Pacifico', 'sans'],
+      },
       boxShadow: {
         '2xl': 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
         '3xl': 'rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px',

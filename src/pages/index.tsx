@@ -275,7 +275,7 @@ const Home: NextPage = () => {
         <div className='w-full relative h-full'>
           <Image src={'/background/reserveSeusPacote.png'} layout='fill' objectFit='cover' />
         </div>
-        <h5 className=' text-white absolute mt-[13vh] px-4 minssm:mt-[12vh] text-5xl minmsm:text-6xl text-center font-pacifico '>Recarregue as suas energias</h5>
+        <h5 className=' text-white absolute mt-[13vh] px-4 minssm:mt-[12vh] text-5xl minmsm:text-6xl text-center font-pacifico' >Recarregue as suas energias</h5>
         <div className='bg-green absolute md:w-[100vw] bottom-10 md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center rounded-lg'>
           <h3 className='text-white text-3xl mb-[50px] font-semibold'>Reserve seu pacote</h3>
           <div className='grid grid-cols-2 sm:grid-cols-1 gap-5 justify-items-center'>
@@ -302,7 +302,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className='col-span-2 w-[90vw] minssm:w-[350px] minmd:w-full'>
-              <input type='text' name="mensagem" className='w-[100%] h-20 rounded-lg border-0 px-2' placeholder='Mensagem' />
+              <textarea name="" id="" className='w-[100%] h-20 rounded-lg border-0 px-2 pt-2'  placeholder='Mensagem'></textarea>
             </div>
             <div className='col-span-2 w-[90vw] minssm:w-[350px] minmd:w-full relative flex items-center'>
               <input type="checkbox" name="" className="absolute left-0" />
