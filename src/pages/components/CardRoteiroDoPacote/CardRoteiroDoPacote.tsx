@@ -59,19 +59,19 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
                             : null
                     }
                     {/* ======= Galery ======= */}
-                    <Modal
 
+
+                    
+                    <Modal
                         isOpen={isOpenGalery}
                         onRequestClose={handleCloseGalery}
-                        className='relative w-full h-full bg-[#000]'>
-                        <div
-                            onClick={handleCloseGalery}
-                            className="absolute z-50 top-5 right-5 cursor-pointer w-10">
-                            <img src="/icons/close.svg" alt="" />
-                        </div>
-                        <div className="flex items-center h-full">
+                        className='absolute inset-x-0 mx-auto w-full h-full max-w-[1200px] bg-[#00000090] '>
+                            <div
+                                onClick={handleCloseGalery}
+                                className="absolute z-50 top-10 right-14 cursor-pointer w-10">
+                                <img src="/icons/close.svg" alt="" />
+                            </div>
                             <Slide groupImages={groupImages} />
-                        </div>
                     </Modal>
                     {/* ======= Video ======= */}
                     <Modal
@@ -84,12 +84,12 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
                             <img src="/icons/close.svg" alt="" />
                         </div>
                         <div className="flex items-center h-full w-full">
-                            <iframe width="100%" height="100%" src={linkIframeVideo}  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            <iframe width="100%" height="100%" src={linkIframeVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                         </div>
                     </Modal>
 
                 </div>
-            </div>
-        </article>
+            </div >
+        </article >
     )
 }

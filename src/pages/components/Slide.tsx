@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
+import { motion } from "framer-motion"
 
 interface SlideProps {
     groupImages: Array<{ srcImg: string }> | undefined
@@ -8,18 +7,29 @@ interface SlideProps {
 export default function Slide({ groupImages }: SlideProps) {
 
     return (
-        <AwesomeSlider bullets={true} animation="cubeAnimation">
-            {
-                groupImages ?
-                    groupImages.map((image) => {
-                        return (
-                            <div key={image.srcImg}>
-                                <Image src={image.srcImg} layout='fill' objectFit='contain' />
-                            </div>
-                        )
-                    }) : null
-            }
+        <motion.div
+            className="absolute inset-x-0 mx-auto items-center overflow-y-scroll h-screen overflow"
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: "0%", opacity: 1 }}
+            exit={{ y: "100%", opacity: 0 }}
+            transition={{ type: "tween" }}
+        >
+            <div className="flex-1 overflow-y-auto ">
+                <div className="xl:content xl:mx-auto">
+                    {
+                        groupImages ?
+                            groupImages.map((image) => {
+                                return (
+                                    <div key={image.srcImg} className="col-span-6 row-span-6 relative">
+                                        <Image src={image.srcImg} width={1200} height={700} layout="responsive" objectFit="cover" quality={100} />
+                                    </div>
+                                )
+                            }) : null
+                    }
 
-        </AwesomeSlider>
+                </div>
+            </div>
+        </motion.div>
+
     )
 }
