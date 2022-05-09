@@ -8,11 +8,16 @@ interface CardOpcoesDeOspedagemProps {
     subTitle: string
     image: string
     price: number
-    groupImages: Array<{ srcImg: string }>
+    groupImages: Array<{
+        srcImg: string
+        altImg?: string,
+        titleImg?: string
+    }>
+
     linkIframeVideo: string
 }
 
-export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, groupImages, linkIframeVideo}: CardOpcoesDeOspedagemProps) {
+export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, groupImages, linkIframeVideo }: CardOpcoesDeOspedagemProps) {
     /* ====== Galery ======== */
     const [isOpenGalery, setIsOpenGalery] = useState(false)
 
@@ -84,12 +89,12 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
                         isOpen={isOpenGalery}
                         onRequestClose={handleCloseGalery}
                         className='absolute inset-x-0 mx-auto w-full h-full max-w-[1200px] bg-[#00000090] '>
-                            <div
-                                onClick={handleCloseGalery}
-                                className="absolute z-50 top-10 right-14 cursor-pointer w-10">
-                                <img src="/icons/close.svg" alt="" />
-                            </div>
-                            <Slide groupImages={groupImages} />
+                        <div
+                            onClick={handleCloseGalery}
+                            className="absolute z-50 top-10 right-14 cursor-pointer w-10">
+                            <img src="/icons/close.svg" alt="" />
+                        </div>
+                        <Slide groupImages={groupImages} />
                     </Modal>
                     {/* ======= Video ======= */}
                     <Modal
@@ -102,7 +107,7 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
                             <img src="/icons/close.svg" alt="" />
                         </div>
                         <div className="flex items-center h-full w-full">
-                            <iframe width="100%" height="100%" src={linkIframeVideo}  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                            <iframe width="100%" height="100%" src={linkIframeVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
                         </div>
                     </Modal>
                 </nav>

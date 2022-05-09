@@ -113,12 +113,13 @@ const Home: NextPage = () => {
               withGroupImages={true}
               groupImages={
                 [
-                  { srcImg: '/background/ocean.png' },
-                  { srcImg: '/background/bgHeader.png' },
+                  { srcImg: '/background/ocean.png',altImg: 'la casa' },
+                  { srcImg: '/background/bgHeader.png', titleImg: "la casa"},
                   { srcImg: '/background/bgHeader.png' },
                   { srcImg: '/background/ocean.png' }
                 ]
               }
+
               withVideo={true}
               linkIframeVideo='https://www.youtube.com/embed/kj4QE9dhYho'
               image='/GrupoDeMascara.png'
@@ -172,8 +173,8 @@ const Home: NextPage = () => {
               price={930}
               groupImages={
                 [
-                  { srcImg: '/background/ocean.png' },
-                  { srcImg: '/background/bgHeader.png' },
+                  { srcImg: '/background/ocean.png',altImg: "ola" },
+                  { srcImg: '/background/bgHeader.png', titleImg:"ola" },
                   { srcImg: '/background/ocean.png' },
                   { srcImg: '/background/bgHeader.png' }
                 ]

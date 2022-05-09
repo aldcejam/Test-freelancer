@@ -9,7 +9,12 @@ interface CardRoteiroDoPacoteProps {
     title: string
     text: string
     image: string;
-    groupImages?: Array<{ srcImg: string }>
+    groupImages?: Array<{ 
+        srcImg: string 
+        altImg?: string,
+        titleImg?:string
+    }>
+
     linkIframeVideo?: string
 }
 
