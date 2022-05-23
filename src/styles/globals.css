@@ -37,6 +37,9 @@ a {
     padding-right: 20px;
   }
 }
+.hidden{
+  overflow-y: hidden;
+}
 
 
 

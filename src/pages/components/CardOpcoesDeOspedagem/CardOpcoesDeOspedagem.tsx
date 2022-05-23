@@ -2,6 +2,8 @@ import Image from "next/image"
 import { useState } from "react"
 import Modal from 'react-modal'
 import Slide from "../Galery"
+import ModalForGalery from "../ModalForGalery"
+import ModalForVideo from "../ModalForVideo"
 
 interface CardOpcoesDeOspedagemProps {
     title: string
@@ -23,18 +25,22 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
 
     const handleOpenGalery = () => {
         setIsOpenGalery(true)
+        document.body.style.overflow = "hidden"
     }
     const handleCloseGalery = () => {
         setIsOpenGalery(false)
+        document.body.style.overflow = "auto"
     }
     /* ====== Video ======== */
     const [isOpenVideo, setIsOpenVideo] = useState(false)
-
+    
     const handleOpenVideo = () => {
         setIsOpenVideo(true)
+        document.body.style.overflow = "hidden"
     }
     const handleCloseVideo = () => {
         setIsOpenVideo(false)
+        document.body.style.overflow = "auto"
     }
     return (
         <article className="relative shadow-3xl grid grid-cols-4 items-center bg-white rounded-xl mb-16">
@@ -85,37 +91,9 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
                     </button>
 
                     {/* ======= Galery ======= */}
-                    <Modal
-                        isOpen={isOpenGalery}
-                        onRequestClose={handleCloseGalery}
-                        className='absolute inset-x-0 mx-auto overflow-y-scroll  w-full h-full bg-[#fff] '>
-                        <div
-                            onClick={handleCloseGalery}
-                            className="flex items-center w-full py-2 pl-2 bg-white cursor-pointer max-w-[1200px] mx-auto">
-                            <div className="bg-[#e8e8e8] rounded-lg flex items-center mr-2 ">
-                                <Image src="/icons/icon-close.svg" width={40} height={35} />
-                            </div>
-                            <div className="font-semibold">Galeria</div>
-                        </div>
-                        <Slide groupImages={groupImages} />
-                    </Modal>
+                    <ModalForGalery isOpenGalery={isOpenGalery} handleCloseGalery={handleCloseGalery} groupImages={groupImages}/>
                     {/* ======= Video ======= */}
-                    <Modal
-                        isOpen={isOpenVideo}
-                        onRequestClose={handleCloseVideo}
-                        className='relative w-full h-full bg-[#000]'>
-                        <div
-                            onClick={handleCloseVideo}
-                            className="flex items-center w-full py-2 pl-2 bg-white cursor-pointer">
-                            <div className="bg-[#e8e8e8] rounded-lg flex items-center mr-2 ">
-                                <Image src="/icons/icon-close.svg" width={40} height={35} />
-                            </div>
-                            <div className="font-semibold">Video</div>
-                        </div>
-                        <div className="flex items-center h-full w-full">
-                            <iframe width="100%" height="100%" src={linkIframeVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                        </div>
-                    </Modal>
+                    <ModalForVideo handleCloseVideo={handleCloseVideo} isOpenVideo={isOpenVideo} linkIframeVideo={linkIframeVideo}/>
                 </nav>
             </div>
             <div className="col-span-1 lg:col-span-4 text-center pr-8 lg:pr:0 minsm:px-0 minsm:mx-6 px-10 msm:px-5 -mt-[5%] lg:my-4">

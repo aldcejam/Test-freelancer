@@ -66,7 +66,10 @@ const Home: NextPage = () => {
                     <img className='w-8' src="/airplane.svg" alt="" />
                     <div className='leading-5 text-text'>
                       <h3>Período para Viagem:</h3>
-                      <strong className='font-normal'><time dateTime="2021-05-15">15/05/2021</time> a <time dateTime="2021-12-18">18/12/2021</time></strong>
+                      <strong className='font-normal'>
+                        <time dateTime="2021-05-15">15/05/2021</time>
+                        a <time dateTime="2021-12-18">18/12/2021</time>
+                      </strong>
                     </div>
                   </li>
                 </ul>
@@ -113,8 +116,8 @@ const Home: NextPage = () => {
               withGroupImages={true}
               groupImages={
                 [
-                  { srcImg: '/background/ocean.png',altImg: 'la casa' },
-                  { srcImg: '/background/bgHeader.png', titleImg: "la casa"},
+                  { srcImg: '/background/ocean.png', altImg: 'la casa' },
+                  { srcImg: '/background/bgHeader.png', titleImg: "la casa" },
                   { srcImg: '/background/bgHeader.png' },
                   { srcImg: '/background/ocean.png' }
                 ]
@@ -173,8 +176,8 @@ const Home: NextPage = () => {
               price={930}
               groupImages={
                 [
-                  { srcImg: '/background/ocean.png',altImg: "ola" },
-                  { srcImg: '/background/bgHeader.png', titleImg:"ola" },
+                  { srcImg: '/background/ocean.png', altImg: "ola" },
+                  { srcImg: '/background/bgHeader.png', titleImg: "ola" },
                   { srcImg: '/background/ocean.png' },
                   { srcImg: '/background/bgHeader.png' }
                 ]
@@ -302,7 +305,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className='col-span-2 w-[90vw] minssm:w-[350px] minmd:w-full'>
-              <textarea name="" id="" className='w-[100%] h-20 rounded-lg border-0 px-2 pt-2'  placeholder='Mensagem'></textarea>
+              <textarea name="" id="" className='w-[100%] h-20 rounded-lg border-0 px-2 pt-2' placeholder='Mensagem'></textarea>
             </div>
             <div className='col-span-2 w-[90vw] minssm:w-[350px] minmd:w-full relative flex items-center'>
               <input type="checkbox" name="" className="absolute left-0" />

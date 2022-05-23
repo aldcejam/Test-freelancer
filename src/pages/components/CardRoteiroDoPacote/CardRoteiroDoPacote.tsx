@@ -1,7 +1,9 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Slide from "../Galery";
 import Modal from 'react-modal'
+import ModalForGalery from "../ModalForGalery";
+import ModalForVideo from "../ModalForVideo";
 
 interface CardRoteiroDoPacoteProps {
     withGroupImages: boolean;
@@ -25,18 +27,22 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
 
     const handleOpenGalery = () => {
         setIsOpenGalery(true)
+        document.body.style.overflow = "hidden"
     }
     const handleCloseGalery = () => {
         setIsOpenGalery(false)
+        document.body.style.overflow = "auto"
     }
     /* ====== Video ======== */
     const [isOpenVideo, setIsOpenVideo] = useState(false)
-
+    
     const handleOpenVideo = () => {
         setIsOpenVideo(true)
+        document.body.style.overflow = "hidden"
     }
     const handleCloseVideo = () => {
         setIsOpenVideo(false)
+        document.body.style.overflow = "auto"
     }
     return (
         <article className="hover:cursor-pointer bg-white overflow-hidden flex md:flex-wrap md:justify-center gap-8 mb-14 rounded-xl shadow-3xl">
@@ -64,41 +70,9 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
                             : null
                     }
                     {/* ======= Galery ======= */}
-
-
-
-                    <Modal
-                        isOpen={isOpenGalery}
-                        onRequestClose={handleCloseGalery}
-                        className='absolute inset-x-0 mx-auto overflow-y-scroll  w-full h-full bg-[#fff] '>
-                        <div
-                            onClick={handleCloseGalery}
-                            className="flex items-center w-full py-2 pl-2 bg-white cursor-pointer max-w-[1200px] mx-auto">
-                            <div className="bg-[#e8e8e8] rounded-lg flex items-center mr-2 ">
-                                <Image src="/icons/icon-close.svg" width={40} height={35} />
-                            </div>
-                            <div className="font-semibold">Galeria</div>
-                        </div>
-                        <Slide groupImages={groupImages} />
-                    </Modal>
+                    <ModalForGalery isOpenGalery={isOpenGalery} handleCloseGalery={handleCloseGalery} groupImages={groupImages}/>
                     {/* ======= Video ======= */}
-                    <Modal
-                        isOpen={isOpenVideo}
-                        onRequestClose={handleCloseVideo}
-                        className='relative w-full h-full bg-[#000]'>
-                        <div
-                            onClick={handleCloseVideo}
-                            className="flex items-center w-full py-2 pl-2 bg-white cursor-pointer">
-                            <div className="bg-[#e8e8e8] rounded-lg flex items-center mr-2 ">
-                                <Image src="/icons/icon-close.svg" width={40} height={35} />
-                            </div>
-                            <div className="font-semibold">Video</div>
-                        </div>
-                        <div className="flex items-center h-full w-full">
-                            <iframe width="100%" height="100%" src={linkIframeVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-                        </div>
-                    </Modal>
-
+                    <ModalForVideo handleCloseVideo={handleCloseVideo} isOpenVideo={isOpenVideo} linkIframeVideo={linkIframeVideo}/>
                 </div>
             </div >
         </article >
