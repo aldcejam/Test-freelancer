@@ -38,10 +38,10 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
     }
     return (
         <article className="relative shadow-3xl grid grid-cols-4 items-center bg-white rounded-xl mb-16">
-            <div className="relative col-span-1 lg:col-span-4 h-[100%] lg:h-[110%] min-h-[300px] w-[120%] max-w-[450px] lg:max-w-[100%] lg:w-[100%] ">
-                <Image src={image} layout="fill" />
+            <div onClick={handleOpenGalery} className="relative col-span-1 lg:col-span-4 h-[100%] lg:h-[110%] min-h-[300px] w-[120%] max-w-[450px] lg:max-w-[100%] lg:w-[100%] rounded-lg ">
+                <Image className="rounded-xl" src={image} layout="fill" />
             </div>
-            <div className="col-span-2 lg:col-span-4  pl-14 py-10 text-text ">
+            <div className="col-span-2 lg:col-span-4  pl-10 minmlg:pl-14 py-10 text-text ">
                 <div className="leading-[8px] -ml-[10px] minlg:pl-10">
                     <h2 className="hover:cursor-pointer text-2xl leading-6 font-semibold">{title}</h2>
                     <h3 className="hover:cursor-pointer text-sm ">{subTitle}</h3>
@@ -88,11 +88,14 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
                     <Modal
                         isOpen={isOpenGalery}
                         onRequestClose={handleCloseGalery}
-                        className='absolute inset-x-0 mx-auto w-full h-full max-w-[1200px] bg-[#00000090] '>
+                        className='absolute inset-x-0 mx-auto overflow-y-scroll  w-full h-full bg-[#fff] '>
                         <div
                             onClick={handleCloseGalery}
-                            className="absolute z-50 top-10 right-14 cursor-pointer w-10">
-                            <img src="/icons/close.svg" alt="" />
+                            className="flex items-center w-full py-2 pl-2 bg-white cursor-pointer max-w-[1200px] mx-auto">
+                            <div className="bg-[#e8e8e8] rounded-lg flex items-center mr-2 ">
+                                <Image src="/icons/icon-close.svg" width={40} height={35} />
+                            </div>
+                            <div className="font-semibold">Galeria</div>
                         </div>
                         <Slide groupImages={groupImages} />
                     </Modal>
@@ -103,8 +106,11 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
                         className='relative w-full h-full bg-[#000]'>
                         <div
                             onClick={handleCloseVideo}
-                            className="absolute z-50 top-5 right-5 cursor-pointer w-10">
-                            <img src="/icons/close.svg" alt="" />
+                            className="flex items-center w-full py-2 pl-2 bg-white cursor-pointer">
+                            <div className="bg-[#e8e8e8] rounded-lg flex items-center mr-2 ">
+                                <Image src="/icons/icon-close.svg" width={40} height={35} />
+                            </div>
+                            <div className="font-semibold">Video</div>
                         </div>
                         <div className="flex items-center h-full w-full">
                             <iframe width="100%" height="100%" src={linkIframeVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>

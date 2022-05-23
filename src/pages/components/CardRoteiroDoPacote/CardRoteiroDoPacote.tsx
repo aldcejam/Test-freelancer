@@ -9,10 +9,10 @@ interface CardRoteiroDoPacoteProps {
     title: string
     text: string
     image: string;
-    groupImages?: Array<{ 
-        srcImg: string 
+    groupImages?: Array<{
+        srcImg: string
         altImg?: string,
-        titleImg?:string
+        titleImg?: string
     }>
 
     linkIframeVideo?: string
@@ -40,7 +40,7 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
     }
     return (
         <article className="hover:cursor-pointer bg-white overflow-hidden flex md:flex-wrap md:justify-center gap-8 mb-14 rounded-xl shadow-3xl">
-            <div className="relative h-[300px] w-full minmd:w-[40%]">
+            <div onClick={handleOpenGalery} className="relative h-[300px] w-full minmd:w-[40%]">
                 <Image src={image} layout="fill" objectFit="cover" />
             </div>
             <div className="w-[70%] md:w-[90%] pb-7 pr-5 minlg:pr-10 minmd:py-10 leading-4">
@@ -66,17 +66,20 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
                     {/* ======= Galery ======= */}
 
 
-                    
+
                     <Modal
                         isOpen={isOpenGalery}
                         onRequestClose={handleCloseGalery}
-                        className='absolute inset-x-0 mx-auto w-full h-full max-w-[1200px] bg-[#00000090] '>
-                            <div
-                                onClick={handleCloseGalery}
-                                className="absolute z-50 top-10 right-14 cursor-pointer w-10">
-                                <img src="/icons/close.svg" alt="" />
+                        className='absolute inset-x-0 mx-auto overflow-y-scroll  w-full h-full bg-[#fff] '>
+                        <div
+                            onClick={handleCloseGalery}
+                            className="flex items-center w-full py-2 pl-2 bg-white cursor-pointer max-w-[1200px] mx-auto">
+                            <div className="bg-[#e8e8e8] rounded-lg flex items-center mr-2 ">
+                                <Image src="/icons/icon-close.svg" width={40} height={35} />
                             </div>
-                            <Slide groupImages={groupImages} />
+                            <div className="font-semibold">Galeria</div>
+                        </div>
+                        <Slide groupImages={groupImages} />
                     </Modal>
                     {/* ======= Video ======= */}
                     <Modal
@@ -85,8 +88,11 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
                         className='relative w-full h-full bg-[#000]'>
                         <div
                             onClick={handleCloseVideo}
-                            className="absolute z-50 top-5 right-5 cursor-pointer w-10">
-                            <img src="/icons/close.svg" alt="" />
+                            className="flex items-center w-full py-2 pl-2 bg-white cursor-pointer">
+                            <div className="bg-[#e8e8e8] rounded-lg flex items-center mr-2 ">
+                                <Image src="/icons/icon-close.svg" width={40} height={35} />
+                            </div>
+                            <div className="font-semibold">Video</div>
                         </div>
                         <div className="flex items-center h-full w-full">
                             <iframe width="100%" height="100%" src={linkIframeVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>

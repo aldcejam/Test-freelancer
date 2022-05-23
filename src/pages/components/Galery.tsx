@@ -12,14 +12,14 @@ export default function Slide({ groupImages }: SlideProps) {
 
     return (
         <motion.div
-            className="absolute inset-x-0 mx-auto items-center overflow-y-scroll h-screen overflow bg-black"
+            className="absolute inset-x-0 mx-auto items-center h-screen bg-white"
             initial={{ y: "100%", opacity: 0 }}
             animate={{ y: "0%", opacity: 1 }}
             exit={{ y: "100%", opacity: 0 }}
             transition={{ type: "tween" }}
         >
-            <div className="flex-1 overflow-y-auto ">
-                <div className="xl:content xl:mx-auto">
+            <div className="flex-1 overflow-y-auto max-w-[1200px] mx-auto">
+                <div className="xl:content xl:mx-auto ">
                     {
                         groupImages ?
                             groupImages.map((image) => {

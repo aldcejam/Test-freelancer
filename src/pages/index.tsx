@@ -249,11 +249,10 @@ const Home: NextPage = () => {
       {/* =========== SECTION TITULO: BONITO UM LUGAR FANTASTICO ============ */}
       {/* =================================================================== */}
       <section className=' bg-white pb-[7vh]'>
-        <div className='grid grid-cols-12 ssm:px-0 gap-10 md:gap-0 justify-center container mx-auto pt-16 mt-14 rounded-2xl'>
-          <div className='col-span-6 sm:px-0 md:col-span-12 md:mx-[7%] max-w-[800px] pb-10'>
+        <div className='grid grid-cols-12 gap-10 md:gap-0 justify-center container mx-auto pt-16 mt-14 rounded-2xl'>
+          <div className='col-span-6 md:col-span-12  pb-10'>
             <Image src={'/paradises.png'} width={'100%'} height={'100%'} layout='responsive' objectFit='contain' />
           </div>
-
           <div className='flex flex-wrap lg:gap-0 justify-center col-span-6 md:col-span-12 '>
             <div >
               <Title title='Bonito: um lugar fantástico' />
@@ -272,11 +271,11 @@ const Home: NextPage = () => {
       {/* =================================================================== */}
       {/* =========== SECTION TITULO: RECARREGUE AS SUAS ENERGIAS ============ */}
       {/* =================================================================== */}
-      <section className='relative h-[130vh] min-h-[1100px] minmd:min-h-[800px] minmsm:min-h-[950px] max-h-[1000px] sm:max-h-[1100px] flex justify-center '>
+      <section className='relative h-[130vh] min-h-[1100px] minmd:min-h-[900px] minmsm:min-h-[950px] max-h-[1000px] sm:max-h-[1100px] flex justify-center '>
         <div className='w-full relative h-full'>
           <Image src={'/background/reserveSeusPacote.png'} layout='fill' objectFit='cover' />
         </div>
-        <h5 className=' text-white absolute mt-[13vh] px-4 minssm:mt-[12vh] text-5xl minmsm:text-4xl text-center font-pacifico' >Recarregue as suas energias</h5>
+        <h5 className=' text-white absolute mt-[100px] ssm:mt-[40px] px-4 text-5xl minmsm:text-4xl text-center font-pacifico' >Recarregue as suas energias</h5>
         <div className='bg-green absolute md:w-[100vw] bottom-[15%] md:bottom-0 sm:mx-10 p-10 pb-12 px-14 md:px-5 text-center rounded-lg'>
           <h3 className='text-white text-3xl mb-[50px] font-semibold'>Reserve seu pacote</h3>
           <div className='grid grid-cols-2 sm:grid-cols-1 gap-5 justify-items-center'>
