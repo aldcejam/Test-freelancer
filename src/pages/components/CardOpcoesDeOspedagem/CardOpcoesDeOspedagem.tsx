@@ -38,7 +38,7 @@ export default function CardOpcoesDeOspedagem({ title, subTitle, price, image, g
     }
     return (
         <article className="relative shadow-3xl grid grid-cols-4 items-center bg-white rounded-xl mb-16">
-            <div onClick={handleOpenGalery} className="relative col-span-1 lg:col-span-4 h-[100%] lg:h-[110%] min-h-[300px] w-[120%] max-w-[450px] lg:max-w-[100%] lg:w-[100%] rounded-lg ">
+            <div onClick={handleOpenGalery} className="hover:cursor-pointer relative col-span-1 lg:col-span-4 h-[100%] lg:h-[110%] min-h-[300px] w-[120%] max-w-[450px] lg:max-w-[100%] lg:w-[100%] rounded-lg ">
                 <Image className="rounded-xl" src={image} layout="fill" />
             </div>
             <div className="col-span-2 lg:col-span-4  pl-10 minmlg:pl-14 py-10 text-text ">

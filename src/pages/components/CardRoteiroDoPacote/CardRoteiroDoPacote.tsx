@@ -40,7 +40,7 @@ export default function CardRoteiroDoPacote({ title, text, image, withGroupImage
     }
     return (
         <article className="hover:cursor-pointer bg-white overflow-hidden flex md:flex-wrap md:justify-center gap-8 mb-14 rounded-xl shadow-3xl">
-            <div onClick={handleOpenGalery} className="relative h-[300px] w-full minmd:w-[40%]">
+            <div onClick={handleOpenGalery} className="hover:cursor-pointer relative h-[300px] w-full minmd:w-[40%]">
                 <Image src={image} layout="fill" objectFit="cover" />
             </div>
             <div className="w-[70%] md:w-[90%] pb-7 pr-5 minlg:pr-10 minmd:py-10 leading-4">
